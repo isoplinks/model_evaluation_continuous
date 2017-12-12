@@ -1,0 +1,129 @@
+"","PI","Ratio","Outliers","lwr","upr","Type","ModelName"
+"1",0,0.991304347826087,"No",0.8,1.23478260869565,"Lower PI Limit","d.True model
+ Turnover PD"
+"2",20,0.945652173913043,"No",0.75,1.28260869565217,"Lower PI Limit","d.True model
+ Turnover PD"
+"3",40,1,"No",0.695652173913043,1.33333333333333,"Lower PI Limit","d.True model
+ Turnover PD"
+"4",50,1.01724137931034,"No",0.654741379310345,1.3625,"Lower PI Limit","d.True model
+ Turnover PD"
+"5",60,1.02173913043478,"No",0.608695652173913,1.4570652173913,"Lower PI Limit","d.True model
+ Turnover PD"
+"6",80,1.1304347826087,"No",0.434782608695652,1.65326086956522,"Lower PI Limit","d.True model
+ Turnover PD"
+"7",90,0.818181818181818,"No",0.363636363636364,2,"Lower PI Limit","d.True model
+ Turnover PD"
+"8",95,1,"No",0.2,2.6,"Lower PI Limit","d.True model
+ Turnover PD"
+"9",0,1.00854700854701,"No",0.769230769230769,1.1965811965812,"Upper PI Limit","d.True model
+ Turnover PD"
+"10",20,0.978494623655914,"No",0.731182795698925,1.26881720430108,"Upper PI Limit","d.True model
+ Turnover PD"
+"11",40,1.01449275362319,"No",0.666666666666667,1.36231884057971,"Upper PI Limit","d.True model
+ Turnover PD"
+"12",50,0.948275862068966,"No",0.637931034482759,1.39655172413793,"Upper PI Limit","d.True model
+ Turnover PD"
+"13",60,1.04347826086957,"No",0.58695652173913,1.45652173913043,"Upper PI Limit","d.True model
+ Turnover PD"
+"14",80,1.18181818181818,"No",0.498863636363636,1.86363636363636,"Upper PI Limit","d.True model
+ Turnover PD"
+"15",90,1.63636363636364,"No",0.272727272727273,2.09090909090909,"Upper PI Limit","d.True model
+ Turnover PD"
+"16",95,1.8,"No",0,3,"Upper PI Limit","d.True model
+ Turnover PD"
+"17",0,1.02586206896552,"No",0.827586206896552,1.17241379310345,"Lower PI Limit","a.Misspecified delay
+ Immediate effect"
+"18",20,1.02150537634409,"No",0.795698924731183,1.19354838709677,"Lower PI Limit","a.Misspecified delay
+ Immediate effect"
+"19",40,1.10144927536232,"No",0.768115942028985,1.2463768115942,"Lower PI Limit","a.Misspecified delay
+ Immediate effect"
+"20",50,1.12068965517241,"No",0.740948275862069,1.27586206896552,"Lower PI Limit","a.Misspecified delay
+ Immediate effect"
+"21",60,1.08695652173913,"No",0.716847826086957,1.32608695652174,"Lower PI Limit","a.Misspecified delay
+ Immediate effect"
+"22",80,1.1304347826087,"No",0.608695652173913,1.47826086956522,"Lower PI Limit","a.Misspecified delay
+ Immediate effect"
+"23",90,0.909090909090909,"No",0.543181818181818,1.72727272727273,"Lower PI Limit","a.Misspecified delay
+ Immediate effect"
+"24",95,0.666666666666667,"No",0.333333333333333,1.83333333333333,"Lower PI Limit","a.Misspecified delay
+ Immediate effect"
+"25",0,0.974137931034483,"No",0.827586206896552,1.17241379310345,"Upper PI Limit","a.Misspecified delay
+ Immediate effect"
+"26",20,1.02150537634409,"No",0.78494623655914,1.20430107526882,"Upper PI Limit","a.Misspecified delay
+ Immediate effect"
+"27",40,1.10144927536232,"No",0.753260869565217,1.27572463768116,"Upper PI Limit","a.Misspecified delay
+ Immediate effect"
+"28",50,1.12068965517241,"No",0.723706896551724,1.31034482758621,"Upper PI Limit","a.Misspecified delay
+ Immediate effect"
+"29",60,1.17391304347826,"No",0.673913043478261,1.39130434782609,"Upper PI Limit","a.Misspecified delay
+ Immediate effect"
+"30",80,1.73913043478261,"Yes",0.478260869565217,1.56521739130435,"Upper PI Limit","a.Misspecified delay
+ Immediate effect"
+"31",90,2.18181818181818,"Yes",0.363636363636364,1.91136363636363,"Upper PI Limit","a.Misspecified delay
+ Immediate effect"
+"32",95,2.8,"Yes",0.2,2.6,"Upper PI Limit","a.Misspecified delay
+ Immediate effect"
+"33",0,1.06493506493506,"No",0.770562770562771,1.26406926406926,"Lower PI Limit","b.Misspecified delay
+ Effect compartment"
+"34",20,0.91304347826087,"No",0.728260869565217,1.32635869565217,"Lower PI Limit","b.Misspecified delay
+ Effect compartment"
+"35",40,0.884057971014493,"No",0.652173913043478,1.40579710144928,"Lower PI Limit","b.Misspecified delay
+ Effect compartment"
+"36",50,0.736842105263158,"No",0.631578947368421,1.49122807017544,"Lower PI Limit","b.Misspecified delay
+ Effect compartment"
+"37",60,0.652173913043478,"No",0.543478260869565,1.54402173913043,"Lower PI Limit","b.Misspecified delay
+ Effect compartment"
+"38",80,0.391304347826087,"No",0.390217391304348,1.78260869565217,"Lower PI Limit","b.Misspecified delay
+ Effect compartment"
+"39",90,0.272727272727273,"No",0.181818181818182,2.27272727272727,"Lower PI Limit","b.Misspecified delay
+ Effect compartment"
+"40",95,0,"No",0,3,"Lower PI Limit","b.Misspecified delay
+ Effect compartment"
+"41",0,0.935622317596566,"No",0.738197424892704,1.2274678111588,"Upper PI Limit","b.Misspecified delay
+ Effect compartment"
+"42",20,0.78494623655914,"No",0.688172043010753,1.27956989247312,"Upper PI Limit","b.Misspecified delay
+ Effect compartment"
+"43",40,0.685714285714286,"No",0.614285714285714,1.37178571428571,"Upper PI Limit","b.Misspecified delay
+ Effect compartment"
+"44",50,0.706896551724138,"No",0.585775862068966,1.41422413793103,"Upper PI Limit","b.Misspecified delay
+ Effect compartment"
+"45",60,0.717391304347826,"No",0.521739130434783,1.52173913043478,"Upper PI Limit","b.Misspecified delay
+ Effect compartment"
+"46",80,0.739130434782609,"No",0.347826086956522,1.78260869565217,"Upper PI Limit","b.Misspecified delay
+ Effect compartment"
+"47",90,1,"No",0.181818181818182,2.27272727272727,"Upper PI Limit","b.Misspecified delay
+ Effect compartment"
+"48",95,1.2,"No",0,3,"Upper PI Limit","b.Misspecified delay
+ Effect compartment"
+"49",0,1.00862068965517,"No",0.75,1.25,"Lower PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"50",20,0.967741935483871,"No",0.698924731182796,1.31209677419355,"Lower PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"51",40,0.956521739130435,"No",0.652173913043478,1.40579710144928,"Lower PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"52",50,0.859649122807018,"No",0.631578947368421,1.47368421052632,"Lower PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"53",60,0.826086956521739,"No",0.565217391304348,1.52228260869565,"Lower PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"54",80,0.545454545454546,"No",0.409090909090909,1.81931818181818,"Lower PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"55",90,0.363636363636364,"No",0.272727272727273,2.18181818181818,"Lower PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"56",95,0.2,"No",0,3,"Lower PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"57",0,0.991379310344828,"No",0.75,1.25,"Upper PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"58",20,0.945652173913043,"No",0.717391304347826,1.32608695652174,"Upper PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"59",40,0.811594202898551,"No",0.652173913043478,1.40579710144928,"Upper PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"60",50,0.879310344827586,"No",0.586206896551724,1.43103448275862,"Upper PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"61",60,0.869565217391304,"No",0.543478260869565,1.52173913043478,"Upper PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"62",80,1.08695652173913,"No",0.347826086956522,1.73913043478261,"Upper PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"63",90,1.36363636363636,"No",0.181818181818182,2.18181818181818,"Upper PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"
+"64",95,1.4,"No",0,3,"Upper PI Limit","c.Misspecified delay and correlation
+ Effect compartment, Full Omega"

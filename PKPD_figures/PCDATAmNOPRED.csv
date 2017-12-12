@@ -1,0 +1,193 @@
+"ModelName","ObsName","t","QI","--_DVPLOT","2.5%_DVPLOT","50%_DVPLOT","97.5%_DVPLOT","observed"
+"a.Misspecified delay
+ Immediate effect","EObs",0,"05%",87.4922,76.4299,82.4184,87.7457,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",0,"50%",96.402,92.5544,96.1732,99.6594,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",0,"95%",106.082,104.568,109.99,116.32,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",24,"05%",26.6918,3.05915,9.75123,14.8232,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",24,"50%",36.7065,20.8619,24.0525,27.6418,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",24,"95%",47.6053,33.4582,39.2161,46.4711,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",36,"05%",13.7464,3.54934,9.85485,15.457,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",36,"50%",25.163,21.2902,24.5563,28.1622,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",36,"95%",39.4686,33.9929,39.7304,47.0978,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",48,"05%",11.0033,3.93884,10.3689,16.2366,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",48,"50%",20.5195,21.4824,25.1391,28.5132,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",48,"95%",35.2772,34.5553,40.7455,49.3587,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",72,"05%",8.89448,4.72794,11.0408,16.9032,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",72,"50%",20.521,22.4408,26.2381,30.2758,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",72,"95%",42.6506,36.1205,43.3208,54.7292,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",96,"05%",9.34584,5.05721,11.9502,17.6204,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",96,"50%",25.415,23.7346,27.5257,32.0264,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",96,"95%",54.2128,39.0783,47.9253,64.4773,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",120,"05%",10.8986,6.12278,13.2013,19.0832,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",120,"50%",28.634,25.3956,29.8393,34.5611,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",120,"95%",70.5716,43.0391,55.0646,73.0891,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",144,"05%",20.562,4.02139,15.6602,25.5541,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",144,"50%",42.995,25.4121,32.6491,42.697,"Observed"
+"a.Misspecified delay
+ Immediate effect","EObs",144,"95%",75.991,41.7124,60.6867,90.8461,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",0,"05%",87.4922,82.0712,86.3324,90.122,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",0,"50%",96.402,93.6994,96.182,98.6389,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",0,"95%",106.082,102.46,106.317,111.18,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",24,"05%",26.6918,4.50735,14.0402,22.2407,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",24,"50%",36.7065,30.6974,35.3595,40.5138,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",24,"95%",47.6053,48.3945,56.1329,64.696,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",36,"05%",13.7464,-4.56933,4.7286,12.2179,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",36,"50%",25.163,20.938,25.6591,30.7231,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",36,"95%",39.4686,38.6827,46.4767,55.3413,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",48,"05%",11.0033,-8.32467,1.11753,8.45975,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",48,"50%",20.5195,16.8335,21.6579,26.6275,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",48,"95%",35.2772,34.9367,42.2447,52.0645,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",72,"05%",8.89448,-8.20665,0.514899,8.34675,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",72,"50%",20.521,15.7164,21.2235,26.2689,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",72,"95%",42.6506,34.0067,42.276,51.9593,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",96,"05%",9.34584,-5.03358,4.05916,12.1925,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",96,"50%",25.415,20.1688,25.6713,31.2213,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",96,"95%",54.2128,39.7806,48.1824,58.3776,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",120,"05%",10.8986,-0.682931,9.40313,18.1629,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",120,"50%",28.634,26.8639,32.6306,38.4811,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",120,"95%",70.5716,47.8566,56.7155,66.9548,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",144,"05%",20.562,1.93647,18.3047,30.9262,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",144,"50%",42.995,31.7298,41.3272,50.9208,"Observed"
+"b.Misspecified delay
+ Effect compartment","EObs",144,"95%",75.991,52.2381,64.6118,80.3821,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",0,"05%",87.4922,81.3386,86.0273,90.0203,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",0,"50%",96.402,93.6951,96.1239,98.5934,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",0,"95%",106.082,102.293,106.421,111.074,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",24,"05%",26.6918,16.2109,22.0846,26.5579,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",24,"50%",36.7065,31.5619,34.7977,38.3223,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",24,"95%",47.6053,42.7166,47.8026,53.6672,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",36,"05%",13.7464,6.70235,12.5587,17.0086,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",36,"50%",25.163,22.1482,25.2243,28.5904,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",36,"95%",39.4686,33.7552,38.5385,44.7295,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",48,"05%",11.0033,1.84434,7.53078,12.5456,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",48,"50%",20.5195,17.931,21.2562,24.574,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",48,"95%",35.2772,30.1194,35.5486,42.4996,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",72,"05%",8.89448,-1.48951,4.52858,10.4724,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",72,"50%",20.521,16.4081,20.532,24.7478,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",72,"95%",42.6506,31.5179,38.6609,47.4226,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",96,"05%",9.34584,-1.87325,5.7754,12.8473,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",96,"50%",25.415,19.7648,24.5309,29.7849,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",96,"95%",54.2128,38.1992,46.9615,57.7003,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",120,"05%",10.8986,0.562048,9.25259,17.3539,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",120,"50%",28.634,25.7435,31.2038,37.2668,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",120,"95%",70.5716,47.0542,57.1595,68.8183,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",144,"05%",20.562,0.917528,16.6463,30.2378,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",144,"50%",42.995,28.9037,39.5719,50.2108,"Observed"
+"c.Misspecified delay and correlation
+ Effect compartment, Full Omega","EObs",144,"95%",75.991,50.6112,65.2437,81.8061,"Observed"
+"d.True model
+ Turnover PD","EObs",0,"05%",87.4922,81.6714,85.9153,89.4415,"Observed"
+"d.True model
+ Turnover PD","EObs",0,"50%",96.402,93.2972,95.9385,98.2676,"Observed"
+"d.True model
+ Turnover PD","EObs",0,"95%",106.082,102.329,106.36,110.929,"Observed"
+"d.True model
+ Turnover PD","EObs",24,"05%",26.6918,21.5028,25.958,29.8144,"Observed"
+"d.True model
+ Turnover PD","EObs",24,"50%",36.7065,33.8626,36.5234,38.9774,"Observed"
+"d.True model
+ Turnover PD","EObs",24,"95%",47.6053,43.8029,48.0694,53.3808,"Observed"
+"d.True model
+ Turnover PD","EObs",36,"05%",13.7464,11.4356,15.2601,18.8644,"Observed"
+"d.True model
+ Turnover PD","EObs",36,"50%",25.163,22.8382,25.3721,28.0249,"Observed"
+"d.True model
+ Turnover PD","EObs",36,"95%",39.4686,32.0046,36.5933,42.1691,"Observed"
+"d.True model
+ Turnover PD","EObs",48,"05%",11.0033,6.41591,10.5251,13.9326,"Observed"
+"d.True model
+ Turnover PD","EObs",48,"50%",20.5195,17.9762,20.4963,23.0314,"Observed"
+"d.True model
+ Turnover PD","EObs",48,"95%",35.2772,27.6306,32.1597,38.3737,"Observed"
+"d.True model
+ Turnover PD","EObs",72,"05%",8.89448,4.37766,8.58136,12.4818,"Observed"
+"d.True model
+ Turnover PD","EObs",72,"50%",20.521,16.6065,19.6476,22.9896,"Observed"
+"d.True model
+ Turnover PD","EObs",72,"95%",42.6506,28.9266,35.4991,45.609,"Observed"
+"d.True model
+ Turnover PD","EObs",96,"05%",9.34584,5.4838,10.2398,15.2965,"Observed"
+"d.True model
+ Turnover PD","EObs",96,"50%",25.415,20.0525,24.0674,28.5476,"Observed"
+"d.True model
+ Turnover PD","EObs",96,"95%",54.2128,36.7434,45.6559,59.5779,"Observed"
+"d.True model
+ Turnover PD","EObs",120,"05%",10.8986,7.91879,13.4699,19.1601,"Observed"
+"d.True model
+ Turnover PD","EObs",120,"50%",28.634,25.4317,31.0903,36.2631,"Observed"
+"d.True model
+ Turnover PD","EObs",120,"95%",70.5716,47.085,58.9314,73.6685,"Observed"
+"d.True model
+ Turnover PD","EObs",144,"05%",20.562,9.24922,19.1562,29.7397,"Observed"
+"d.True model
+ Turnover PD","EObs",144,"50%",42.995,30.5741,39.9303,51.0992,"Observed"
+"d.True model
+ Turnover PD","EObs",144,"95%",75.991,52.6125,69.2593,91.3637,"Observed"

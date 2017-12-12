@@ -1,0 +1,3801 @@
+"Scenario","Strat1","Strat2","Strat3","t","DV","ObsName","ModelName","PRED"
+NA,0,0,0,24,43.9877,"EObs","d.True model
+ Turnover PD",1.44878
+NA,0,0,0,36,28.1815,"EObs","d.True model
+ Turnover PD",6.23448
+NA,0,0,0,48,25.2693,"EObs","d.True model
+ Turnover PD",8.9098
+NA,0,0,0,72,34.6484,"EObs","d.True model
+ Turnover PD",11.476
+NA,0,0,0,96,42.6941,"EObs","d.True model
+ Turnover PD",11.4966
+NA,0,0,0,120,57.7486,"EObs","d.True model
+ Turnover PD",11.0497
+NA,0,0,0,144,74.163,"EObs","d.True model
+ Turnover PD",9.07805
+NA,0,0,0,0,101.54,"EObs","d.True model
+ Turnover PD",35.7396
+NA,0,0,0,24,28.2106,"EObs","d.True model
+ Turnover PD",7.43922
+NA,0,0,0,36,25.5776,"EObs","d.True model
+ Turnover PD",24.6663
+NA,0,0,0,48,26.0583,"EObs","d.True model
+ Turnover PD",6.09622
+NA,0,0,0,72,23.7906,"EObs","d.True model
+ Turnover PD",19.803
+NA,0,0,0,96,32.4063,"EObs","d.True model
+ Turnover PD",4.0938
+NA,0,0,0,120,36.024,"EObs","d.True model
+ Turnover PD",19.0393
+NA,0,0,0,0,93.322,"EObs","d.True model
+ Turnover PD",23.6221
+NA,0,0,0,24,28.6843,"EObs","d.True model
+ Turnover PD",30.6978
+NA,0,0,0,36,24.3984,"EObs","d.True model
+ Turnover PD",39.2038
+NA,0,0,0,48,18.9945,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,72,18.3508,"EObs","d.True model
+ Turnover PD",9.07805
+NA,0,0,0,96,20.8296,"EObs","d.True model
+ Turnover PD",35.7397
+NA,0,0,0,120,18.4213,"EObs","d.True model
+ Turnover PD",7.43922
+NA,0,0,0,144,23.614,"EObs","d.True model
+ Turnover PD",24.6663
+NA,0,0,0,0,91.519,"EObs","d.True model
+ Turnover PD",6.09622
+NA,0,0,0,24,26.8184,"EObs","d.True model
+ Turnover PD",19.803
+NA,0,0,0,36,22.4338,"EObs","d.True model
+ Turnover PD",4.0938
+NA,0,0,0,48,17.7853,"EObs","d.True model
+ Turnover PD",19.0393
+NA,0,0,0,72,18.7067,"EObs","d.True model
+ Turnover PD",2.74912
+NA,0,0,0,96,17.3945,"EObs","d.True model
+ Turnover PD",23.6221
+NA,0,0,0,120,21.1058,"EObs","d.True model
+ Turnover PD",1.84612
+NA,0,0,0,144,30.0265,"EObs","d.True model
+ Turnover PD",30.6978
+NA,0,0,0,0,105.56,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,24,43.087,"EObs","d.True model
+ Turnover PD",0
+NA,0,0,0,36,27.2725,"EObs","d.True model
+ Turnover PD",6.23448
+NA,0,0,0,48,34.8315,"EObs","d.True model
+ Turnover PD",8.9098
+NA,0,0,0,72,40.133,"EObs","d.True model
+ Turnover PD",11.476
+NA,0,0,0,96,45.3809,"EObs","d.True model
+ Turnover PD",11.0497
+NA,0,0,0,120,60.8378,"EObs","d.True model
+ Turnover PD",9.07805
+NA,0,0,0,144,65.2761,"EObs","d.True model
+ Turnover PD",35.7396
+NA,0,0,0,0,90.151,"EObs","d.True model
+ Turnover PD",7.43922
+NA,0,0,0,24,37.2485,"EObs","d.True model
+ Turnover PD",24.6663
+NA,0,0,0,36,27.6533,"EObs","d.True model
+ Turnover PD",6.09622
+NA,0,0,0,48,18.7765,"EObs","d.True model
+ Turnover PD",19.803
+NA,0,0,0,72,28.9368,"EObs","d.True model
+ Turnover PD",4.0938
+NA,0,0,0,96,30.8282,"EObs","d.True model
+ Turnover PD",19.0393
+NA,0,0,0,120,45.2574,"EObs","d.True model
+ Turnover PD",2.74912
+NA,0,0,0,144,57.5076,"EObs","d.True model
+ Turnover PD",23.6221
+NA,0,0,0,24,30.2578,"EObs","d.True model
+ Turnover PD",1.84612
+NA,0,0,0,36,22.2204,"EObs","d.True model
+ Turnover PD",30.6978
+NA,0,0,0,48,20.2859,"EObs","d.True model
+ Turnover PD",39.2038
+NA,0,0,0,72,13.9263,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,96,14.8613,"EObs","d.True model
+ Turnover PD",8.92295
+NA,0,0,0,120,24.3364,"EObs","d.True model
+ Turnover PD",11.513
+NA,0,0,0,144,29.5144,"EObs","d.True model
+ Turnover PD",11.5571
+NA,0,0,0,0,106.72,"EObs","d.True model
+ Turnover PD",9.22662
+NA,0,0,0,24,35.7995,"EObs","d.True model
+ Turnover PD",35.6802
+NA,0,0,0,36,27.3375,"EObs","d.True model
+ Turnover PD",7.62816
+NA,0,0,0,48,29.5881,"EObs","d.True model
+ Turnover PD",24.5316
+NA,0,0,0,72,28.984,"EObs","d.True model
+ Turnover PD",6.3066
+NA,0,0,0,96,37.6673,"EObs","d.True model
+ Turnover PD",19.5631
+NA,0,0,0,120,48.5627,"EObs","d.True model
+ Turnover PD",4.31069
+NA,0,0,0,144,63.97,"EObs","d.True model
+ Turnover PD",18.4944
+NA,0,0,0,0,92.508,"EObs","d.True model
+ Turnover PD",2.94644
+NA,0,0,0,24,40.2572,"EObs","d.True model
+ Turnover PD",22.6452
+NA,0,0,0,36,22.6357,"EObs","d.True model
+ Turnover PD",2.01395
+NA,0,0,0,48,21.1629,"EObs","d.True model
+ Turnover PD",29.1891
+NA,0,0,0,72,24.6683,"EObs","d.True model
+ Turnover PD",37.135
+NA,0,0,0,96,24.877,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,120,36.4682,"EObs","d.True model
+ Turnover PD",8.88765
+NA,0,0,0,144,42.8514,"EObs","d.True model
+ Turnover PD",11.3865
+NA,0,0,0,0,104.51,"EObs","d.True model
+ Turnover PD",11.336
+NA,0,0,0,24,40.7062,"EObs","d.True model
+ Turnover PD",10.8235
+NA,0,0,0,36,29.24,"EObs","d.True model
+ Turnover PD",8.65461
+NA,0,0,0,48,19.7477,"EObs","d.True model
+ Turnover PD",35.9124
+NA,0,0,0,72,28.87,"EObs","d.True model
+ Turnover PD",6.90227
+NA,0,0,0,96,27.679,"EObs","d.True model
+ Turnover PD",25.0742
+NA,0,0,0,120,46.928,"EObs","d.True model
+ Turnover PD",5.50471
+NA,0,0,0,144,43.6293,"EObs","d.True model
+ Turnover PD",20.5466
+NA,0,0,0,0,96.307,"EObs","d.True model
+ Turnover PD",3.50122
+NA,0,0,0,24,36.0362,"EObs","d.True model
+ Turnover PD",20.7719
+NA,0,0,0,36,20.6597,"EObs","d.True model
+ Turnover PD",2.22691
+NA,0,0,0,48,18.2974,"EObs","d.True model
+ Turnover PD",26.7549
+NA,0,0,0,72,17.8164,"EObs","d.True model
+ Turnover PD",1.41641
+NA,0,0,0,96,15.303,"EObs","d.True model
+ Turnover PD",35.5011
+NA,0,0,0,120,12.1832,"EObs","d.True model
+ Turnover PD",45.639
+NA,0,0,0,144,21.8664,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,0,89.879,"EObs","d.True model
+ Turnover PD",11.5078
+NA,0,0,0,24,32.2642,"EObs","d.True model
+ Turnover PD",11.1116
+NA,0,0,0,36,28.4895,"EObs","d.True model
+ Turnover PD",9.18319
+NA,0,0,0,48,20.5756,"EObs","d.True model
+ Turnover PD",35.6958
+NA,0,0,0,0,100.91,"EObs","d.True model
+ Turnover PD",7.57026
+NA,0,0,0,24,40.378,"EObs","d.True model
+ Turnover PD",24.5706
+NA,0,0,0,36,36.633,"EObs","d.True model
+ Turnover PD",6.2406
+NA,0,0,0,48,27.0144,"EObs","d.True model
+ Turnover PD",19.6352
+NA,0,0,0,72,20.7655,"EObs","d.True model
+ Turnover PD",4.24089
+NA,0,0,0,96,27.2697,"EObs","d.True model
+ Turnover PD",18.6634
+NA,0,0,0,120,28.0732,"EObs","d.True model
+ Turnover PD",2.88196
+NA,0,0,0,144,36.3926,"EObs","d.True model
+ Turnover PD",22.9522
+NA,0,0,0,0,88.483,"EObs","d.True model
+ Turnover PD",1.95848
+NA,0,0,0,24,35.0327,"EObs","d.True model
+ Turnover PD",29.6674
+NA,0,0,0,36,25.5064,"EObs","d.True model
+ Turnover PD",37.7963
+NA,0,0,0,48,12.9926,"EObs","d.True model
+ Turnover PD",8.90902
+NA,0,0,0,72,22.9536,"EObs","d.True model
+ Turnover PD",11.4629
+NA,0,0,0,96,25.9963,"EObs","d.True model
+ Turnover PD",11.4694
+NA,0,0,0,120,25.5456,"EObs","d.True model
+ Turnover PD",11.0093
+NA,0,0,0,144,31.938,"EObs","d.True model
+ Turnover PD",8.99676
+NA,0,0,0,0,89.148,"EObs","d.True model
+ Turnover PD",35.7707
+NA,0,0,0,24,42.1439,"EObs","d.True model
+ Turnover PD",7.33335
+NA,0,0,0,36,29.6207,"EObs","d.True model
+ Turnover PD",24.7418
+NA,0,0,0,48,22.1505,"EObs","d.True model
+ Turnover PD",5.97746
+NA,0,0,0,72,19.4438,"EObs","d.True model
+ Turnover PD",19.9418
+NA,0,0,0,96,23.7535,"EObs","d.True model
+ Turnover PD",3.97141
+NA,0,0,0,120,36.257,"EObs","d.True model
+ Turnover PD",19.3641
+NA,0,0,0,144,43.0704,"EObs","d.True model
+ Turnover PD",2.6386
+NA,0,0,0,0,86.846,"EObs","d.True model
+ Turnover PD",24.2113
+NA,0,0,0,24,33.9192,"EObs","d.True model
+ Turnover PD",31.6099
+NA,0,0,0,36,23.3862,"EObs","d.True model
+ Turnover PD",40.4478
+NA,0,0,0,48,20.4558,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,72,20.1929,"EObs","d.True model
+ Turnover PD",8.92837
+NA,0,0,0,96,25.6736,"EObs","d.True model
+ Turnover PD",11.5325
+NA,0,0,0,120,35.6149,"EObs","d.True model
+ Turnover PD",11.5915
+NA,0,0,0,0,100.86,"EObs","d.True model
+ Turnover PD",11.18
+NA,0,0,0,24,37.0967,"EObs","d.True model
+ Turnover PD",9.31765
+NA,0,0,0,36,24.1257,"EObs","d.True model
+ Turnover PD",35.6453
+NA,0,0,0,48,11.3667,"EObs","d.True model
+ Turnover PD",7.74607
+NA,0,0,0,72,16.6317,"EObs","d.True model
+ Turnover PD",24.4511
+NA,0,0,0,96,18.6101,"EObs","d.True model
+ Turnover PD",6.43953
+NA,0,0,0,120,15.247,"EObs","d.True model
+ Turnover PD",19.4188
+NA,0,0,0,0,96.569,"EObs","d.True model
+ Turnover PD",4.45041
+NA,0,0,0,24,26.5085,"EObs","d.True model
+ Turnover PD",18.1658
+NA,0,0,0,36,24.5205,"EObs","d.True model
+ Turnover PD",3.07571
+NA,0,0,0,48,13.0254,"EObs","d.True model
+ Turnover PD",22.0554
+NA,0,0,0,72,21.6292,"EObs","d.True model
+ Turnover PD",2.12565
+NA,0,0,0,96,29.6455,"EObs","d.True model
+ Turnover PD",28.2741
+NA,0,0,0,120,42.7707,"EObs","d.True model
+ Turnover PD",35.8687
+NA,0,0,0,0,92.625,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,24,38.4159,"EObs","d.True model
+ Turnover PD",1.44931
+NA,0,0,0,36,31.8691,"EObs","d.True model
+ Turnover PD",6.23239
+NA,0,0,0,48,24.0963,"EObs","d.True model
+ Turnover PD",8.89967
+NA,0,0,0,72,21.1896,"EObs","d.True model
+ Turnover PD",11.4295
+NA,0,0,0,96,20.5134,"EObs","d.True model
+ Turnover PD",11.4109
+NA,0,0,0,120,23.0239,"EObs","d.True model
+ Turnover PD",10.9277
+NA,0,0,0,0,88.494,"EObs","d.True model
+ Turnover PD",8.84555
+NA,0,0,0,24,33.0132,"EObs","d.True model
+ Turnover PD",35.8322
+NA,0,0,0,36,21.3509,"EObs","d.True model
+ Turnover PD",7.14168
+NA,0,0,0,48,22.9068,"EObs","d.True model
+ Turnover PD",24.8857
+NA,0,0,0,72,27.2307,"EObs","d.True model
+ Turnover PD",5.76599
+NA,0,0,0,96,39.2004,"EObs","d.True model
+ Turnover PD",20.2028
+NA,0,0,0,120,52.5837,"EObs","d.True model
+ Turnover PD",3.75856
+NA,0,0,0,0,96.596,"EObs","d.True model
+ Turnover PD",19.9689
+NA,0,0,0,24,48.969,"EObs","d.True model
+ Turnover PD",2.45001
+NA,0,0,0,36,24.5795,"EObs","d.True model
+ Turnover PD",25.3034
+NA,0,0,0,48,21.9282,"EObs","d.True model
+ Turnover PD",1.59704
+NA,0,0,0,72,18.4368,"EObs","d.True model
+ Turnover PD",33.2879
+NA,0,0,0,96,24.7019,"EObs","d.True model
+ Turnover PD",42.7083
+NA,0,0,0,120,30.3128,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,0,96.497,"EObs","d.True model
+ Turnover PD",9.12126
+NA,0,0,0,24,30.1256,"EObs","d.True model
+ Turnover PD",35.7212
+NA,0,0,0,36,19.2491,"EObs","d.True model
+ Turnover PD",7.49251
+NA,0,0,0,48,10.293,"EObs","d.True model
+ Turnover PD",24.6267
+NA,0,0,0,72,7.30014,"EObs","d.True model
+ Turnover PD",6.15457
+NA,0,0,0,96,5.45757,"EObs","d.True model
+ Turnover PD",19.7341
+NA,0,0,0,120,9.24829,"EObs","d.True model
+ Turnover PD",4.15278
+NA,0,0,0,0,93.066,"EObs","d.True model
+ Turnover PD",18.8858
+NA,0,0,0,24,42.0251,"EObs","d.True model
+ Turnover PD",2.80208
+NA,0,0,0,36,30.1257,"EObs","d.True model
+ Turnover PD",23.3492
+NA,0,0,0,48,18.9911,"EObs","d.True model
+ Turnover PD",1.8907
+NA,0,0,0,72,10.5693,"EObs","d.True model
+ Turnover PD",30.2791
+NA,0,0,0,96,25.921,"EObs","d.True model
+ Turnover PD",38.6338
+NA,0,0,0,120,21.3958,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,0,88.021,"EObs","d.True model
+ Turnover PD",4.18583
+NA,0,0,0,24,30.7706,"EObs","d.True model
+ Turnover PD",8.9241
+NA,0,0,0,36,9.09056,"EObs","d.True model
+ Turnover PD",11.5171
+NA,0,0,0,48,17.6911,"EObs","d.True model
+ Turnover PD",11.1421
+NA,0,0,0,72,13.4857,"EObs","d.True model
+ Turnover PD",9.24585
+NA,0,0,0,96,17.9623,"EObs","d.True model
+ Turnover PD",35.6728
+NA,0,0,0,120,19.0498,"EObs","d.True model
+ Turnover PD",7.65302
+NA,0,0,0,0,99.997,"EObs","d.True model
+ Turnover PD",24.5145
+NA,0,0,0,24,29.8913,"EObs","d.True model
+ Turnover PD",6.33456
+NA,0,0,0,36,16.2783,"EObs","d.True model
+ Turnover PD",19.5323
+NA,0,0,0,48,11.4075,"EObs","d.True model
+ Turnover PD",4.33995
+NA,0,0,0,72,19.4789,"EObs","d.True model
+ Turnover PD",18.4243
+NA,0,0,0,96,19.2147,"EObs","d.True model
+ Turnover PD",2.97339
+NA,0,0,0,120,22.3675,"EObs","d.True model
+ Turnover PD",22.5192
+NA,0,0,0,0,99.465,"EObs","d.True model
+ Turnover PD",2.03714
+NA,0,0,0,24,40.2646,"EObs","d.True model
+ Turnover PD",28.9937
+NA,0,0,0,36,42.5494,"EObs","d.True model
+ Turnover PD",36.8652
+NA,0,0,0,48,34.9593,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,72,42.5386,"EObs","d.True model
+ Turnover PD",8.92404
+NA,0,0,0,96,59.3206,"EObs","d.True model
+ Turnover PD",11.5078
+NA,0,0,0,120,72.6826,"EObs","d.True model
+ Turnover PD",11.5443
+NA,0,0,0,0,103.98,"EObs","d.True model
+ Turnover PD",9.18319
+NA,0,0,0,24,36.375,"EObs","d.True model
+ Turnover PD",35.6958
+NA,0,0,0,36,24.6517,"EObs","d.True model
+ Turnover PD",7.57026
+NA,0,0,0,48,21.0694,"EObs","d.True model
+ Turnover PD",24.5706
+NA,0,0,0,72,18.3217,"EObs","d.True model
+ Turnover PD",6.2406
+NA,0,0,0,96,19.4268,"EObs","d.True model
+ Turnover PD",19.6352
+NA,0,0,0,120,35.4772,"EObs","d.True model
+ Turnover PD",4.24089
+NA,0,0,0,0,92.94,"EObs","d.True model
+ Turnover PD",2.88196
+NA,0,0,0,24,33.7306,"EObs","d.True model
+ Turnover PD",1.95848
+NA,0,0,0,36,18.4625,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,48,11.4517,"EObs","d.True model
+ Turnover PD",4.18714
+NA,0,0,0,72,10.3903,"EObs","d.True model
+ Turnover PD",8.92404
+NA,0,0,0,96,15.5045,"EObs","d.True model
+ Turnover PD",11.5078
+NA,0,0,0,120,17.6349,"EObs","d.True model
+ Turnover PD",11.5443
+NA,0,0,0,0,95.305,"EObs","d.True model
+ Turnover PD",9.18319
+NA,0,0,0,24,37.8542,"EObs","d.True model
+ Turnover PD",35.6958
+NA,0,0,0,36,24.1388,"EObs","d.True model
+ Turnover PD",7.57026
+NA,0,0,0,48,23.732,"EObs","d.True model
+ Turnover PD",24.5706
+NA,0,0,0,72,14.6975,"EObs","d.True model
+ Turnover PD",6.2406
+NA,0,0,0,96,16.1734,"EObs","d.True model
+ Turnover PD",19.6352
+NA,0,0,0,120,24.6172,"EObs","d.True model
+ Turnover PD",4.24089
+NA,0,0,0,0,97.752,"EObs","d.True model
+ Turnover PD",18.6634
+NA,0,0,0,24,37.6859,"EObs","d.True model
+ Turnover PD",2.88196
+NA,0,0,0,36,26.603,"EObs","d.True model
+ Turnover PD",22.9522
+NA,0,0,0,48,16.9962,"EObs","d.True model
+ Turnover PD",1.95848
+NA,0,0,0,72,28.469,"EObs","d.True model
+ Turnover PD",29.6674
+NA,0,0,0,96,30.635,"EObs","d.True model
+ Turnover PD",37.7963
+NA,0,0,0,120,37.688,"EObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,0,98.957,"EObs","d.True model
+ Turnover PD",0
+NA,0,0,0,24,38.0542,"EObs","d.True model
+ Turnover PD",1.44931
+NA,0,0,0,36,29.453,"EObs","d.True model
+ Turnover PD",6.23239
+NA,0,0,0,48,12.5994,"EObs","d.True model
+ Turnover PD",8.89967
+NA,0,0,0,72,10.0788,"EObs","d.True model
+ Turnover PD",11.4295
+NA,0,0,0,96,12.2539,"EObs","d.True model
+ Turnover PD",11.4109
+NA,0,0,0,120,30.0396,"EObs","d.True model
+ Turnover PD",8.84555
+NA,0,0,0,0,102.92,"EObs","d.True model
+ Turnover PD",35.8322
+NA,0,0,0,24,46.774,"EObs","d.True model
+ Turnover PD",7.14168
+NA,0,0,0,36,37.7145,"EObs","d.True model
+ Turnover PD",24.8857
+NA,0,0,0,48,23.8848,"EObs","d.True model
+ Turnover PD",5.76599
+NA,0,0,0,72,24.3291,"EObs","d.True model
+ Turnover PD",20.2028
+NA,0,0,0,96,22.0174,"EObs","d.True model
+ Turnover PD",3.75856
+NA,0,0,0,120,22.9906,"EObs","d.True model
+ Turnover PD",19.9689
+NA,0,0,0,1,0.867833,"CObs","d.True model
+ Turnover PD",2.45001
+NA,0,0,0,2,6.75436,"CObs","d.True model
+ Turnover PD",25.3034
+NA,0,0,0,3,9.69505,"CObs","d.True model
+ Turnover PD",33.2879
+NA,0,0,0,6,11.4281,"CObs","d.True model
+ Turnover PD",42.7083
+NA,0,0,0,9,12.6373,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,12,10.3805,"CObs","d.True model
+ Turnover PD",1.44854
+NA,0,0,0,24,7.042,"CObs","d.True model
+ Turnover PD",8.90092
+NA,0,0,0,36,4.5396,"CObs","d.True model
+ Turnover PD",11.446
+NA,0,0,0,48,3.84689,"CObs","d.True model
+ Turnover PD",11.4448
+NA,0,0,0,72,1.39221,"CObs","d.True model
+ Turnover PD",8.94504
+NA,0,0,0,24,6.9765,"CObs","d.True model
+ Turnover PD",35.7932
+NA,0,0,0,36,4.41938,"CObs","d.True model
+ Turnover PD",7.26999
+NA,0,0,0,48,4.4328,"CObs","d.True model
+ Turnover PD",24.7904
+NA,0,0,0,72,2.37329,"CObs","d.True model
+ Turnover PD",5.90859
+NA,0,0,0,96,1.1445,"CObs","d.True model
+ Turnover PD",20.027
+NA,0,0,0,120,0.62053,"CObs","d.True model
+ Turnover PD",3.90286
+NA,0,0,0,0.5,0.49987,"CObs","d.True model
+ Turnover PD",19.5553
+NA,0,0,0,2,3.82139,"CObs","d.True model
+ Turnover PD",2.57799
+NA,0,0,0,3,5.84172,"CObs","d.True model
+ Turnover PD",24.5519
+NA,0,0,0,6,9.85307,"CObs","d.True model
+ Turnover PD",1.70287
+NA,0,0,0,12,9.36828,"CObs","d.True model
+ Turnover PD",32.1306
+NA,0,0,0,24,8.8806,"CObs","d.True model
+ Turnover PD",41.1495
+NA,0,0,0,36,6.0008,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,48,6.41833,"CObs","d.True model
+ Turnover PD",8.96897
+NA,0,0,0,72,5.53202,"CObs","d.True model
+ Turnover PD",35.7819
+NA,0,0,0,96,3.81467,"CObs","d.True model
+ Turnover PD",7.29799
+NA,0,0,0,120,2.73682,"CObs","d.True model
+ Turnover PD",24.7679
+NA,0,0,0,3,6.38152,"CObs","d.True model
+ Turnover PD",5.93829
+NA,0,0,0,6,9.84243,"CObs","d.True model
+ Turnover PD",19.9891
+NA,0,0,0,9,12.1987,"CObs","d.True model
+ Turnover PD",3.93168
+NA,0,0,0,24,11.549,"CObs","d.True model
+ Turnover PD",19.4732
+NA,0,0,0,36,8.67497,"CObs","d.True model
+ Turnover PD",2.60313
+NA,0,0,0,48,7.88419,"CObs","d.True model
+ Turnover PD",24.4082
+NA,0,0,0,72,4.6553,"CObs","d.True model
+ Turnover PD",1.72351
+NA,0,0,0,96,3.42996,"CObs","d.True model
+ Turnover PD",31.9132
+NA,0,0,0,120,1.43037,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,3,9.37173,"CObs","d.True model
+ Turnover PD",9.20682
+NA,0,0,0,6,11.2881,"CObs","d.True model
+ Turnover PD",35.6878
+NA,0,0,0,9,13.227,"CObs","d.True model
+ Turnover PD",7.6026
+NA,0,0,0,12,13.2412,"CObs","d.True model
+ Turnover PD",24.5493
+NA,0,0,0,24,8.49148,"CObs","d.True model
+ Turnover PD",6.27788
+NA,0,0,0,36,7.26568,"CObs","d.True model
+ Turnover PD",19.5949
+NA,0,0,0,48,5.6725,"CObs","d.True model
+ Turnover PD",4.2807
+NA,0,0,0,72,3.59971,"CObs","d.True model
+ Turnover PD",18.5671
+NA,0,0,0,96,1.40897,"CObs","d.True model
+ Turnover PD",2.91888
+NA,0,0,0,120,1.02245,"CObs","d.True model
+ Turnover PD",22.7757
+NA,0,0,0,6,11.1409,"CObs","d.True model
+ Turnover PD",1.9903
+NA,0,0,0,12,11.2589,"CObs","d.True model
+ Turnover PD",29.3914
+NA,0,0,0,24,6.26005,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,36,5.46735,"CObs","d.True model
+ Turnover PD",9.16873
+NA,0,0,0,48,3.05395,"CObs","d.True model
+ Turnover PD",35.7039
+NA,0,0,0,72,2.12826,"CObs","d.True model
+ Turnover PD",7.55541
+NA,0,0,0,96,1.04368,"CObs","d.True model
+ Turnover PD",24.5836
+NA,0,0,0,120,1.0427,"CObs","d.True model
+ Turnover PD",6.22595
+NA,0,0,0,3,12.0758,"CObs","d.True model
+ Turnover PD",19.6543
+NA,0,0,0,6,10.9982,"CObs","d.True model
+ Turnover PD",4.22766
+NA,0,0,0,9,10.228,"CObs","d.True model
+ Turnover PD",18.6988
+NA,0,0,0,12,11.462,"CObs","d.True model
+ Turnover PD",2.87075
+NA,0,0,0,24,10.755,"CObs","d.True model
+ Turnover PD",23.0093
+NA,0,0,0,36,7.27943,"CObs","d.True model
+ Turnover PD",1.94935
+NA,0,0,0,48,5.56896,"CObs","d.True model
+ Turnover PD",29.7505
+NA,0,0,0,72,4.4709,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,96,3.71635,"CObs","d.True model
+ Turnover PD",9.04072
+NA,0,0,0,3,5.15487,"CObs","d.True model
+ Turnover PD",35.7546
+NA,0,0,0,6,8.34531,"CObs","d.True model
+ Turnover PD",7.39158
+NA,0,0,0,9,9.5607,"CObs","d.True model
+ Turnover PD",24.7008
+NA,0,0,0,12,8.93445,"CObs","d.True model
+ Turnover PD",6.04324
+NA,0,0,0,24,6.38648,"CObs","d.True model
+ Turnover PD",19.8651
+NA,0,0,0,36,5.53676,"CObs","d.True model
+ Turnover PD",4.03957
+NA,0,0,0,48,4.1472,"CObs","d.True model
+ Turnover PD",19.1821
+NA,0,0,0,72,2.74694,"CObs","d.True model
+ Turnover PD",2.70023
+NA,0,0,0,96,2.28828,"CObs","d.True model
+ Turnover PD",23.8792
+NA,0,0,0,120,1.33701,"CObs","d.True model
+ Turnover PD",1.80495
+NA,0,0,0,1,0.062565,"CObs","d.True model
+ Turnover PD",31.0947
+NA,0,0,0,2,3.6674,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,3,6.0024,"CObs","d.True model
+ Turnover PD",8.983
+NA,0,0,0,6,9.42868,"CObs","d.True model
+ Turnover PD",35.7762
+NA,0,0,0,9,8.94,"CObs","d.True model
+ Turnover PD",7.31583
+NA,0,0,0,12,9.8611,"CObs","d.True model
+ Turnover PD",24.7547
+NA,0,0,0,24,7.35029,"CObs","d.True model
+ Turnover PD",5.95805
+NA,0,0,0,36,5.93497,"CObs","d.True model
+ Turnover PD",19.9652
+NA,0,0,0,48,4.62862,"CObs","d.True model
+ Turnover PD",3.95171
+NA,0,0,0,72,3.50407,"CObs","d.True model
+ Turnover PD",19.418
+NA,0,0,0,96,2.08366,"CObs","d.True model
+ Turnover PD",2.62099
+NA,0,0,0,120,1.58441,"CObs","d.True model
+ Turnover PD",24.3086
+NA,0,0,0,24,8.9016,"CObs","d.True model
+ Turnover PD",1.73839
+NA,0,0,0,36,6.28346,"CObs","d.True model
+ Turnover PD",31.7598
+NA,0,0,0,48,5.39234,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,72,2.51752,"CObs","d.True model
+ Turnover PD",9.0235
+NA,0,0,0,96,1.3743,"CObs","d.True model
+ Turnover PD",35.76
+NA,0,0,0,120,1.40836,"CObs","d.True model
+ Turnover PD",7.36743
+NA,0,0,0,1.5,0.0611294,"CObs","d.True model
+ Turnover PD",24.7168
+NA,0,0,0,3,7.66132,"CObs","d.True model
+ Turnover PD",6.01527
+NA,0,0,0,6,10.7992,"CObs","d.True model
+ Turnover PD",19.8967
+NA,0,0,0,12,11.4507,"CObs","d.True model
+ Turnover PD",4.0099
+NA,0,0,0,24,9.42206,"CObs","d.True model
+ Turnover PD",19.2599
+NA,0,0,0,36,8.83509,"CObs","d.True model
+ Turnover PD",2.67308
+NA,0,0,0,48,6.9721,"CObs","d.True model
+ Turnover PD",24.0233
+NA,0,0,0,72,5.18922,"CObs","d.True model
+ Turnover PD",1.78192
+NA,0,0,0,96,3.98071,"CObs","d.True model
+ Turnover PD",31.3202
+NA,0,0,0,120,2.60701,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,3,9.97305,"CObs","d.True model
+ Turnover PD",8.96897
+NA,0,0,0,6,13.3811,"CObs","d.True model
+ Turnover PD",35.7819
+NA,0,0,0,9,10.2632,"CObs","d.True model
+ Turnover PD",7.29799
+NA,0,0,0,24,8.87697,"CObs","d.True model
+ Turnover PD",24.7679
+NA,0,0,0,36,7.9906,"CObs","d.True model
+ Turnover PD",5.93829
+NA,0,0,0,48,6.58784,"CObs","d.True model
+ Turnover PD",19.9891
+NA,0,0,0,72,5.35197,"CObs","d.True model
+ Turnover PD",3.93168
+NA,0,0,0,96,3.30398,"CObs","d.True model
+ Turnover PD",19.4732
+NA,0,0,0,120,2.98538,"CObs","d.True model
+ Turnover PD",2.60313
+NA,0,0,0,1.5,3.5627,"CObs","d.True model
+ Turnover PD",24.4082
+NA,0,0,0,3,6.64659,"CObs","d.True model
+ Turnover PD",1.72351
+NA,0,0,0,6,9.88824,"CObs","d.True model
+ Turnover PD",31.9132
+NA,0,0,0,9,10.123,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,24,9.57393,"CObs","d.True model
+ Turnover PD",9.16203
+NA,0,0,0,36,6.92655,"CObs","d.True model
+ Turnover PD",35.704
+NA,0,0,0,48,6.31248,"CObs","d.True model
+ Turnover PD",7.54297
+NA,0,0,0,72,5.01143,"CObs","d.True model
+ Turnover PD",24.5897
+NA,0,0,0,96,2.99448,"CObs","d.True model
+ Turnover PD",6.21
+NA,0,0,0,120,2.34542,"CObs","d.True model
+ Turnover PD",19.6696
+NA,0,0,0,0.5,0.4558,"CObs","d.True model
+ Turnover PD",4.2091
+NA,0,0,0,1,0.128219,"CObs","d.True model
+ Turnover PD",18.7424
+NA,0,0,0,2,11.8082,"CObs","d.True model
+ Turnover PD",2.8529
+NA,0,0,0,3,12.1751,"CObs","d.True model
+ Turnover PD",23.0943
+NA,0,0,0,6,12.147,"CObs","d.True model
+ Turnover PD",1.93368
+NA,0,0,0,9,11.604,"CObs","d.True model
+ Turnover PD",29.8875
+NA,0,0,0,24,8.62703,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,36,6.9762,"CObs","d.True model
+ Turnover PD",9.18963
+NA,0,0,0,48,5.86904,"CObs","d.True model
+ Turnover PD",35.6957
+NA,0,0,0,72,4.60971,"CObs","d.True model
+ Turnover PD",7.5823
+NA,0,0,0,96,2.31379,"CObs","d.True model
+ Turnover PD",24.5648
+NA,0,0,0,1,3.96012,"CObs","d.True model
+ Turnover PD",6.25607
+NA,0,0,0,3,8.88179,"CObs","d.True model
+ Turnover PD",19.6205
+NA,0,0,0,6,10.5207,"CObs","d.True model
+ Turnover PD",4.25895
+NA,0,0,0,9,10.82,"CObs","d.True model
+ Turnover PD",18.6215
+NA,0,0,0,24,7.75469,"CObs","d.True model
+ Turnover PD",2.89938
+NA,0,0,0,36,5.15222,"CObs","d.True model
+ Turnover PD",22.8705
+NA,0,0,0,48,4.66465,"CObs","d.True model
+ Turnover PD",1.97381
+NA,0,0,0,72,2.37494,"CObs","d.True model
+ Turnover PD",29.5355
+NA,0,0,0,96,2.02552,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,120,1.58433,"CObs","d.True model
+ Turnover PD",9.16873
+NA,0,0,0,24,10.281,"CObs","d.True model
+ Turnover PD",35.7039
+NA,0,0,0,36,10.4833,"CObs","d.True model
+ Turnover PD",7.55541
+NA,0,0,0,48,6.90022,"CObs","d.True model
+ Turnover PD",24.5836
+NA,0,0,0,72,4.92833,"CObs","d.True model
+ Turnover PD",6.22595
+NA,0,0,0,96,3.19983,"CObs","d.True model
+ Turnover PD",19.6543
+NA,0,0,0,120,2.84472,"CObs","d.True model
+ Turnover PD",4.22766
+NA,0,0,0,24,10.4223,"CObs","d.True model
+ Turnover PD",18.6988
+NA,0,0,0,36,7.9512,"CObs","d.True model
+ Turnover PD",2.87075
+NA,0,0,0,48,6.104,"CObs","d.True model
+ Turnover PD",23.0093
+NA,0,0,0,72,4.80927,"CObs","d.True model
+ Turnover PD",1.94935
+NA,0,0,0,96,3.14817,"CObs","d.True model
+ Turnover PD",29.7505
+NA,0,0,0,120,1.94929,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,24,11.707,"CObs","d.True model
+ Turnover PD",9.22662
+NA,0,0,0,36,7.59623,"CObs","d.True model
+ Turnover PD",35.6802
+NA,0,0,0,48,6.18,"CObs","d.True model
+ Turnover PD",7.62816
+NA,0,0,0,72,3.34771,"CObs","d.True model
+ Turnover PD",24.5316
+NA,0,0,0,96,2.70654,"CObs","d.True model
+ Turnover PD",6.3066
+NA,0,0,0,120,1.92326,"CObs","d.True model
+ Turnover PD",19.5631
+NA,0,0,0,24,9.0471,"CObs","d.True model
+ Turnover PD",4.31069
+NA,0,0,0,36,8.17636,"CObs","d.True model
+ Turnover PD",18.4944
+NA,0,0,0,48,6.01878,"CObs","d.True model
+ Turnover PD",2.94644
+NA,0,0,0,72,4.0345,"CObs","d.True model
+ Turnover PD",22.6452
+NA,0,0,0,96,3.44533,"CObs","d.True model
+ Turnover PD",2.01395
+NA,0,0,0,120,3.33791,"CObs","d.True model
+ Turnover PD",29.1891
+NA,0,0,0,24,9.2942,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,36,7.17742,"CObs","d.True model
+ Turnover PD",9.22662
+NA,0,0,0,48,4.49993,"CObs","d.True model
+ Turnover PD",35.6802
+NA,0,0,0,72,2.69516,"CObs","d.True model
+ Turnover PD",7.62816
+NA,0,0,0,96,1.6314,"CObs","d.True model
+ Turnover PD",24.5316
+NA,0,0,0,120,0.562707,"CObs","d.True model
+ Turnover PD",6.3066
+NA,0,0,0,24,8.56823,"CObs","d.True model
+ Turnover PD",19.5631
+NA,0,0,0,36,8.00667,"CObs","d.True model
+ Turnover PD",4.31069
+NA,0,0,0,48,6.80808,"CObs","d.True model
+ Turnover PD",18.4944
+NA,0,0,0,72,4.35571,"CObs","d.True model
+ Turnover PD",2.94644
+NA,0,0,0,96,3.61088,"CObs","d.True model
+ Turnover PD",22.6452
+NA,0,0,0,120,2.2568,"CObs","d.True model
+ Turnover PD",2.01395
+NA,0,0,0,24,9.02821,"CObs","d.True model
+ Turnover PD",29.1891
+NA,0,0,0,36,6.47107,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,48,6.20508,"CObs","d.True model
+ Turnover PD",9.22662
+NA,0,0,0,72,5.06527,"CObs","d.True model
+ Turnover PD",35.6802
+NA,0,0,0,96,4.61234,"CObs","d.True model
+ Turnover PD",7.62816
+NA,0,0,0,120,3.28505,"CObs","d.True model
+ Turnover PD",24.5316
+NA,0,0,0,24,10.169,"CObs","d.True model
+ Turnover PD",6.3066
+NA,0,0,0,36,8.84253,"CObs","d.True model
+ Turnover PD",19.5631
+NA,0,0,0,48,7.04623,"CObs","d.True model
+ Turnover PD",4.31069
+NA,0,0,0,72,5.55332,"CObs","d.True model
+ Turnover PD",18.4944
+NA,0,0,0,96,3.34349,"CObs","d.True model
+ Turnover PD",2.94644
+NA,0,0,0,120,2.79611,"CObs","d.True model
+ Turnover PD",22.6452
+NA,0,0,0,24,11.5353,"CObs","d.True model
+ Turnover PD",2.01395
+NA,0,0,0,36,10.359,"CObs","d.True model
+ Turnover PD",29.1891
+NA,0,0,0,48,6.57307,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,72,4.99695,"CObs","d.True model
+ Turnover PD",9.41244
+NA,0,0,0,96,3.86301,"CObs","d.True model
+ Turnover PD",35.6095
+NA,0,0,0,120,2.6731,"CObs","d.True model
+ Turnover PD",7.86952
+NA,0,0,0,24,11.8482,"CObs","d.True model
+ Turnover PD",24.3689
+NA,0,0,0,36,9.85373,"CObs","d.True model
+ Turnover PD",6.5795
+NA,0,0,0,48,8.5618,"CObs","d.True model
+ Turnover PD",19.2718
+NA,0,0,0,72,5.93119,"CObs","d.True model
+ Turnover PD",4.5992
+NA,0,0,0,96,5.47855,"CObs","d.True model
+ Turnover PD",17.8328
+NA,0,0,0,120,3.15422,"CObs","d.True model
+ Turnover PD",3.21492
+NA,0,0,0,24,9.53439,"CObs","d.True model
+ Turnover PD",21.4589
+NA,0,0,0,36,7.32486,"CObs","d.True model
+ Turnover PD",2.24729
+NA,0,0,0,48,4.68589,"CObs","d.True model
+ Turnover PD",27.3478
+NA,0,0,0,72,3.7209,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,96,2.02635,"CObs","d.True model
+ Turnover PD",9.12126
+NA,0,0,0,120,1.16412,"CObs","d.True model
+ Turnover PD",35.7212
+NA,0,0,0,24,10.8294,"CObs","d.True model
+ Turnover PD",7.49251
+NA,0,0,0,36,9.13643,"CObs","d.True model
+ Turnover PD",24.6267
+NA,0,0,0,48,7.23406,"CObs","d.True model
+ Turnover PD",6.15457
+NA,0,0,0,72,4.99719,"CObs","d.True model
+ Turnover PD",19.7341
+NA,0,0,0,96,2.7389,"CObs","d.True model
+ Turnover PD",4.15278
+NA,0,0,0,120,0.816323,"CObs","d.True model
+ Turnover PD",18.8858
+NA,0,0,0,24,7.41792,"CObs","d.True model
+ Turnover PD",2.80208
+NA,0,0,0,36,7.68074,"CObs","d.True model
+ Turnover PD",23.3492
+NA,0,0,0,48,7.2603,"CObs","d.True model
+ Turnover PD",1.8907
+NA,0,0,0,72,5.0274,"CObs","d.True model
+ Turnover PD",30.2791
+NA,0,0,0,96,4.8252,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,120,3.6167,"CObs","d.True model
+ Turnover PD",9.26176
+NA,0,0,0,24,7.32515,"CObs","d.True model
+ Turnover PD",35.6655
+NA,0,0,0,36,7.49564,"CObs","d.True model
+ Turnover PD",7.67188
+NA,0,0,0,48,6.88239,"CObs","d.True model
+ Turnover PD",24.5004
+NA,0,0,0,72,5.56276,"CObs","d.True model
+ Turnover PD",6.35489
+NA,0,0,0,96,3.47591,"CObs","d.True model
+ Turnover PD",19.5089
+NA,0,0,0,120,3.19699,"CObs","d.True model
+ Turnover PD",4.36034
+NA,0,0,0,24,7.7052,"CObs","d.True model
+ Turnover PD",18.3747
+NA,0,0,0,36,7.37062,"CObs","d.True model
+ Turnover PD",2.9918
+NA,0,0,0,48,4.93502,"CObs","d.True model
+ Turnover PD",22.4329
+NA,0,0,0,72,2.8312,"CObs","d.True model
+ Turnover PD",2.05279
+NA,0,0,0,96,1.87967,"CObs","d.True model
+ Turnover PD",28.8623
+NA,0,0,0,120,0.773052,"CObs","d.True model
+ Turnover PD",95.8316
+NA,0,0,0,24,9.40465,"CObs","d.True model
+ Turnover PD",9.0235
+NA,0,0,0,36,8.8197,"CObs","d.True model
+ Turnover PD",35.76
+NA,0,0,0,48,8.29191,"CObs","d.True model
+ Turnover PD",7.36743
+NA,0,0,0,72,6.2099,"CObs","d.True model
+ Turnover PD",24.7168
+NA,0,0,0,96,5.6711,"CObs","d.True model
+ Turnover PD",6.01527
+NA,0,0,0,120,3.50355,"CObs","d.True model
+ Turnover PD",19.8967
+NA,0,0,0,24,9.7695,"CObs","d.True model
+ Turnover PD",4.0099
+NA,0,0,0,36,10.1365,"CObs","d.True model
+ Turnover PD",19.2599
+NA,0,0,0,48,7.41798,"CObs","d.True model
+ Turnover PD",2.67308
+NA,0,0,0,72,4.88166,"CObs","d.True model
+ Turnover PD",24.0233
+NA,0,0,0,96,3.83748,"CObs","d.True model
+ Turnover PD",1.78192
+NA,0,0,0,120,2.02287,"CObs","d.True model
+ Turnover PD",31.3202
+NA,0,0,0,24,44.0054,"EObs","a.Misspecified delay
+ Immediate effect",0.901944
+NA,0,0,0,36,28.2301,"EObs","a.Misspecified delay
+ Immediate effect",6.25369
+NA,0,0,0,48,25.3735,"EObs","a.Misspecified delay
+ Immediate effect",9.10541
+NA,0,0,0,72,34.8799,"EObs","a.Misspecified delay
+ Immediate effect",11.614
+NA,0,0,0,96,43.0805,"EObs","a.Misspecified delay
+ Immediate effect",11.5481
+NA,0,0,0,120,58.2951,"EObs","a.Misspecified delay
+ Immediate effect",11.0764
+NA,0,0,0,144,74.163,"EObs","a.Misspecified delay
+ Immediate effect",9.11462
+NA,0,0,0,0,101.54,"EObs","a.Misspecified delay
+ Immediate effect",23.6258
+NA,0,0,0,24,28.222,"EObs","a.Misspecified delay
+ Immediate effect",7.48861
+NA,0,0,0,36,25.6218,"EObs","a.Misspecified delay
+ Immediate effect",23.8879
+NA,0,0,0,48,26.1657,"EObs","a.Misspecified delay
+ Immediate effect",6.15267
+NA,0,0,0,72,23.9496,"EObs","a.Misspecified delay
+ Immediate effect",24.2045
+NA,0,0,0,96,32.6996,"EObs","a.Misspecified delay
+ Immediate effect",4.15325
+NA,0,0,0,120,36.3649,"EObs","a.Misspecified delay
+ Immediate effect",25.0451
+NA,0,0,0,0,93.322,"EObs","a.Misspecified delay
+ Immediate effect",26.2548
+NA,0,0,0,24,28.6959,"EObs","a.Misspecified delay
+ Immediate effect",27.9732
+NA,0,0,0,36,24.4405,"EObs","a.Misspecified delay
+ Immediate effect",30.369
+NA,0,0,0,48,19.0728,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,72,18.4735,"EObs","a.Misspecified delay
+ Immediate effect",9.11462
+NA,0,0,0,96,21.0181,"EObs","a.Misspecified delay
+ Immediate effect",23.6258
+NA,0,0,0,120,18.5956,"EObs","a.Misspecified delay
+ Immediate effect",7.48861
+NA,0,0,0,144,23.614,"EObs","a.Misspecified delay
+ Immediate effect",23.8879
+NA,0,0,0,0,91.519,"EObs","a.Misspecified delay
+ Immediate effect",6.15267
+NA,0,0,0,24,26.8065,"EObs","a.Misspecified delay
+ Immediate effect",24.2045
+NA,0,0,0,36,22.3835,"EObs","a.Misspecified delay
+ Immediate effect",4.15325
+NA,0,0,0,48,17.6849,"EObs","a.Misspecified delay
+ Immediate effect",25.0451
+NA,0,0,0,72,18.3862,"EObs","a.Misspecified delay
+ Immediate effect",2.80357
+NA,0,0,0,96,16.9832,"EObs","a.Misspecified delay
+ Immediate effect",26.2548
+NA,0,0,0,120,20.5728,"EObs","a.Misspecified delay
+ Immediate effect",1.8925
+NA,0,0,0,144,29.1192,"EObs","a.Misspecified delay
+ Immediate effect",27.9732
+NA,0,0,0,0,105.56,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,24,43.2055,"EObs","a.Misspecified delay
+ Immediate effect",0
+NA,0,0,0,36,27.6413,"EObs","a.Misspecified delay
+ Immediate effect",6.25369
+NA,0,0,0,48,36.0103,"EObs","a.Misspecified delay
+ Immediate effect",9.10541
+NA,0,0,0,72,43.3432,"EObs","a.Misspecified delay
+ Immediate effect",11.614
+NA,0,0,0,96,50.2637,"EObs","a.Misspecified delay
+ Immediate effect",11.0764
+NA,0,0,0,120,67.3895,"EObs","a.Misspecified delay
+ Immediate effect",9.11462
+NA,0,0,0,144,70.1378,"EObs","a.Misspecified delay
+ Immediate effect",23.6258
+NA,0,0,0,0,90.151,"EObs","a.Misspecified delay
+ Immediate effect",7.48861
+NA,0,0,0,24,37.2395,"EObs","a.Misspecified delay
+ Immediate effect",23.8879
+NA,0,0,0,36,27.6225,"EObs","a.Misspecified delay
+ Immediate effect",6.15267
+NA,0,0,0,48,18.7255,"EObs","a.Misspecified delay
+ Immediate effect",24.2045
+NA,0,0,0,72,28.6554,"EObs","a.Misspecified delay
+ Immediate effect",4.15325
+NA,0,0,0,96,30.4186,"EObs","a.Misspecified delay
+ Immediate effect",25.0451
+NA,0,0,0,120,44.6206,"EObs","a.Misspecified delay
+ Immediate effect",2.80357
+NA,0,0,0,144,56.3429,"EObs","a.Misspecified delay
+ Immediate effect",26.2548
+NA,0,0,0,24,30.2824,"EObs","a.Misspecified delay
+ Immediate effect",1.8925
+NA,0,0,0,36,22.3074,"EObs","a.Misspecified delay
+ Immediate effect",27.9732
+NA,0,0,0,48,20.4831,"EObs","a.Misspecified delay
+ Immediate effect",30.369
+NA,0,0,0,72,14.2144,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,96,15.282,"EObs","a.Misspecified delay
+ Immediate effect",9.11841
+NA,0,0,0,120,25.0557,"EObs","a.Misspecified delay
+ Immediate effect",11.6509
+NA,0,0,0,144,30.0075,"EObs","a.Misspecified delay
+ Immediate effect",11.6084
+NA,0,0,0,0,106.72,"EObs","a.Misspecified delay
+ Immediate effect",9.26229
+NA,0,0,0,24,35.7661,"EObs","a.Misspecified delay
+ Immediate effect",23.6064
+NA,0,0,0,36,27.2112,"EObs","a.Misspecified delay
+ Immediate effect",7.67668
+NA,0,0,0,48,29.2464,"EObs","a.Misspecified delay
+ Immediate effect",23.852
+NA,0,0,0,72,28.0666,"EObs","a.Misspecified delay
+ Immediate effect",6.3625
+NA,0,0,0,96,36.017,"EObs","a.Misspecified delay
+ Immediate effect",24.1462
+NA,0,0,0,120,46.2718,"EObs","a.Misspecified delay
+ Immediate effect",4.37056
+NA,0,0,0,144,60.7613,"EObs","a.Misspecified delay
+ Immediate effect",24.9177
+NA,0,0,0,0,92.508,"EObs","a.Misspecified delay
+ Immediate effect",3.00224
+NA,0,0,0,24,40.324,"EObs","a.Misspecified delay
+ Immediate effect",26.0118
+NA,0,0,0,36,22.819,"EObs","a.Misspecified delay
+ Immediate effect",2.06231
+NA,0,0,0,48,21.5902,"EObs","a.Misspecified delay
+ Immediate effect",27.5458
+NA,0,0,0,72,25.8143,"EObs","a.Misspecified delay
+ Immediate effect",29.6627
+NA,0,0,0,96,26.4475,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,120,38.8306,"EObs","a.Misspecified delay
+ Immediate effect",9.08411
+NA,0,0,0,144,44.7484,"EObs","a.Misspecified delay
+ Immediate effect",11.5249
+NA,0,0,0,0,104.51,"EObs","a.Misspecified delay
+ Immediate effect",11.3882
+NA,0,0,0,24,40.7114,"EObs","a.Misspecified delay
+ Immediate effect",10.8514
+NA,0,0,0,36,29.2561,"EObs","a.Misspecified delay
+ Immediate effect",8.69375
+NA,0,0,0,48,19.7737,"EObs","a.Misspecified delay
+ Immediate effect",23.6844
+NA,0,0,0,72,28.87,"EObs","a.Misspecified delay
+ Immediate effect",6.95397
+NA,0,0,0,96,27.679,"EObs","a.Misspecified delay
+ Immediate effect",24.0003
+NA,0,0,0,120,46.928,"EObs","a.Misspecified delay
+ Immediate effect",5.56235
+NA,0,0,0,144,43.2786,"EObs","a.Misspecified delay
+ Immediate effect",24.3915
+NA,0,0,0,0,96.307,"EObs","a.Misspecified delay
+ Immediate effect",3.55885
+NA,0,0,0,24,36.0165,"EObs","a.Misspecified delay
+ Immediate effect",25.4695
+NA,0,0,0,36,20.6029,"EObs","a.Misspecified delay
+ Immediate effect",2.27698
+NA,0,0,0,48,18.1712,"EObs","a.Misspecified delay
+ Immediate effect",27.091
+NA,0,0,0,72,17.4562,"EObs","a.Misspecified delay
+ Immediate effect",1.45684
+NA,0,0,0,96,14.8757,"EObs","a.Misspecified delay
+ Immediate effect",29.4815
+NA,0,0,0,120,11.8192,"EObs","a.Misspecified delay
+ Immediate effect",32.9033
+NA,0,0,0,144,21.1147,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,0,89.879,"EObs","a.Misspecified delay
+ Immediate effect",11.6459
+NA,0,0,0,24,32.2564,"EObs","a.Misspecified delay
+ Immediate effect",11.138
+NA,0,0,0,36,28.4579,"EObs","a.Misspecified delay
+ Immediate effect",9.21919
+NA,0,0,0,48,20.5197,"EObs","a.Misspecified delay
+ Immediate effect",23.612
+NA,0,0,0,0,100.91,"EObs","a.Misspecified delay
+ Immediate effect",7.61911
+NA,0,0,0,24,40.3682,"EObs","a.Misspecified delay
+ Immediate effect",23.8629
+NA,0,0,0,36,36.5923,"EObs","a.Misspecified delay
+ Immediate effect",6.29672
+NA,0,0,0,48,26.941,"EObs","a.Misspecified delay
+ Immediate effect",24.1641
+NA,0,0,0,72,20.5636,"EObs","a.Misspecified delay
+ Immediate effect",4.30067
+NA,0,0,0,96,26.9074,"EObs","a.Misspecified delay
+ Immediate effect",24.9573
+NA,0,0,0,120,27.6782,"EObs","a.Misspecified delay
+ Immediate effect",2.93736
+NA,0,0,0,144,35.6555,"EObs","a.Misspecified delay
+ Immediate effect",26.0878
+NA,0,0,0,0,88.483,"EObs","a.Misspecified delay
+ Immediate effect",2.00622
+NA,0,0,0,24,35.0908,"EObs","a.Misspecified delay
+ Immediate effect",27.6796
+NA,0,0,0,36,25.7128,"EObs","a.Misspecified delay
+ Immediate effect",29.8839
+NA,0,0,0,48,13.255,"EObs","a.Misspecified delay
+ Immediate effect",9.10487
+NA,0,0,0,72,24.02,"EObs","a.Misspecified delay
+ Immediate effect",11.6011
+NA,0,0,0,96,27.6374,"EObs","a.Misspecified delay
+ Immediate effect",11.5211
+NA,0,0,0,120,27.2004,"EObs","a.Misspecified delay
+ Immediate effect",11.0362
+NA,0,0,0,144,33.3519,"EObs","a.Misspecified delay
+ Immediate effect",9.03388
+NA,0,0,0,0,89.148,"EObs","a.Misspecified delay
+ Immediate effect",23.6366
+NA,0,0,0,24,42.1922,"EObs","a.Misspecified delay
+ Immediate effect",7.38327
+NA,0,0,0,36,29.7791,"EObs","a.Misspecified delay
+ Immediate effect",23.9088
+NA,0,0,0,48,22.442,"EObs","a.Misspecified delay
+ Immediate effect",6.03423
+NA,0,0,0,72,20.0056,"EObs","a.Misspecified delay
+ Immediate effect",24.2392
+NA,0,0,0,96,24.6872,"EObs","a.Misspecified delay
+ Immediate effect",4.0306
+NA,0,0,0,120,37.7344,"EObs","a.Misspecified delay
+ Immediate effect",25.1228
+NA,0,0,0,144,44.1761,"EObs","a.Misspecified delay
+ Immediate effect",2.69226
+NA,0,0,0,0,86.846,"EObs","a.Misspecified delay
+ Immediate effect",26.4058
+NA,0,0,0,24,33.952,"EObs","a.Misspecified delay
+ Immediate effect",28.2423
+NA,0,0,0,36,23.4956,"EObs","a.Misspecified delay
+ Immediate effect",30.8178
+NA,0,0,0,48,20.6935,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,72,20.7052,"EObs","a.Misspecified delay
+ Immediate effect",9.12368
+NA,0,0,0,96,26.5637,"EObs","a.Misspecified delay
+ Immediate effect",11.6704
+NA,0,0,0,120,36.9003,"EObs","a.Misspecified delay
+ Immediate effect",11.6426
+NA,0,0,0,0,100.86,"EObs","a.Misspecified delay
+ Immediate effect",11.2059
+NA,0,0,0,24,37.0843,"EObs","a.Misspecified delay
+ Immediate effect",9.35274
+NA,0,0,0,36,24.0842,"EObs","a.Misspecified delay
+ Immediate effect",23.5949
+NA,0,0,0,48,11.3173,"EObs","a.Misspecified delay
+ Immediate effect",7.79399
+NA,0,0,0,72,16.3999,"EObs","a.Misspecified delay
+ Immediate effect",23.8305
+NA,0,0,0,96,18.2523,"EObs","a.Misspecified delay
+ Immediate effect",6.49502
+NA,0,0,0,120,14.9345,"EObs","a.Misspecified delay
+ Immediate effect",24.1113
+NA,0,0,0,0,96.569,"EObs","a.Misspecified delay
+ Immediate effect",4.51047
+NA,0,0,0,24,26.5059,"EObs","a.Misspecified delay
+ Immediate effect",24.842
+NA,0,0,0,36,24.5033,"EObs","a.Misspecified delay
+ Immediate effect",3.13229
+NA,0,0,0,48,13.0005,"EObs","a.Misspecified delay
+ Immediate effect",25.8687
+NA,0,0,0,72,21.4529,"EObs","a.Misspecified delay
+ Immediate effect",2.17522
+NA,0,0,0,96,29.3092,"EObs","a.Misspecified delay
+ Immediate effect",27.2962
+NA,0,0,0,120,42.2524,"EObs","a.Misspecified delay
+ Immediate effect",29.2527
+NA,0,0,0,0,92.625,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,24,38.4394,"EObs","a.Misspecified delay
+ Immediate effect",0.902327
+NA,0,0,0,36,31.9563,"EObs","a.Misspecified delay
+ Immediate effect",6.25207
+NA,0,0,0,48,24.2563,"EObs","a.Misspecified delay
+ Immediate effect",9.09579
+NA,0,0,0,72,21.4621,"EObs","a.Misspecified delay
+ Immediate effect",11.5677
+NA,0,0,0,96,20.8724,"EObs","a.Misspecified delay
+ Immediate effect",11.4628
+NA,0,0,0,120,23.4451,"EObs","a.Misspecified delay
+ Immediate effect",10.955
+NA,0,0,0,0,88.494,"EObs","a.Misspecified delay
+ Immediate effect",8.88358
+NA,0,0,0,24,33.0426,"EObs","a.Misspecified delay
+ Immediate effect",23.6573
+NA,0,0,0,36,21.4425,"EObs","a.Misspecified delay
+ Immediate effect",7.19243
+NA,0,0,0,48,23.151,"EObs","a.Misspecified delay
+ Immediate effect",23.9482
+NA,0,0,0,72,27.857,"EObs","a.Misspecified delay
+ Immediate effect",5.82321
+NA,0,0,0,96,40.4334,"EObs","a.Misspecified delay
+ Immediate effect",24.3043
+NA,0,0,0,120,54.308,"EObs","a.Misspecified delay
+ Immediate effect",3.81713
+NA,0,0,0,0,96.596,"EObs","a.Misspecified delay
+ Immediate effect",25.2695
+NA,0,0,0,24,49.0016,"EObs","a.Misspecified delay
+ Immediate effect",2.50214
+NA,0,0,0,36,24.6578,"EObs","a.Misspecified delay
+ Immediate effect",26.6929
+NA,0,0,0,48,22.1013,"EObs","a.Misspecified delay
+ Immediate effect",1.64016
+NA,0,0,0,72,18.7356,"EObs","a.Misspecified delay
+ Immediate effect",28.7576
+NA,0,0,0,96,25.2501,"EObs","a.Misspecified delay
+ Immediate effect",31.6812
+NA,0,0,0,120,31.0173,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,0,96.497,"EObs","a.Misspecified delay
+ Immediate effect",9.1576
+NA,0,0,0,24,30.1547,"EObs","a.Misspecified delay
+ Immediate effect",23.6201
+NA,0,0,0,36,19.3391,"EObs","a.Misspecified delay
+ Immediate effect",7.54169
+NA,0,0,0,48,10.4126,"EObs","a.Misspecified delay
+ Immediate effect",23.8776
+NA,0,0,0,72,7.48535,"EObs","a.Misspecified delay
+ Immediate effect",6.2109
+NA,0,0,0,96,5.64679,"EObs","a.Misspecified delay
+ Immediate effect",24.1879
+NA,0,0,0,120,9.58207,"EObs","a.Misspecified delay
+ Immediate effect",4.21238
+NA,0,0,0,0,93.066,"EObs","a.Misspecified delay
+ Immediate effect",25.0092
+NA,0,0,0,24,42.0197,"EObs","a.Misspecified delay
+ Immediate effect",2.85693
+NA,0,0,0,36,30.1091,"EObs","a.Misspecified delay
+ Immediate effect",26.1864
+NA,0,0,0,48,18.9661,"EObs","a.Misspecified delay
+ Immediate effect",1.93764
+NA,0,0,0,72,10.503,"EObs","a.Misspecified delay
+ Immediate effect",27.8528
+NA,0,0,0,96,25.7002,"EObs","a.Misspecified delay
+ Immediate effect",30.17
+NA,0,0,0,120,21.2036,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,0,88.021,"EObs","a.Misspecified delay
+ Immediate effect",3.99303
+NA,0,0,0,24,30.7641,"EObs","a.Misspecified delay
+ Immediate effect",9.11953
+NA,0,0,0,36,9.07914,"EObs","a.Misspecified delay
+ Immediate effect",11.655
+NA,0,0,0,48,17.6328,"EObs","a.Misspecified delay
+ Immediate effect",11.1682
+NA,0,0,0,72,13.3301,"EObs","a.Misspecified delay
+ Immediate effect",9.2814
+NA,0,0,0,96,17.6746,"EObs","a.Misspecified delay
+ Immediate effect",23.604
+NA,0,0,0,120,18.7238,"EObs","a.Misspecified delay
+ Immediate effect",7.70141
+NA,0,0,0,0,99.997,"EObs","a.Misspecified delay
+ Immediate effect",23.8475
+NA,0,0,0,24,29.8885,"EObs","a.Misspecified delay
+ Immediate effect",6.39038
+NA,0,0,0,36,16.2669,"EObs","a.Misspecified delay
+ Immediate effect",24.1387
+NA,0,0,0,48,11.3857,"EObs","a.Misspecified delay
+ Immediate effect",4.39986
+NA,0,0,0,72,19.3201,"EObs","a.Misspecified delay
+ Immediate effect",24.9015
+NA,0,0,0,96,18.9967,"EObs","a.Misspecified delay
+ Immediate effect",3.02936
+NA,0,0,0,120,22.0964,"EObs","a.Misspecified delay
+ Immediate effect",25.981
+NA,0,0,0,0,99.465,"EObs","a.Misspecified delay
+ Immediate effect",2.08576
+NA,0,0,0,24,40.2467,"EObs","a.Misspecified delay
+ Immediate effect",27.4919
+NA,0,0,0,36,42.4539,"EObs","a.Misspecified delay
+ Immediate effect",29.574
+NA,0,0,0,48,34.7619,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,72,41.8099,"EObs","a.Misspecified delay
+ Immediate effect",9.11967
+NA,0,0,0,96,57.9181,"EObs","a.Misspecified delay
+ Immediate effect",11.6459
+NA,0,0,0,120,70.8469,"EObs","a.Misspecified delay
+ Immediate effect",11.5957
+NA,0,0,0,0,103.98,"EObs","a.Misspecified delay
+ Immediate effect",9.21919
+NA,0,0,0,24,36.3589,"EObs","a.Misspecified delay
+ Immediate effect",23.612
+NA,0,0,0,36,24.5964,"EObs","a.Misspecified delay
+ Immediate effect",7.61911
+NA,0,0,0,48,20.9505,"EObs","a.Misspecified delay
+ Immediate effect",23.8629
+NA,0,0,0,72,18.0078,"EObs","a.Misspecified delay
+ Immediate effect",6.29672
+NA,0,0,0,96,18.9675,"EObs","a.Misspecified delay
+ Immediate effect",24.1641
+NA,0,0,0,120,34.5812,"EObs","a.Misspecified delay
+ Immediate effect",4.30067
+NA,0,0,0,0,92.94,"EObs","a.Misspecified delay
+ Immediate effect",2.93736
+NA,0,0,0,24,33.7157,"EObs","a.Misspecified delay
+ Immediate effect",2.00622
+NA,0,0,0,36,18.421,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,48,11.387,"EObs","a.Misspecified delay
+ Immediate effect",3.99436
+NA,0,0,0,72,10.2123,"EObs","a.Misspecified delay
+ Immediate effect",9.11967
+NA,0,0,0,96,15.1379,"EObs","a.Misspecified delay
+ Immediate effect",11.6459
+NA,0,0,0,120,17.1895,"EObs","a.Misspecified delay
+ Immediate effect",11.5957
+NA,0,0,0,0,95.305,"EObs","a.Misspecified delay
+ Immediate effect",9.21919
+NA,0,0,0,24,37.7999,"EObs","a.Misspecified delay
+ Immediate effect",23.612
+NA,0,0,0,36,23.9684,"EObs","a.Misspecified delay
+ Immediate effect",7.61911
+NA,0,0,0,48,23.3145,"EObs","a.Misspecified delay
+ Immediate effect",23.8629
+NA,0,0,0,72,14.0141,"EObs","a.Misspecified delay
+ Immediate effect",6.29672
+NA,0,0,0,96,15.1296,"EObs","a.Misspecified delay
+ Immediate effect",24.1641
+NA,0,0,0,120,22.8934,"EObs","a.Misspecified delay
+ Immediate effect",4.30067
+NA,0,0,0,0,97.752,"EObs","a.Misspecified delay
+ Immediate effect",24.9573
+NA,0,0,0,24,37.6908,"EObs","a.Misspecified delay
+ Immediate effect",2.93736
+NA,0,0,0,36,26.6176,"EObs","a.Misspecified delay
+ Immediate effect",26.0878
+NA,0,0,0,48,17.0186,"EObs","a.Misspecified delay
+ Immediate effect",2.00622
+NA,0,0,0,72,28.469,"EObs","a.Misspecified delay
+ Immediate effect",27.6796
+NA,0,0,0,96,30.635,"EObs","a.Misspecified delay
+ Immediate effect",29.8839
+NA,0,0,0,120,37.688,"EObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,0,98.957,"EObs","a.Misspecified delay
+ Immediate effect",0
+NA,0,0,0,24,38.0289,"EObs","a.Misspecified delay
+ Immediate effect",0.902327
+NA,0,0,0,36,29.3595,"EObs","a.Misspecified delay
+ Immediate effect",6.25207
+NA,0,0,0,48,12.5002,"EObs","a.Misspecified delay
+ Immediate effect",9.09579
+NA,0,0,0,72,9.85284,"EObs","a.Misspecified delay
+ Immediate effect",11.5677
+NA,0,0,0,96,11.8756,"EObs","a.Misspecified delay
+ Immediate effect",11.4628
+NA,0,0,0,120,29.0477,"EObs","a.Misspecified delay
+ Immediate effect",8.88358
+NA,0,0,0,0,102.92,"EObs","a.Misspecified delay
+ Immediate effect",23.6573
+NA,0,0,0,24,46.8051,"EObs","a.Misspecified delay
+ Immediate effect",7.19243
+NA,0,0,0,36,37.8347,"EObs","a.Misspecified delay
+ Immediate effect",23.9482
+NA,0,0,0,48,24.0734,"EObs","a.Misspecified delay
+ Immediate effect",5.82321
+NA,0,0,0,72,24.7233,"EObs","a.Misspecified delay
+ Immediate effect",24.3043
+NA,0,0,0,96,22.506,"EObs","a.Misspecified delay
+ Immediate effect",3.81713
+NA,0,0,0,120,23.5249,"EObs","a.Misspecified delay
+ Immediate effect",25.2695
+NA,0,0,0,1,0.868183,"CObs","a.Misspecified delay
+ Immediate effect",2.50214
+NA,0,0,0,2,6.76601,"CObs","a.Misspecified delay
+ Immediate effect",26.6929
+NA,0,0,0,3,9.73502,"CObs","a.Misspecified delay
+ Immediate effect",28.7576
+NA,0,0,0,6,11.5045,"CObs","a.Misspecified delay
+ Immediate effect",31.6812
+NA,0,0,0,9,12.7517,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,12,10.4787,"CObs","a.Misspecified delay
+ Immediate effect",0.901827
+NA,0,0,0,24,7.042,"CObs","a.Misspecified delay
+ Immediate effect",9.09675
+NA,0,0,0,36,4.5396,"CObs","a.Misspecified delay
+ Immediate effect",11.584
+NA,0,0,0,48,3.84844,"CObs","a.Misspecified delay
+ Immediate effect",11.4965
+NA,0,0,0,72,1.39462,"CObs","a.Misspecified delay
+ Immediate effect",8.98242
+NA,0,0,0,24,7.00526,"CObs","a.Misspecified delay
+ Immediate effect",23.6436
+NA,0,0,0,36,4.44891,"CObs","a.Misspecified delay
+ Immediate effect",7.32014
+NA,0,0,0,48,4.47291,"CObs","a.Misspecified delay
+ Immediate effect",23.9216
+NA,0,0,0,72,2.39575,"CObs","a.Misspecified delay
+ Immediate effect",5.96548
+NA,0,0,0,96,1.1445,"CObs","a.Misspecified delay
+ Immediate effect",24.2599
+NA,0,0,0,120,0.620781,"CObs","a.Misspecified delay
+ Immediate effect",3.96183
+NA,0,0,0,0.5,0.500733,"CObs","a.Misspecified delay
+ Immediate effect",25.1684
+NA,0,0,0,2,3.83714,"CObs","a.Misspecified delay
+ Immediate effect",2.63116
+NA,0,0,0,3,5.88076,"CObs","a.Misspecified delay
+ Immediate effect",26.4938
+NA,0,0,0,6,9.94223,"CObs","a.Misspecified delay
+ Immediate effect",1.74742
+NA,0,0,0,12,9.45694,"CObs","a.Misspecified delay
+ Immediate effect",28.3987
+NA,0,0,0,24,8.8806,"CObs","a.Misspecified delay
+ Immediate effect",31.0783
+NA,0,0,0,36,6.0008,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,48,6.41548,"CObs","a.Misspecified delay
+ Immediate effect",9.00626
+NA,0,0,0,72,5.5196,"CObs","a.Misspecified delay
+ Immediate effect",23.6403
+NA,0,0,0,96,3.79314,"CObs","a.Misspecified delay
+ Immediate effect",7.34806
+NA,0,0,0,120,2.68993,"CObs","a.Misspecified delay
+ Immediate effect",23.9159
+NA,0,0,0,3,6.23064,"CObs","a.Misspecified delay
+ Immediate effect",5.99516
+NA,0,0,0,6,9.59384,"CObs","a.Misspecified delay
+ Immediate effect",24.2509
+NA,0,0,0,9,11.8301,"CObs","a.Misspecified delay
+ Immediate effect",3.99076
+NA,0,0,0,24,11.549,"CObs","a.Misspecified delay
+ Immediate effect",25.149
+NA,0,0,0,36,8.69883,"CObs","a.Misspecified delay
+ Immediate effect",2.65651
+NA,0,0,0,48,7.99081,"CObs","a.Misspecified delay
+ Immediate effect",26.4568
+NA,0,0,0,72,4.81284,"CObs","a.Misspecified delay
+ Immediate effect",1.76834
+NA,0,0,0,96,3.70432,"CObs","a.Misspecified delay
+ Immediate effect",28.3334
+NA,0,0,0,120,1.58427,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,3,10.381,"CObs","a.Misspecified delay
+ Immediate effect",9.24262
+NA,0,0,0,6,12.1288,"CObs","a.Misspecified delay
+ Immediate effect",23.609
+NA,0,0,0,9,13.227,"CObs","a.Misspecified delay
+ Immediate effect",7.65125
+NA,0,0,0,12,13.238,"CObs","a.Misspecified delay
+ Immediate effect",23.8568
+NA,0,0,0,24,8.48204,"CObs","a.Misspecified delay
+ Immediate effect",6.33387
+NA,0,0,0,36,7.24594,"CObs","a.Misspecified delay
+ Immediate effect",24.1539
+NA,0,0,0,48,5.61734,"CObs","a.Misspecified delay
+ Immediate effect",4.34052
+NA,0,0,0,72,3.55188,"CObs","a.Misspecified delay
+ Immediate effect",24.9346
+NA,0,0,0,96,1.38914,"CObs","a.Misspecified delay
+ Immediate effect",2.97451
+NA,0,0,0,120,1.00174,"CObs","a.Misspecified delay
+ Immediate effect",26.0439
+NA,0,0,0,6,11.1499,"CObs","a.Misspecified delay
+ Immediate effect",2.0384
+NA,0,0,0,12,11.303,"CObs","a.Misspecified delay
+ Immediate effect",27.602
+NA,0,0,0,24,6.32089,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,36,5.58045,"CObs","a.Misspecified delay
+ Immediate effect",9.20473
+NA,0,0,0,48,3.14039,"CObs","a.Misspecified delay
+ Immediate effect",23.6139
+NA,0,0,0,72,2.19116,"CObs","a.Misspecified delay
+ Immediate effect",7.60425
+NA,0,0,0,96,1.06112,"CObs","a.Misspecified delay
+ Immediate effect",23.8657
+NA,0,0,0,120,1.0427,"CObs","a.Misspecified delay
+ Immediate effect",6.28205
+NA,0,0,0,3,12.0645,"CObs","a.Misspecified delay
+ Immediate effect",24.1681
+NA,0,0,0,6,10.9474,"CObs","a.Misspecified delay
+ Immediate effect",4.28737
+NA,0,0,0,9,10.1098,"CObs","a.Misspecified delay
+ Immediate effect",24.965
+NA,0,0,0,12,11.0992,"CObs","a.Misspecified delay
+ Immediate effect",2.92605
+NA,0,0,0,24,10.2838,"CObs","a.Misspecified delay
+ Immediate effect",26.1013
+NA,0,0,0,36,6.93603,"CObs","a.Misspecified delay
+ Immediate effect",1.99697
+NA,0,0,0,48,5.28962,"CObs","a.Misspecified delay
+ Immediate effect",27.7023
+NA,0,0,0,72,4.4709,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,96,3.72252,"CObs","a.Misspecified delay
+ Immediate effect",9.07752
+NA,0,0,0,3,5.19659,"CObs","a.Misspecified delay
+ Immediate effect",23.6307
+NA,0,0,0,6,8.5138,"CObs","a.Misspecified delay
+ Immediate effect",7.44119
+NA,0,0,0,9,10.0049,"CObs","a.Misspecified delay
+ Immediate effect",23.8973
+NA,0,0,0,12,9.49848,"CObs","a.Misspecified delay
+ Immediate effect",6.09982
+NA,0,0,0,24,6.8002,"CObs","a.Misspecified delay
+ Immediate effect",24.2198
+NA,0,0,0,36,5.78186,"CObs","a.Misspecified delay
+ Immediate effect",4.09889
+NA,0,0,0,48,4.1472,"CObs","a.Misspecified delay
+ Immediate effect",25.079
+NA,0,0,0,72,2.74729,"CObs","a.Misspecified delay
+ Immediate effect",2.75433
+NA,0,0,0,96,2.28954,"CObs","a.Misspecified delay
+ Immediate effect",26.3202
+NA,0,0,0,120,1.33877,"CObs","a.Misspecified delay
+ Immediate effect",1.85082
+NA,0,0,0,1,0.062565,"CObs","a.Misspecified delay
+ Immediate effect",28.0891
+NA,0,0,0,2,3.6674,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,3,6.0024,"CObs","a.Misspecified delay
+ Immediate effect",9.02021
+NA,0,0,0,6,9.35288,"CObs","a.Misspecified delay
+ Immediate effect",23.6384
+NA,0,0,0,9,8.94,"CObs","a.Misspecified delay
+ Immediate effect",7.36583
+NA,0,0,0,12,9.85571,"CObs","a.Misspecified delay
+ Immediate effect",23.9123
+NA,0,0,0,24,7.33009,"CObs","a.Misspecified delay
+ Immediate effect",6.01487
+NA,0,0,0,36,5.89401,"CObs","a.Misspecified delay
+ Immediate effect",24.245
+NA,0,0,0,48,4.53503,"CObs","a.Misspecified delay
+ Immediate effect",4.01084
+NA,0,0,0,72,3.40622,"CObs","a.Misspecified delay
+ Immediate effect",25.1357
+NA,0,0,0,96,2.02139,"CObs","a.Misspecified delay
+ Immediate effect",2.67451
+NA,0,0,0,120,1.52995,"CObs","a.Misspecified delay
+ Immediate effect",26.431
+NA,0,0,0,24,8.9016,"CObs","a.Misspecified delay
+ Immediate effect",1.78342
+NA,0,0,0,36,6.28194,"CObs","a.Misspecified delay
+ Immediate effect",28.2872
+NA,0,0,0,48,5.38635,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,72,2.51068,"CObs","a.Misspecified delay
+ Immediate effect",9.06046
+NA,0,0,0,96,1.3743,"CObs","a.Misspecified delay
+ Immediate effect",23.633
+NA,0,0,0,120,1.40802,"CObs","a.Misspecified delay
+ Immediate effect",7.41719
+NA,0,0,0,1.5,0.0610615,"CObs","a.Misspecified delay
+ Immediate effect",23.902
+NA,0,0,0,3,7.6405,"CObs","a.Misspecified delay
+ Immediate effect",6.07195
+NA,0,0,0,6,10.6942,"CObs","a.Misspecified delay
+ Immediate effect",24.228
+NA,0,0,0,12,11.2986,"CObs","a.Misspecified delay
+ Immediate effect",4.06917
+NA,0,0,0,24,9.28949,"CObs","a.Misspecified delay
+ Immediate effect",25.0979
+NA,0,0,0,36,8.65615,"CObs","a.Misspecified delay
+ Immediate effect",2.72699
+NA,0,0,0,48,6.9721,"CObs","a.Misspecified delay
+ Immediate effect",26.3574
+NA,0,0,0,72,5.19783,"CObs","a.Misspecified delay
+ Immediate effect",1.82752
+NA,0,0,0,96,4.01293,"CObs","a.Misspecified delay
+ Immediate effect",28.1561
+NA,0,0,0,120,2.65965,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,3,10.4364,"CObs","a.Misspecified delay
+ Immediate effect",9.00626
+NA,0,0,0,6,14.2258,"CObs","a.Misspecified delay
+ Immediate effect",23.6403
+NA,0,0,0,9,10.928,"CObs","a.Misspecified delay
+ Immediate effect",7.34806
+NA,0,0,0,24,9.26994,"CObs","a.Misspecified delay
+ Immediate effect",23.9159
+NA,0,0,0,36,7.9906,"CObs","a.Misspecified delay
+ Immediate effect",5.99516
+NA,0,0,0,48,6.59539,"CObs","a.Misspecified delay
+ Immediate effect",24.2509
+NA,0,0,0,72,5.3806,"CObs","a.Misspecified delay
+ Immediate effect",3.99076
+NA,0,0,0,96,3.34747,"CObs","a.Misspecified delay
+ Immediate effect",25.149
+NA,0,0,0,120,3.07165,"CObs","a.Misspecified delay
+ Immediate effect",2.65651
+NA,0,0,0,1.5,3.70274,"CObs","a.Misspecified delay
+ Immediate effect",26.4568
+NA,0,0,0,3,6.91742,"CObs","a.Misspecified delay
+ Immediate effect",1.76834
+NA,0,0,0,6,10.1421,"CObs","a.Misspecified delay
+ Immediate effect",28.3334
+NA,0,0,0,9,10.123,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,24,9.5832,"CObs","a.Misspecified delay
+ Immediate effect",9.19816
+NA,0,0,0,36,6.95893,"CObs","a.Misspecified delay
+ Immediate effect",23.6148
+NA,0,0,0,48,6.38583,"CObs","a.Misspecified delay
+ Immediate effect",7.59195
+NA,0,0,0,72,5.13857,"CObs","a.Misspecified delay
+ Immediate effect",23.868
+NA,0,0,0,96,3.09831,"CObs","a.Misspecified delay
+ Immediate effect",6.26621
+NA,0,0,0,120,2.43007,"CObs","a.Misspecified delay
+ Immediate effect",24.1725
+NA,0,0,0,0.5,0.4558,"CObs","a.Misspecified delay
+ Immediate effect",4.26882
+NA,0,0,0,1,0.128176,"CObs","a.Misspecified delay
+ Immediate effect",24.9758
+NA,0,0,0,2,11.7879,"CObs","a.Misspecified delay
+ Immediate effect",2.90811
+NA,0,0,0,3,12.1222,"CObs","a.Misspecified delay
+ Immediate effect",26.123
+NA,0,0,0,6,11.9777,"CObs","a.Misspecified delay
+ Immediate effect",1.98114
+NA,0,0,0,9,11.3809,"CObs","a.Misspecified delay
+ Immediate effect",27.7416
+NA,0,0,0,24,8.45019,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,36,6.9762,"CObs","a.Misspecified delay
+ Immediate effect",9.2255
+NA,0,0,0,48,5.86847,"CObs","a.Misspecified delay
+ Immediate effect",23.6112
+NA,0,0,0,72,4.60648,"CObs","a.Misspecified delay
+ Immediate effect",7.63101
+NA,0,0,0,96,2.30936,"CObs","a.Misspecified delay
+ Immediate effect",23.8606
+NA,0,0,0,1,3.92784,"CObs","a.Misspecified delay
+ Immediate effect",6.31209
+NA,0,0,0,3,8.78103,"CObs","a.Misspecified delay
+ Immediate effect",24.1599
+NA,0,0,0,6,10.3932,"CObs","a.Misspecified delay
+ Immediate effect",4.31872
+NA,0,0,0,9,10.82,"CObs","a.Misspecified delay
+ Immediate effect",24.947
+NA,0,0,0,24,7.75943,"CObs","a.Misspecified delay
+ Immediate effect",2.95486
+NA,0,0,0,36,5.16631,"CObs","a.Misspecified delay
+ Immediate effect",26.067
+NA,0,0,0,48,4.69561,"CObs","a.Misspecified delay
+ Immediate effect",2.02171
+NA,0,0,0,72,2.40549,"CObs","a.Misspecified delay
+ Immediate effect",27.6419
+NA,0,0,0,96,2.06097,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,120,1.61331,"CObs","a.Misspecified delay
+ Immediate effect",9.20473
+NA,0,0,0,24,10.281,"CObs","a.Misspecified delay
+ Immediate effect",23.6139
+NA,0,0,0,36,10.4927,"CObs","a.Misspecified delay
+ Immediate effect",7.60425
+NA,0,0,0,48,6.92983,"CObs","a.Misspecified delay
+ Immediate effect",23.8657
+NA,0,0,0,72,4.98086,"CObs","a.Misspecified delay
+ Immediate effect",6.28205
+NA,0,0,0,96,3.27344,"CObs","a.Misspecified delay
+ Immediate effect",24.1681
+NA,0,0,0,120,2.9342,"CObs","a.Misspecified delay
+ Immediate effect",4.28737
+NA,0,0,0,24,10.7641,"CObs","a.Misspecified delay
+ Immediate effect",24.965
+NA,0,0,0,36,7.9512,"CObs","a.Misspecified delay
+ Immediate effect",2.92605
+NA,0,0,0,48,6.10807,"CObs","a.Misspecified delay
+ Immediate effect",26.1013
+NA,0,0,0,72,4.82459,"CObs","a.Misspecified delay
+ Immediate effect",1.99697
+NA,0,0,0,96,3.17303,"CObs","a.Misspecified delay
+ Immediate effect",27.7023
+NA,0,0,0,120,1.98088,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,24,11.9668,"CObs","a.Misspecified delay
+ Immediate effect",9.26229
+NA,0,0,0,36,7.77277,"CObs","a.Misspecified delay
+ Immediate effect",23.6064
+NA,0,0,0,48,6.18,"CObs","a.Misspecified delay
+ Immediate effect",7.67668
+NA,0,0,0,72,3.35095,"CObs","a.Misspecified delay
+ Immediate effect",23.852
+NA,0,0,0,96,2.71919,"CObs","a.Misspecified delay
+ Immediate effect",6.3625
+NA,0,0,0,120,1.94561,"CObs","a.Misspecified delay
+ Immediate effect",24.1462
+NA,0,0,0,24,9.27663,"CObs","a.Misspecified delay
+ Immediate effect",4.37056
+NA,0,0,0,36,8.45984,"CObs","a.Misspecified delay
+ Immediate effect",24.9177
+NA,0,0,0,48,6.236,"CObs","a.Misspecified delay
+ Immediate effect",3.00224
+NA,0,0,0,72,4.0345,"CObs","a.Misspecified delay
+ Immediate effect",26.0118
+NA,0,0,0,96,3.44489,"CObs","a.Misspecified delay
+ Immediate effect",2.06231
+NA,0,0,0,120,3.33607,"CObs","a.Misspecified delay
+ Immediate effect",27.5458
+NA,0,0,0,24,9.28197,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,36,7.13242,"CObs","a.Misspecified delay
+ Immediate effect",9.26229
+NA,0,0,0,48,4.4616,"CObs","a.Misspecified delay
+ Immediate effect",23.6064
+NA,0,0,0,72,2.67096,"CObs","a.Misspecified delay
+ Immediate effect",7.67668
+NA,0,0,0,96,1.6314,"CObs","a.Misspecified delay
+ Immediate effect",23.852
+NA,0,0,0,120,0.562588,"CObs","a.Misspecified delay
+ Immediate effect",6.3625
+NA,0,0,0,24,8.55748,"CObs","a.Misspecified delay
+ Immediate effect",24.1462
+NA,0,0,0,36,7.98032,"CObs","a.Misspecified delay
+ Immediate effect",4.37056
+NA,0,0,0,48,6.72953,"CObs","a.Misspecified delay
+ Immediate effect",24.9177
+NA,0,0,0,72,4.28595,"CObs","a.Misspecified delay
+ Immediate effect",3.00224
+NA,0,0,0,96,3.54907,"CObs","a.Misspecified delay
+ Immediate effect",26.0118
+NA,0,0,0,120,2.2568,"CObs","a.Misspecified delay
+ Immediate effect",2.06231
+NA,0,0,0,24,9.02734,"CObs","a.Misspecified delay
+ Immediate effect",27.5458
+NA,0,0,0,36,6.46654,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,48,6.1932,"CObs","a.Misspecified delay
+ Immediate effect",9.26229
+NA,0,0,0,72,5.02397,"CObs","a.Misspecified delay
+ Immediate effect",23.6064
+NA,0,0,0,96,4.56002,"CObs","a.Misspecified delay
+ Immediate effect",7.67668
+NA,0,0,0,120,3.24524,"CObs","a.Misspecified delay
+ Immediate effect",23.852
+NA,0,0,0,24,10.169,"CObs","a.Misspecified delay
+ Immediate effect",6.3625
+NA,0,0,0,36,8.83861,"CObs","a.Misspecified delay
+ Immediate effect",24.1462
+NA,0,0,0,48,7.03042,"CObs","a.Misspecified delay
+ Immediate effect",4.37056
+NA,0,0,0,72,5.52197,"CObs","a.Misspecified delay
+ Immediate effect",24.9177
+NA,0,0,0,96,3.28621,"CObs","a.Misspecified delay
+ Immediate effect",3.00224
+NA,0,0,0,120,2.73,"CObs","a.Misspecified delay
+ Immediate effect",26.0118
+NA,0,0,0,24,11.2439,"CObs","a.Misspecified delay
+ Immediate effect",2.06231
+NA,0,0,0,36,10.359,"CObs","a.Misspecified delay
+ Immediate effect",27.5458
+NA,0,0,0,48,6.57015,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,72,4.98574,"CObs","a.Misspecified delay
+ Immediate effect",9.4469
+NA,0,0,0,96,3.8412,"CObs","a.Misspecified delay
+ Immediate effect",23.5831
+NA,0,0,0,120,2.62731,"CObs","a.Misspecified delay
+ Immediate effect",7.9168
+NA,0,0,0,24,11.5681,"CObs","a.Misspecified delay
+ Immediate effect",23.8087
+NA,0,0,0,36,9.60487,"CObs","a.Misspecified delay
+ Immediate effect",6.63452
+NA,0,0,0,48,8.5618,"CObs","a.Misspecified delay
+ Immediate effect",24.076
+NA,0,0,0,72,5.92856,"CObs","a.Misspecified delay
+ Immediate effect",4.65939
+NA,0,0,0,96,5.46626,"CObs","a.Misspecified delay
+ Immediate effect",24.7663
+NA,0,0,0,120,3.13641,"CObs","a.Misspecified delay
+ Immediate effect",3.27227
+NA,0,0,0,24,9.37106,"CObs","a.Misspecified delay
+ Immediate effect",25.7267
+NA,0,0,0,36,7.15168,"CObs","a.Misspecified delay
+ Immediate effect",2.2981
+NA,0,0,0,48,4.56754,"CObs","a.Misspecified delay
+ Immediate effect",27.0506
+NA,0,0,0,72,3.7209,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,96,2.02344,"CObs","a.Misspecified delay
+ Immediate effect",9.1576
+NA,0,0,0,120,1.15591,"CObs","a.Misspecified delay
+ Immediate effect",23.6201
+NA,0,0,0,24,10.6389,"CObs","a.Misspecified delay
+ Immediate effect",7.54169
+NA,0,0,0,36,8.71161,"CObs","a.Misspecified delay
+ Immediate effect",23.8776
+NA,0,0,0,48,6.76719,"CObs","a.Misspecified delay
+ Immediate effect",6.2109
+NA,0,0,0,72,4.64726,"CObs","a.Misspecified delay
+ Immediate effect",24.1879
+NA,0,0,0,96,2.7389,"CObs","a.Misspecified delay
+ Immediate effect",4.21238
+NA,0,0,0,120,0.816428,"CObs","a.Misspecified delay
+ Immediate effect",25.0092
+NA,0,0,0,24,7.422,"CObs","a.Misspecified delay
+ Immediate effect",2.85693
+NA,0,0,0,36,7.69084,"CObs","a.Misspecified delay
+ Immediate effect",26.1864
+NA,0,0,0,48,7.2603,"CObs","a.Misspecified delay
+ Immediate effect",1.93764
+NA,0,0,0,72,5.0274,"CObs","a.Misspecified delay
+ Immediate effect",27.8528
+NA,0,0,0,96,4.8252,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,120,3.6167,"CObs","a.Misspecified delay
+ Immediate effect",9.29725
+NA,0,0,0,24,7.32029,"CObs","a.Misspecified delay
+ Immediate effect",23.6019
+NA,0,0,0,36,7.47182,"CObs","a.Misspecified delay
+ Immediate effect",7.72022
+NA,0,0,0,48,6.82824,"CObs","a.Misspecified delay
+ Immediate effect",23.844
+NA,0,0,0,72,5.43805,"CObs","a.Misspecified delay
+ Immediate effect",6.41068
+NA,0,0,0,96,3.36859,"CObs","a.Misspecified delay
+ Immediate effect",24.1333
+NA,0,0,0,120,3.09143,"CObs","a.Misspecified delay
+ Immediate effect",4.42031
+NA,0,0,0,24,7.7052,"CObs","a.Misspecified delay
+ Immediate effect",24.8903
+NA,0,0,0,36,7.37553,"CObs","a.Misspecified delay
+ Immediate effect",3.0479
+NA,0,0,0,48,4.95074,"CObs","a.Misspecified delay
+ Immediate effect",25.9602
+NA,0,0,0,72,2.85356,"CObs","a.Misspecified delay
+ Immediate effect",2.1016
+NA,0,0,0,96,1.91013,"CObs","a.Misspecified delay
+ Immediate effect",27.4561
+NA,0,0,0,120,0.790209,"CObs","a.Misspecified delay
+ Immediate effect",96.1597
+NA,0,0,0,24,9.62322,"CObs","a.Misspecified delay
+ Immediate effect",9.06046
+NA,0,0,0,36,8.81997,"CObs","a.Misspecified delay
+ Immediate effect",23.633
+NA,0,0,0,48,8.29222,"CObs","a.Misspecified delay
+ Immediate effect",7.41719
+NA,0,0,0,72,6.2099,"CObs","a.Misspecified delay
+ Immediate effect",23.902
+NA,0,0,0,96,5.6711,"CObs","a.Misspecified delay
+ Immediate effect",6.07195
+NA,0,0,0,120,3.5036,"CObs","a.Misspecified delay
+ Immediate effect",24.228
+NA,0,0,0,24,9.7695,"CObs","a.Misspecified delay
+ Immediate effect",4.06917
+NA,0,0,0,36,10.1359,"CObs","a.Misspecified delay
+ Immediate effect",25.0979
+NA,0,0,0,48,7.41716,"CObs","a.Misspecified delay
+ Immediate effect",2.72699
+NA,0,0,0,72,4.8809,"CObs","a.Misspecified delay
+ Immediate effect",26.3574
+NA,0,0,0,96,3.83653,"CObs","a.Misspecified delay
+ Immediate effect",1.82752
+NA,0,0,0,120,2.02274,"CObs","a.Misspecified delay
+ Immediate effect",28.1561
+NA,0,0,0,24,43.8312,"EObs","b.Misspecified delay
+ Effect compartment",1.44878
+NA,0,0,0,36,27.9901,"EObs","b.Misspecified delay
+ Effect compartment",6.23448
+NA,0,0,0,48,25.0302,"EObs","b.Misspecified delay
+ Effect compartment",8.9098
+NA,0,0,0,72,34.404,"EObs","b.Misspecified delay
+ Effect compartment",11.476
+NA,0,0,0,96,42.4959,"EObs","b.Misspecified delay
+ Effect compartment",11.4966
+NA,0,0,0,120,57.6585,"EObs","b.Misspecified delay
+ Effect compartment",11.0497
+NA,0,0,0,144,74.163,"EObs","b.Misspecified delay
+ Effect compartment",9.07805
+NA,0,0,0,0,101.54,"EObs","b.Misspecified delay
+ Effect compartment",34.2373
+NA,0,0,0,24,28.1102,"EObs","b.Misspecified delay
+ Effect compartment",7.43922
+NA,0,0,0,36,25.4039,"EObs","b.Misspecified delay
+ Effect compartment",24.7951
+NA,0,0,0,48,25.8117,"EObs","b.Misspecified delay
+ Effect compartment",6.09622
+NA,0,0,0,72,23.6228,"EObs","b.Misspecified delay
+ Effect compartment",20.6971
+NA,0,0,0,96,32.2559,"EObs","b.Misspecified delay
+ Effect compartment",4.0938
+NA,0,0,0,120,35.9677,"EObs","b.Misspecified delay
+ Effect compartment",20.1366
+NA,0,0,0,0,93.322,"EObs","b.Misspecified delay
+ Effect compartment",24.7098
+NA,0,0,0,24,28.5822,"EObs","b.Misspecified delay
+ Effect compartment",31.8926
+NA,0,0,0,36,24.2327,"EObs","b.Misspecified delay
+ Effect compartment",40.3819
+NA,0,0,0,48,18.8148,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,72,18.2214,"EObs","b.Misspecified delay
+ Effect compartment",9.07805
+NA,0,0,0,96,20.7329,"EObs","b.Misspecified delay
+ Effect compartment",34.2373
+NA,0,0,0,120,18.3926,"EObs","b.Misspecified delay
+ Effect compartment",7.43922
+NA,0,0,0,144,23.614,"EObs","b.Misspecified delay
+ Effect compartment",24.7951
+NA,0,0,0,0,91.519,"EObs","b.Misspecified delay
+ Effect compartment",6.09622
+NA,0,0,0,24,26.9338,"EObs","b.Misspecified delay
+ Effect compartment",20.6971
+NA,0,0,0,36,22.632,"EObs","b.Misspecified delay
+ Effect compartment",4.0938
+NA,0,0,0,48,18.0163,"EObs","b.Misspecified delay
+ Effect compartment",20.1366
+NA,0,0,0,72,19.0578,"EObs","b.Misspecified delay
+ Effect compartment",2.74912
+NA,0,0,0,96,17.6177,"EObs","b.Misspecified delay
+ Effect compartment",24.7098
+NA,0,0,0,120,21.2036,"EObs","b.Misspecified delay
+ Effect compartment",1.84612
+NA,0,0,0,144,29.93,"EObs","b.Misspecified delay
+ Effect compartment",31.8926
+NA,0,0,0,0,105.56,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,24,42.0248,"EObs","b.Misspecified delay
+ Effect compartment",0
+NA,0,0,0,36,25.9758,"EObs","b.Misspecified delay
+ Effect compartment",6.23448
+NA,0,0,0,48,32.5728,"EObs","b.Misspecified delay
+ Effect compartment",8.9098
+NA,0,0,0,72,37.6106,"EObs","b.Misspecified delay
+ Effect compartment",11.476
+NA,0,0,0,96,43.7723,"EObs","b.Misspecified delay
+ Effect compartment",11.0497
+NA,0,0,0,120,60.6413,"EObs","b.Misspecified delay
+ Effect compartment",9.07805
+NA,0,0,0,144,66.6276,"EObs","b.Misspecified delay
+ Effect compartment",34.2373
+NA,0,0,0,0,90.151,"EObs","b.Misspecified delay
+ Effect compartment",7.43922
+NA,0,0,0,24,37.3335,"EObs","b.Misspecified delay
+ Effect compartment",24.7951
+NA,0,0,0,36,27.7752,"EObs","b.Misspecified delay
+ Effect compartment",6.09622
+NA,0,0,0,48,18.8951,"EObs","b.Misspecified delay
+ Effect compartment",20.6971
+NA,0,0,0,72,29.2457,"EObs","b.Misspecified delay
+ Effect compartment",4.0938
+NA,0,0,0,96,31.0506,"EObs","b.Misspecified delay
+ Effect compartment",20.1366
+NA,0,0,0,120,45.3749,"EObs","b.Misspecified delay
+ Effect compartment",2.74912
+NA,0,0,0,144,57.3817,"EObs","b.Misspecified delay
+ Effect compartment",24.7098
+NA,0,0,0,24,30.032,"EObs","b.Misspecified delay
+ Effect compartment",1.84612
+NA,0,0,0,36,21.8909,"EObs","b.Misspecified delay
+ Effect compartment",31.8926
+NA,0,0,0,48,19.8604,"EObs","b.Misspecified delay
+ Effect compartment",40.3819
+NA,0,0,0,72,13.6508,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,96,14.6738,"EObs","b.Misspecified delay
+ Effect compartment",8.92295
+NA,0,0,0,120,24.2536,"EObs","b.Misspecified delay
+ Effect compartment",11.513
+NA,0,0,0,144,29.6075,"EObs","b.Misspecified delay
+ Effect compartment",11.5571
+NA,0,0,0,0,106.72,"EObs","b.Misspecified delay
+ Effect compartment",9.22662
+NA,0,0,0,24,36.1222,"EObs","b.Misspecified delay
+ Effect compartment",33.9126
+NA,0,0,0,36,27.846,"EObs","b.Misspecified delay
+ Effect compartment",7.62816
+NA,0,0,0,48,30.4037,"EObs","b.Misspecified delay
+ Effect compartment",24.2777
+NA,0,0,0,72,30.0459,"EObs","b.Misspecified delay
+ Effect compartment",6.3066
+NA,0,0,0,96,38.6354,"EObs","b.Misspecified delay
+ Effect compartment",19.9931
+NA,0,0,0,120,49.0526,"EObs","b.Misspecified delay
+ Effect compartment",4.31069
+NA,0,0,0,144,63.7054,"EObs","b.Misspecified delay
+ Effect compartment",19.0646
+NA,0,0,0,0,92.508,"EObs","b.Misspecified delay
+ Effect compartment",2.94644
+NA,0,0,0,24,39.6489,"EObs","b.Misspecified delay
+ Effect compartment",23.2792
+NA,0,0,0,36,21.9647,"EObs","b.Misspecified delay
+ Effect compartment",2.01395
+NA,0,0,0,48,20.289,"EObs","b.Misspecified delay
+ Effect compartment",30.1382
+NA,0,0,0,72,23.664,"EObs","b.Misspecified delay
+ Effect compartment",38.3743
+NA,0,0,0,96,24.2633,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,120,36.2898,"EObs","b.Misspecified delay
+ Effect compartment",8.88765
+NA,0,0,0,144,43.2767,"EObs","b.Misspecified delay
+ Effect compartment",11.3865
+NA,0,0,0,0,104.51,"EObs","b.Misspecified delay
+ Effect compartment",11.336
+NA,0,0,0,24,40.6609,"EObs","b.Misspecified delay
+ Effect compartment",10.8235
+NA,0,0,0,36,29.1761,"EObs","b.Misspecified delay
+ Effect compartment",8.65461
+NA,0,0,0,48,19.6872,"EObs","b.Misspecified delay
+ Effect compartment",35.1468
+NA,0,0,0,72,28.87,"EObs","b.Misspecified delay
+ Effect compartment",6.90227
+NA,0,0,0,96,27.679,"EObs","b.Misspecified delay
+ Effect compartment",26.2837
+NA,0,0,0,120,46.928,"EObs","b.Misspecified delay
+ Effect compartment",5.50471
+NA,0,0,0,144,43.5876,"EObs","b.Misspecified delay
+ Effect compartment",22.7461
+NA,0,0,0,0,96.307,"EObs","b.Misspecified delay
+ Effect compartment",3.50122
+NA,0,0,0,24,36.2271,"EObs","b.Misspecified delay
+ Effect compartment",23.2771
+NA,0,0,0,36,20.8844,"EObs","b.Misspecified delay
+ Effect compartment",2.22691
+NA,0,0,0,48,18.5905,"EObs","b.Misspecified delay
+ Effect compartment",28.8807
+NA,0,0,0,72,18.2157,"EObs","b.Misspecified delay
+ Effect compartment",1.41641
+NA,0,0,0,96,15.5388,"EObs","b.Misspecified delay
+ Effect compartment",36.9447
+NA,0,0,0,120,12.2523,"EObs","b.Misspecified delay
+ Effect compartment",46.0569
+NA,0,0,0,144,21.79,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,0,89.879,"EObs","b.Misspecified delay
+ Effect compartment",11.5078
+NA,0,0,0,24,32.3378,"EObs","b.Misspecified delay
+ Effect compartment",11.1116
+NA,0,0,0,36,28.6152,"EObs","b.Misspecified delay
+ Effect compartment",9.18319
+NA,0,0,0,48,20.7055,"EObs","b.Misspecified delay
+ Effect compartment",33.996
+NA,0,0,0,0,100.91,"EObs","b.Misspecified delay
+ Effect compartment",7.57026
+NA,0,0,0,24,40.4701,"EObs","b.Misspecified delay
+ Effect compartment",24.4234
+NA,0,0,0,36,36.7945,"EObs","b.Misspecified delay
+ Effect compartment",6.2406
+NA,0,0,0,48,27.185,"EObs","b.Misspecified delay
+ Effect compartment",20.2
+NA,0,0,0,72,20.9873,"EObs","b.Misspecified delay
+ Effect compartment",4.24089
+NA,0,0,0,96,27.4664,"EObs","b.Misspecified delay
+ Effect compartment",19.3928
+NA,0,0,0,120,28.1461,"EObs","b.Misspecified delay
+ Effect compartment",2.88196
+NA,0,0,0,144,36.3129,"EObs","b.Misspecified delay
+ Effect compartment",23.7265
+NA,0,0,0,0,88.483,"EObs","b.Misspecified delay
+ Effect compartment",1.95848
+NA,0,0,0,24,34.5034,"EObs","b.Misspecified delay
+ Effect compartment",30.6943
+NA,0,0,0,36,24.7502,"EObs","b.Misspecified delay
+ Effect compartment",39.0176
+NA,0,0,0,48,12.4561,"EObs","b.Misspecified delay
+ Effect compartment",8.90902
+NA,0,0,0,72,22.0192,"EObs","b.Misspecified delay
+ Effect compartment",11.4629
+NA,0,0,0,96,25.355,"EObs","b.Misspecified delay
+ Effect compartment",11.4694
+NA,0,0,0,120,25.4206,"EObs","b.Misspecified delay
+ Effect compartment",11.0093
+NA,0,0,0,144,32.2549,"EObs","b.Misspecified delay
+ Effect compartment",8.99676
+NA,0,0,0,0,89.148,"EObs","b.Misspecified delay
+ Effect compartment",34.4018
+NA,0,0,0,24,41.7073,"EObs","b.Misspecified delay
+ Effect compartment",7.33335
+NA,0,0,0,36,29.0235,"EObs","b.Misspecified delay
+ Effect compartment",25.0739
+NA,0,0,0,48,21.5264,"EObs","b.Misspecified delay
+ Effect compartment",5.97746
+NA,0,0,0,72,18.914,"EObs","b.Misspecified delay
+ Effect compartment",21.0873
+NA,0,0,0,96,23.3461,"EObs","b.Misspecified delay
+ Effect compartment",3.97141
+NA,0,0,0,120,36.0959,"EObs","b.Misspecified delay
+ Effect compartment",20.7461
+NA,0,0,0,144,43.28,"EObs","b.Misspecified delay
+ Effect compartment",2.6386
+NA,0,0,0,0,86.846,"EObs","b.Misspecified delay
+ Effect compartment",25.5307
+NA,0,0,0,24,33.6182,"EObs","b.Misspecified delay
+ Effect compartment",32.901
+NA,0,0,0,36,22.9747,"EObs","b.Misspecified delay
+ Effect compartment",41.5323
+NA,0,0,0,48,19.9479,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,72,19.7108,"EObs","b.Misspecified delay
+ Effect compartment",8.92837
+NA,0,0,0,96,25.2862,"EObs","b.Misspecified delay
+ Effect compartment",11.5325
+NA,0,0,0,120,35.4766,"EObs","b.Misspecified delay
+ Effect compartment",11.5915
+NA,0,0,0,0,100.86,"EObs","b.Misspecified delay
+ Effect compartment",11.18
+NA,0,0,0,24,37.2186,"EObs","b.Misspecified delay
+ Effect compartment",9.31765
+NA,0,0,0,36,24.2883,"EObs","b.Misspecified delay
+ Effect compartment",33.7213
+NA,0,0,0,48,11.4794,"EObs","b.Misspecified delay
+ Effect compartment",7.74607
+NA,0,0,0,72,16.8827,"EObs","b.Misspecified delay
+ Effect compartment",23.966
+NA,0,0,0,96,18.801,"EObs","b.Misspecified delay
+ Effect compartment",6.43953
+NA,0,0,0,120,15.3024,"EObs","b.Misspecified delay
+ Effect compartment",19.5642
+NA,0,0,0,0,96.569,"EObs","b.Misspecified delay
+ Effect compartment",4.45041
+NA,0,0,0,24,26.5379,"EObs","b.Misspecified delay
+ Effect compartment",18.403
+NA,0,0,0,36,24.584,"EObs","b.Misspecified delay
+ Effect compartment",3.07571
+NA,0,0,0,48,13.0778,"EObs","b.Misspecified delay
+ Effect compartment",22.3884
+NA,0,0,0,72,21.8094,"EObs","b.Misspecified delay
+ Effect compartment",2.12565
+NA,0,0,0,96,29.8113,"EObs","b.Misspecified delay
+ Effect compartment",29.0359
+NA,0,0,0,120,42.8473,"EObs","b.Misspecified delay
+ Effect compartment",37.1
+NA,0,0,0,0,92.625,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,24,38.2056,"EObs","b.Misspecified delay
+ Effect compartment",1.44931
+NA,0,0,0,36,31.5316,"EObs","b.Misspecified delay
+ Effect compartment",6.23239
+NA,0,0,0,48,23.7388,"EObs","b.Misspecified delay
+ Effect compartment",8.89967
+NA,0,0,0,72,20.9142,"EObs","b.Misspecified delay
+ Effect compartment",11.4295
+NA,0,0,0,96,20.3402,"EObs","b.Misspecified delay
+ Effect compartment",11.4109
+NA,0,0,0,120,22.964,"EObs","b.Misspecified delay
+ Effect compartment",10.9277
+NA,0,0,0,0,88.494,"EObs","b.Misspecified delay
+ Effect compartment",8.84555
+NA,0,0,0,24,32.7437,"EObs","b.Misspecified delay
+ Effect compartment",34.7285
+NA,0,0,0,36,21.005,"EObs","b.Misspecified delay
+ Effect compartment",7.14168
+NA,0,0,0,48,22.3825,"EObs","b.Misspecified delay
+ Effect compartment",25.6048
+NA,0,0,0,72,26.6363,"EObs","b.Misspecified delay
+ Effect compartment",5.76599
+NA,0,0,0,96,38.6572,"EObs","b.Misspecified delay
+ Effect compartment",21.816
+NA,0,0,0,120,52.3915,"EObs","b.Misspecified delay
+ Effect compartment",3.75856
+NA,0,0,0,0,96.596,"EObs","b.Misspecified delay
+ Effect compartment",21.8608
+NA,0,0,0,24,48.6702,"EObs","b.Misspecified delay
+ Effect compartment",2.45001
+NA,0,0,0,36,24.2809,"EObs","b.Misspecified delay
+ Effect compartment",27.0121
+NA,0,0,0,48,21.5505,"EObs","b.Misspecified delay
+ Effect compartment",1.59704
+NA,0,0,0,72,18.1466,"EObs","b.Misspecified delay
+ Effect compartment",34.6994
+NA,0,0,0,96,24.4518,"EObs","b.Misspecified delay
+ Effect compartment",43.5595
+NA,0,0,0,120,30.2265,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,0,96.497,"EObs","b.Misspecified delay
+ Effect compartment",9.12126
+NA,0,0,0,24,29.8582,"EObs","b.Misspecified delay
+ Effect compartment",34.1358
+NA,0,0,0,36,18.9104,"EObs","b.Misspecified delay
+ Effect compartment",7.49251
+NA,0,0,0,48,10.0374,"EObs","b.Misspecified delay
+ Effect compartment",24.6411
+NA,0,0,0,72,7.12584,"EObs","b.Misspecified delay
+ Effect compartment",6.15457
+NA,0,0,0,96,5.37522,"EObs","b.Misspecified delay
+ Effect compartment",20.4927
+NA,0,0,0,120,9.21237,"EObs","b.Misspecified delay
+ Effect compartment",4.15278
+NA,0,0,0,0,93.066,"EObs","b.Misspecified delay
+ Effect compartment",19.8334
+NA,0,0,0,24,42.0755,"EObs","b.Misspecified delay
+ Effect compartment",2.80208
+NA,0,0,0,36,30.1919,"EObs","b.Misspecified delay
+ Effect compartment",24.311
+NA,0,0,0,48,19.0498,"EObs","b.Misspecified delay
+ Effect compartment",1.8907
+NA,0,0,0,72,10.6424,"EObs","b.Misspecified delay
+ Effect compartment",31.4086
+NA,0,0,0,96,26.0416,"EObs","b.Misspecified delay
+ Effect compartment",39.8329
+NA,0,0,0,120,21.4318,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,0,88.021,"EObs","b.Misspecified delay
+ Effect compartment",4.18583
+NA,0,0,0,24,30.838,"EObs","b.Misspecified delay
+ Effect compartment",8.9241
+NA,0,0,0,36,9.13401,"EObs","b.Misspecified delay
+ Effect compartment",11.5171
+NA,0,0,0,48,17.8187,"EObs","b.Misspecified delay
+ Effect compartment",11.1421
+NA,0,0,0,72,13.6486,"EObs","b.Misspecified delay
+ Effect compartment",9.24585
+NA,0,0,0,96,18.109,"EObs","b.Misspecified delay
+ Effect compartment",33.8721
+NA,0,0,0,120,19.1019,"EObs","b.Misspecified delay
+ Effect compartment",7.65302
+NA,0,0,0,0,99.997,"EObs","b.Misspecified delay
+ Effect compartment",24.2117
+NA,0,0,0,24,29.9245,"EObs","b.Misspecified delay
+ Effect compartment",6.33456
+NA,0,0,0,36,16.3204,"EObs","b.Misspecified delay
+ Effect compartment",19.9023
+NA,0,0,0,48,11.4534,"EObs","b.Misspecified delay
+ Effect compartment",4.33995
+NA,0,0,0,72,19.6412,"EObs","b.Misspecified delay
+ Effect compartment",18.9246
+NA,0,0,0,96,19.3222,"EObs","b.Misspecified delay
+ Effect compartment",2.97339
+NA,0,0,0,120,22.4075,"EObs","b.Misspecified delay
+ Effect compartment",23.091
+NA,0,0,0,0,99.465,"EObs","b.Misspecified delay
+ Effect compartment",2.03714
+NA,0,0,0,24,40.4379,"EObs","b.Misspecified delay
+ Effect compartment",29.9057
+NA,0,0,0,36,42.9253,"EObs","b.Misspecified delay
+ Effect compartment",38.1062
+NA,0,0,0,48,35.4134,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,72,43.337,"EObs","b.Misspecified delay
+ Effect compartment",8.92404
+NA,0,0,0,96,60.0819,"EObs","b.Misspecified delay
+ Effect compartment",11.5078
+NA,0,0,0,120,73.0193,"EObs","b.Misspecified delay
+ Effect compartment",11.5443
+NA,0,0,0,0,103.98,"EObs","b.Misspecified delay
+ Effect compartment",9.18319
+NA,0,0,0,24,36.5316,"EObs","b.Misspecified delay
+ Effect compartment",33.996
+NA,0,0,0,36,24.8695,"EObs","b.Misspecified delay
+ Effect compartment",7.57026
+NA,0,0,0,48,21.3431,"EObs","b.Misspecified delay
+ Effect compartment",24.4234
+NA,0,0,0,72,18.6656,"EObs","b.Misspecified delay
+ Effect compartment",6.2406
+NA,0,0,0,96,19.6761,"EObs","b.Misspecified delay
+ Effect compartment",20.2
+NA,0,0,0,120,35.6416,"EObs","b.Misspecified delay
+ Effect compartment",4.24089
+NA,0,0,0,0,92.94,"EObs","b.Misspecified delay
+ Effect compartment",2.88196
+NA,0,0,0,24,33.8759,"EObs","b.Misspecified delay
+ Effect compartment",1.95848
+NA,0,0,0,36,18.6256,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,48,11.6004,"EObs","b.Misspecified delay
+ Effect compartment",4.18714
+NA,0,0,0,72,10.5853,"EObs","b.Misspecified delay
+ Effect compartment",8.92404
+NA,0,0,0,96,15.7035,"EObs","b.Misspecified delay
+ Effect compartment",11.5078
+NA,0,0,0,120,17.7166,"EObs","b.Misspecified delay
+ Effect compartment",11.5443
+NA,0,0,0,0,95.305,"EObs","b.Misspecified delay
+ Effect compartment",9.18319
+NA,0,0,0,24,38.3823,"EObs","b.Misspecified delay
+ Effect compartment",33.996
+NA,0,0,0,36,24.8393,"EObs","b.Misspecified delay
+ Effect compartment",7.57026
+NA,0,0,0,48,24.7636,"EObs","b.Misspecified delay
+ Effect compartment",24.4234
+NA,0,0,0,72,15.5358,"EObs","b.Misspecified delay
+ Effect compartment",6.2406
+NA,0,0,0,96,16.8374,"EObs","b.Misspecified delay
+ Effect compartment",20.2
+NA,0,0,0,120,25.0446,"EObs","b.Misspecified delay
+ Effect compartment",4.24089
+NA,0,0,0,0,97.752,"EObs","b.Misspecified delay
+ Effect compartment",19.3928
+NA,0,0,0,24,37.644,"EObs","b.Misspecified delay
+ Effect compartment",2.88196
+NA,0,0,0,36,26.5448,"EObs","b.Misspecified delay
+ Effect compartment",23.7265
+NA,0,0,0,48,16.9441,"EObs","b.Misspecified delay
+ Effect compartment",1.95848
+NA,0,0,0,72,28.469,"EObs","b.Misspecified delay
+ Effect compartment",30.6943
+NA,0,0,0,96,30.635,"EObs","b.Misspecified delay
+ Effect compartment",39.0176
+NA,0,0,0,120,37.688,"EObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,0,98.957,"EObs","b.Misspecified delay
+ Effect compartment",0
+NA,0,0,0,24,38.2944,"EObs","b.Misspecified delay
+ Effect compartment",1.44931
+NA,0,0,0,36,29.8277,"EObs","b.Misspecified delay
+ Effect compartment",6.23239
+NA,0,0,0,48,12.8334,"EObs","b.Misspecified delay
+ Effect compartment",8.89967
+NA,0,0,0,72,10.3343,"EObs","b.Misspecified delay
+ Effect compartment",11.4295
+NA,0,0,0,96,12.4682,"EObs","b.Misspecified delay
+ Effect compartment",11.4109
+NA,0,0,0,120,30.2382,"EObs","b.Misspecified delay
+ Effect compartment",8.84555
+NA,0,0,0,0,102.92,"EObs","b.Misspecified delay
+ Effect compartment",34.7285
+NA,0,0,0,24,46.4885,"EObs","b.Misspecified delay
+ Effect compartment",7.14168
+NA,0,0,0,36,37.2564,"EObs","b.Misspecified delay
+ Effect compartment",25.6048
+NA,0,0,0,48,23.4734,"EObs","b.Misspecified delay
+ Effect compartment",5.76599
+NA,0,0,0,72,23.9461,"EObs","b.Misspecified delay
+ Effect compartment",21.816
+NA,0,0,0,96,21.7945,"EObs","b.Misspecified delay
+ Effect compartment",3.75856
+NA,0,0,0,120,22.9251,"EObs","b.Misspecified delay
+ Effect compartment",21.8608
+NA,0,0,0,1,0.864745,"CObs","b.Misspecified delay
+ Effect compartment",2.45001
+NA,0,0,0,2,6.70849,"CObs","b.Misspecified delay
+ Effect compartment",27.0121
+NA,0,0,0,3,9.6033,"CObs","b.Misspecified delay
+ Effect compartment",34.6994
+NA,0,0,0,6,11.3475,"CObs","b.Misspecified delay
+ Effect compartment",43.5595
+NA,0,0,0,9,12.5787,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,12,10.3643,"CObs","b.Misspecified delay
+ Effect compartment",1.44854
+NA,0,0,0,24,7.042,"CObs","b.Misspecified delay
+ Effect compartment",8.90092
+NA,0,0,0,36,4.5396,"CObs","b.Misspecified delay
+ Effect compartment",11.446
+NA,0,0,0,48,3.8332,"CObs","b.Misspecified delay
+ Effect compartment",11.4448
+NA,0,0,0,72,1.38276,"CObs","b.Misspecified delay
+ Effect compartment",8.94504
+NA,0,0,0,24,6.91047,"CObs","b.Misspecified delay
+ Effect compartment",34.5242
+NA,0,0,0,36,4.38821,"CObs","b.Misspecified delay
+ Effect compartment",7.26999
+NA,0,0,0,48,4.41222,"CObs","b.Misspecified delay
+ Effect compartment",25.2599
+NA,0,0,0,72,2.36958,"CObs","b.Misspecified delay
+ Effect compartment",5.90859
+NA,0,0,0,96,1.1445,"CObs","b.Misspecified delay
+ Effect compartment",21.3342
+NA,0,0,0,120,0.618322,"CObs","b.Misspecified delay
+ Effect compartment",3.90286
+NA,0,0,0,0.5,0.496475,"CObs","b.Misspecified delay
+ Effect compartment",21.1116
+NA,0,0,0,2,3.78522,"CObs","b.Misspecified delay
+ Effect compartment",2.57799
+NA,0,0,0,3,5.80052,"CObs","b.Misspecified delay
+ Effect compartment",26.0093
+NA,0,0,0,6,9.80732,"CObs","b.Misspecified delay
+ Effect compartment",1.70287
+NA,0,0,0,12,9.35366,"CObs","b.Misspecified delay
+ Effect compartment",33.4779
+NA,0,0,0,24,8.8806,"CObs","b.Misspecified delay
+ Effect compartment",42.1808
+NA,0,0,0,36,6.0008,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,48,6.44596,"CObs","b.Misspecified delay
+ Effect compartment",8.96897
+NA,0,0,0,72,5.58089,"CObs","b.Misspecified delay
+ Effect compartment",34.4616
+NA,0,0,0,96,3.86423,"CObs","b.Misspecified delay
+ Effect compartment",7.29799
+NA,0,0,0,120,2.78818,"CObs","b.Misspecified delay
+ Effect compartment",25.171
+NA,0,0,0,3,6.46341,"CObs","b.Misspecified delay
+ Effect compartment",5.93829
+NA,0,0,0,6,9.88803,"CObs","b.Misspecified delay
+ Effect compartment",21.2207
+NA,0,0,0,9,12.1595,"CObs","b.Misspecified delay
+ Effect compartment",3.93168
+NA,0,0,0,24,11.549,"CObs","b.Misspecified delay
+ Effect compartment",20.9505
+NA,0,0,0,36,8.46111,"CObs","b.Misspecified delay
+ Effect compartment",2.60313
+NA,0,0,0,48,7.50932,"CObs","b.Misspecified delay
+ Effect compartment",25.803
+NA,0,0,0,72,4.35341,"CObs","b.Misspecified delay
+ Effect compartment",1.72351
+NA,0,0,0,96,3.21438,"CObs","b.Misspecified delay
+ Effect compartment",33.2327
+NA,0,0,0,120,1.37967,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,3,9.34146,"CObs","b.Misspecified delay
+ Effect compartment",9.20682
+NA,0,0,0,6,11.5218,"CObs","b.Misspecified delay
+ Effect compartment",33.9544
+NA,0,0,0,9,13.227,"CObs","b.Misspecified delay
+ Effect compartment",7.6026
+NA,0,0,0,12,13.2714,"CObs","b.Misspecified delay
+ Effect compartment",24.3458
+NA,0,0,0,24,8.52892,"CObs","b.Misspecified delay
+ Effect compartment",6.27788
+NA,0,0,0,36,7.31156,"CObs","b.Misspecified delay
+ Effect compartment",20.0867
+NA,0,0,0,48,5.73307,"CObs","b.Misspecified delay
+ Effect compartment",4.2807
+NA,0,0,0,72,3.62568,"CObs","b.Misspecified delay
+ Effect compartment",19.2088
+NA,0,0,0,96,1.41263,"CObs","b.Misspecified delay
+ Effect compartment",2.91888
+NA,0,0,0,120,1.02021,"CObs","b.Misspecified delay
+ Effect compartment",23.4731
+NA,0,0,0,6,11.0577,"CObs","b.Misspecified delay
+ Effect compartment",1.9903
+NA,0,0,0,12,11.0919,"CObs","b.Misspecified delay
+ Effect compartment",30.3774
+NA,0,0,0,24,6.12873,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,36,5.35917,"CObs","b.Misspecified delay
+ Effect compartment",9.16873
+NA,0,0,0,48,3.01542,"CObs","b.Misspecified delay
+ Effect compartment",34.0435
+NA,0,0,0,72,2.12102,"CObs","b.Misspecified delay
+ Effect compartment",7.55541
+NA,0,0,0,96,1.04697,"CObs","b.Misspecified delay
+ Effect compartment",24.4808
+NA,0,0,0,120,1.0427,"CObs","b.Misspecified delay
+ Effect compartment",6.22595
+NA,0,0,0,3,12.1846,"CObs","b.Misspecified delay
+ Effect compartment",20.2658
+NA,0,0,0,6,11.2028,"CObs","b.Misspecified delay
+ Effect compartment",4.22766
+NA,0,0,0,9,10.5099,"CObs","b.Misspecified delay
+ Effect compartment",19.4748
+NA,0,0,0,12,11.8819,"CObs","b.Misspecified delay
+ Effect compartment",2.87075
+NA,0,0,0,24,11.0314,"CObs","b.Misspecified delay
+ Effect compartment",23.8239
+NA,0,0,0,36,7.35286,"CObs","b.Misspecified delay
+ Effect compartment",1.94935
+NA,0,0,0,48,5.54592,"CObs","b.Misspecified delay
+ Effect compartment",30.8051
+NA,0,0,0,72,4.4709,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,96,3.6602,"CObs","b.Misspecified delay
+ Effect compartment",9.04072
+NA,0,0,0,3,5.00204,"CObs","b.Misspecified delay
+ Effect compartment",34.3175
+NA,0,0,0,6,8.00071,"CObs","b.Misspecified delay
+ Effect compartment",7.39158
+NA,0,0,0,9,9.17148,"CObs","b.Misspecified delay
+ Effect compartment",24.9251
+NA,0,0,0,12,8.71404,"CObs","b.Misspecified delay
+ Effect compartment",6.04324
+NA,0,0,0,24,6.35524,"CObs","b.Misspecified delay
+ Effect compartment",20.8753
+NA,0,0,0,36,5.5917,"CObs","b.Misspecified delay
+ Effect compartment",4.03957
+NA,0,0,0,48,4.1472,"CObs","b.Misspecified delay
+ Effect compartment",20.4098
+NA,0,0,0,72,2.74388,"CObs","b.Misspecified delay
+ Effect compartment",2.70023
+NA,0,0,0,96,2.28327,"CObs","b.Misspecified delay
+ Effect compartment",25.0745
+NA,0,0,0,120,1.33292,"CObs","b.Misspecified delay
+ Effect compartment",1.80495
+NA,0,0,0,1,0.062565,"CObs","b.Misspecified delay
+ Effect compartment",32.3387
+NA,0,0,0,2,3.6674,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,3,6.0024,"CObs","b.Misspecified delay
+ Effect compartment",8.983
+NA,0,0,0,6,9.41967,"CObs","b.Misspecified delay
+ Effect compartment",34.4314
+NA,0,0,0,9,8.94,"CObs","b.Misspecified delay
+ Effect compartment",7.31583
+NA,0,0,0,12,9.91335,"CObs","b.Misspecified delay
+ Effect compartment",25.122
+NA,0,0,0,24,7.43026,"CObs","b.Misspecified delay
+ Effect compartment",5.95805
+NA,0,0,0,36,6.03002,"CObs","b.Misspecified delay
+ Effect compartment",21.1533
+NA,0,0,0,48,4.73235,"CObs","b.Misspecified delay
+ Effect compartment",3.95171
+NA,0,0,0,72,3.55806,"CObs","b.Misspecified delay
+ Effect compartment",20.8473
+NA,0,0,0,96,2.09547,"CObs","b.Misspecified delay
+ Effect compartment",2.62099
+NA,0,0,0,120,1.57888,"CObs","b.Misspecified delay
+ Effect compartment",25.6655
+NA,0,0,0,24,8.9016,"CObs","b.Misspecified delay
+ Effect compartment",1.73839
+NA,0,0,0,36,6.29779,"CObs","b.Misspecified delay
+ Effect compartment",33.0653
+NA,0,0,0,48,5.41612,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,72,2.53341,"CObs","b.Misspecified delay
+ Effect compartment",9.0235
+NA,0,0,0,96,1.3743,"CObs","b.Misspecified delay
+ Effect compartment",34.3444
+NA,0,0,0,120,1.41158,"CObs","b.Misspecified delay
+ Effect compartment",7.36743
+NA,0,0,0,1.5,0.061399,"CObs","b.Misspecified delay
+ Effect compartment",24.9806
+NA,0,0,0,3,7.70969,"CObs","b.Misspecified delay
+ Effect compartment",6.01527
+NA,0,0,0,6,10.9145,"CObs","b.Misspecified delay
+ Effect compartment",20.9592
+NA,0,0,0,12,11.5333,"CObs","b.Misspecified delay
+ Effect compartment",4.0099
+NA,0,0,0,24,9.44653,"CObs","b.Misspecified delay
+ Effect compartment",20.5497
+NA,0,0,0,36,8.81575,"CObs","b.Misspecified delay
+ Effect compartment",2.67308
+NA,0,0,0,48,6.9721,"CObs","b.Misspecified delay
+ Effect compartment",25.2687
+NA,0,0,0,72,5.11082,"CObs","b.Misspecified delay
+ Effect compartment",1.78192
+NA,0,0,0,96,3.8627,"CObs","b.Misspecified delay
+ Effect compartment",32.5813
+NA,0,0,0,120,2.49936,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,3,9.56705,"CObs","b.Misspecified delay
+ Effect compartment",8.96897
+NA,0,0,0,6,13.051,"CObs","b.Misspecified delay
+ Effect compartment",34.4616
+NA,0,0,0,9,10.213,"CObs","b.Misspecified delay
+ Effect compartment",7.29799
+NA,0,0,0,24,8.96506,"CObs","b.Misspecified delay
+ Effect compartment",25.171
+NA,0,0,0,36,7.9906,"CObs","b.Misspecified delay
+ Effect compartment",5.93829
+NA,0,0,0,48,6.51958,"CObs","b.Misspecified delay
+ Effect compartment",21.2207
+NA,0,0,0,72,5.24407,"CObs","b.Misspecified delay
+ Effect compartment",3.93168
+NA,0,0,0,96,3.21089,"CObs","b.Misspecified delay
+ Effect compartment",20.9505
+NA,0,0,0,120,2.90404,"CObs","b.Misspecified delay
+ Effect compartment",2.60313
+NA,0,0,0,1.5,3.50159,"CObs","b.Misspecified delay
+ Effect compartment",25.803
+NA,0,0,0,3,6.61705,"CObs","b.Misspecified delay
+ Effect compartment",1.72351
+NA,0,0,0,6,9.93637,"CObs","b.Misspecified delay
+ Effect compartment",33.2327
+NA,0,0,0,9,10.123,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,24,9.48897,"CObs","b.Misspecified delay
+ Effect compartment",9.16203
+NA,0,0,0,36,6.80467,"CObs","b.Misspecified delay
+ Effect compartment",34.0406
+NA,0,0,0,48,6.15575,"CObs","b.Misspecified delay
+ Effect compartment",7.54297
+NA,0,0,0,72,4.89177,"CObs","b.Misspecified delay
+ Effect compartment",24.4963
+NA,0,0,0,96,2.9493,"CObs","b.Misspecified delay
+ Effect compartment",6.21
+NA,0,0,0,120,2.33631,"CObs","b.Misspecified delay
+ Effect compartment",20.3004
+NA,0,0,0,0.5,0.4558,"CObs","b.Misspecified delay
+ Effect compartment",4.2091
+NA,0,0,0,1,0.12864,"CObs","b.Misspecified delay
+ Effect compartment",19.5475
+NA,0,0,0,2,11.8878,"CObs","b.Misspecified delay
+ Effect compartment",2.8529
+NA,0,0,0,3,12.2958,"CObs","b.Misspecified delay
+ Effect compartment",23.9343
+NA,0,0,0,6,12.3303,"CObs","b.Misspecified delay
+ Effect compartment",1.93368
+NA,0,0,0,9,11.7231,"CObs","b.Misspecified delay
+ Effect compartment",30.9502
+NA,0,0,0,24,8.65835,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,36,6.9762,"CObs","b.Misspecified delay
+ Effect compartment",9.18963
+NA,0,0,0,48,5.87556,"CObs","b.Misspecified delay
+ Effect compartment",33.999
+NA,0,0,0,72,4.62164,"CObs","b.Misspecified delay
+ Effect compartment",7.5823
+NA,0,0,0,96,2.32309,"CObs","b.Misspecified delay
+ Effect compartment",24.4086
+NA,0,0,0,1,3.9931,"CObs","b.Misspecified delay
+ Effect compartment",6.25607
+NA,0,0,0,3,8.93146,"CObs","b.Misspecified delay
+ Effect compartment",20.1667
+NA,0,0,0,6,10.5395,"CObs","b.Misspecified delay
+ Effect compartment",4.25895
+NA,0,0,0,9,10.82,"CObs","b.Misspecified delay
+ Effect compartment",19.3225
+NA,0,0,0,24,7.71225,"CObs","b.Misspecified delay
+ Effect compartment",2.89938
+NA,0,0,0,36,5.09766,"CObs","b.Misspecified delay
+ Effect compartment",23.6197
+NA,0,0,0,48,4.59543,"CObs","b.Misspecified delay
+ Effect compartment",1.97381
+NA,0,0,0,72,2.34408,"CObs","b.Misspecified delay
+ Effect compartment",30.5537
+NA,0,0,0,96,2.00842,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,120,1.5802,"CObs","b.Misspecified delay
+ Effect compartment",9.16873
+NA,0,0,0,24,10.281,"CObs","b.Misspecified delay
+ Effect compartment",34.0435
+NA,0,0,0,36,10.3978,"CObs","b.Misspecified delay
+ Effect compartment",7.55541
+NA,0,0,0,48,6.78843,"CObs","b.Misspecified delay
+ Effect compartment",24.4808
+NA,0,0,0,72,4.81552,"CObs","b.Misspecified delay
+ Effect compartment",6.22595
+NA,0,0,0,96,3.12999,"CObs","b.Misspecified delay
+ Effect compartment",20.2658
+NA,0,0,0,120,2.8053,"CObs","b.Misspecified delay
+ Effect compartment",4.22766
+NA,0,0,0,24,10.3843,"CObs","b.Misspecified delay
+ Effect compartment",19.4748
+NA,0,0,0,36,7.9512,"CObs","b.Misspecified delay
+ Effect compartment",2.87075
+NA,0,0,0,48,6.06675,"CObs","b.Misspecified delay
+ Effect compartment",23.8239
+NA,0,0,0,72,4.75085,"CObs","b.Misspecified delay
+ Effect compartment",1.94935
+NA,0,0,0,96,3.09395,"CObs","b.Misspecified delay
+ Effect compartment",30.8051
+NA,0,0,0,120,1.91861,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,24,11.5885,"CObs","b.Misspecified delay
+ Effect compartment",9.22662
+NA,0,0,0,36,7.57459,"CObs","b.Misspecified delay
+ Effect compartment",33.9126
+NA,0,0,0,48,6.18,"CObs","b.Misspecified delay
+ Effect compartment",7.62816
+NA,0,0,0,72,3.318,"CObs","b.Misspecified delay
+ Effect compartment",24.2777
+NA,0,0,0,96,2.65891,"CObs","b.Misspecified delay
+ Effect compartment",6.3066
+NA,0,0,0,120,1.87551,"CObs","b.Misspecified delay
+ Effect compartment",19.9931
+NA,0,0,0,24,8.83109,"CObs","b.Misspecified delay
+ Effect compartment",4.31069
+NA,0,0,0,36,8.05299,"CObs","b.Misspecified delay
+ Effect compartment",19.0646
+NA,0,0,0,48,5.9954,"CObs","b.Misspecified delay
+ Effect compartment",2.94644
+NA,0,0,0,72,4.0345,"CObs","b.Misspecified delay
+ Effect compartment",23.2792
+NA,0,0,0,96,3.44946,"CObs","b.Misspecified delay
+ Effect compartment",2.01395
+NA,0,0,0,120,3.34525,"CObs","b.Misspecified delay
+ Effect compartment",30.1382
+NA,0,0,0,24,9.32295,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,36,7.22708,"CObs","b.Misspecified delay
+ Effect compartment",9.22662
+NA,0,0,0,48,4.52086,"CObs","b.Misspecified delay
+ Effect compartment",33.9126
+NA,0,0,0,72,2.6997,"CObs","b.Misspecified delay
+ Effect compartment",7.62816
+NA,0,0,0,96,1.6314,"CObs","b.Misspecified delay
+ Effect compartment",24.2777
+NA,0,0,0,120,0.563939,"CObs","b.Misspecified delay
+ Effect compartment",6.3066
+NA,0,0,0,24,8.60919,"CObs","b.Misspecified delay
+ Effect compartment",19.9931
+NA,0,0,0,36,8.06445,"CObs","b.Misspecified delay
+ Effect compartment",4.31069
+NA,0,0,0,48,6.89028,"CObs","b.Misspecified delay
+ Effect compartment",19.0646
+NA,0,0,0,72,4.39128,"CObs","b.Misspecified delay
+ Effect compartment",2.94644
+NA,0,0,0,96,3.62075,"CObs","b.Misspecified delay
+ Effect compartment",23.2792
+NA,0,0,0,120,2.2568,"CObs","b.Misspecified delay
+ Effect compartment",2.01395
+NA,0,0,0,24,9.03824,"CObs","b.Misspecified delay
+ Effect compartment",30.1382
+NA,0,0,0,36,6.48781,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,48,6.23003,"CObs","b.Misspecified delay
+ Effect compartment",9.22662
+NA,0,0,0,72,5.10745,"CObs","b.Misspecified delay
+ Effect compartment",33.9126
+NA,0,0,0,96,4.63813,"CObs","b.Misspecified delay
+ Effect compartment",7.62816
+NA,0,0,0,120,3.29093,"CObs","b.Misspecified delay
+ Effect compartment",24.2777
+NA,0,0,0,24,10.169,"CObs","b.Misspecified delay
+ Effect compartment",6.3066
+NA,0,0,0,36,8.8806,"CObs","b.Misspecified delay
+ Effect compartment",19.9931
+NA,0,0,0,48,7.10848,"CObs","b.Misspecified delay
+ Effect compartment",4.31069
+NA,0,0,0,72,5.62546,"CObs","b.Misspecified delay
+ Effect compartment",19.0646
+NA,0,0,0,96,3.40624,"CObs","b.Misspecified delay
+ Effect compartment",2.94644
+NA,0,0,0,120,2.83199,"CObs","b.Misspecified delay
+ Effect compartment",23.2792
+NA,0,0,0,24,11.5887,"CObs","b.Misspecified delay
+ Effect compartment",2.01395
+NA,0,0,0,36,10.359,"CObs","b.Misspecified delay
+ Effect compartment",30.1382
+NA,0,0,0,48,6.60137,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,72,5.0411,"CObs","b.Misspecified delay
+ Effect compartment",9.41244
+NA,0,0,0,96,3.9132,"CObs","b.Misspecified delay
+ Effect compartment",33.5236
+NA,0,0,0,120,2.72327,"CObs","b.Misspecified delay
+ Effect compartment",7.86952
+NA,0,0,0,24,12.0003,"CObs","b.Misspecified delay
+ Effect compartment",23.6436
+NA,0,0,0,36,9.89939,"CObs","b.Misspecified delay
+ Effect compartment",6.5795
+NA,0,0,0,48,8.5618,"CObs","b.Misspecified delay
+ Effect compartment",19.1202
+NA,0,0,0,72,5.95672,"CObs","b.Misspecified delay
+ Effect compartment",4.5992
+NA,0,0,0,96,5.52695,"CObs","b.Misspecified delay
+ Effect compartment",17.717
+NA,0,0,0,120,3.1952,"CObs","b.Misspecified delay
+ Effect compartment",3.21492
+NA,0,0,0,24,9.71334,"CObs","b.Misspecified delay
+ Effect compartment",21.4617
+NA,0,0,0,36,7.41886,"CObs","b.Misspecified delay
+ Effect compartment",2.24729
+NA,0,0,0,48,4.7076,"CObs","b.Misspecified delay
+ Effect compartment",27.8838
+NA,0,0,0,72,3.7209,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,96,2.05462,"CObs","b.Misspecified delay
+ Effect compartment",9.12126
+NA,0,0,0,120,1.19791,"CObs","b.Misspecified delay
+ Effect compartment",34.1358
+NA,0,0,0,24,11.3001,"CObs","b.Misspecified delay
+ Effect compartment",7.49251
+NA,0,0,0,36,9.65753,"CObs","b.Misspecified delay
+ Effect compartment",24.6411
+NA,0,0,0,48,7.53104,"CObs","b.Misspecified delay
+ Effect compartment",6.15457
+NA,0,0,0,72,5.08394,"CObs","b.Misspecified delay
+ Effect compartment",20.4927
+NA,0,0,0,96,2.7389,"CObs","b.Misspecified delay
+ Effect compartment",4.15278
+NA,0,0,0,120,0.815416,"CObs","b.Misspecified delay
+ Effect compartment",19.8334
+NA,0,0,0,24,7.4017,"CObs","b.Misspecified delay
+ Effect compartment",2.80208
+NA,0,0,0,36,7.6572,"CObs","b.Misspecified delay
+ Effect compartment",24.311
+NA,0,0,0,48,7.2603,"CObs","b.Misspecified delay
+ Effect compartment",1.8907
+NA,0,0,0,72,5.0274,"CObs","b.Misspecified delay
+ Effect compartment",31.4086
+NA,0,0,0,96,4.8252,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,120,3.6167,"CObs","b.Misspecified delay
+ Effect compartment",9.26176
+NA,0,0,0,24,7.37141,"CObs","b.Misspecified delay
+ Effect compartment",33.8311
+NA,0,0,0,36,7.59098,"CObs","b.Misspecified delay
+ Effect compartment",7.67188
+NA,0,0,0,48,7.01023,"CObs","b.Misspecified delay
+ Effect compartment",24.1538
+NA,0,0,0,72,5.70376,"CObs","b.Misspecified delay
+ Effect compartment",6.35489
+NA,0,0,0,96,3.53671,"CObs","b.Misspecified delay
+ Effect compartment",19.8285
+NA,0,0,0,120,3.21813,"CObs","b.Misspecified delay
+ Effect compartment",4.36034
+NA,0,0,0,24,7.7052,"CObs","b.Misspecified delay
+ Effect compartment",18.8196
+NA,0,0,0,36,7.32564,"CObs","b.Misspecified delay
+ Effect compartment",2.9918
+NA,0,0,0,48,4.87507,"CObs","b.Misspecified delay
+ Effect compartment",22.9554
+NA,0,0,0,72,2.78244,"CObs","b.Misspecified delay
+ Effect compartment",2.05279
+NA,0,0,0,96,1.85008,"CObs","b.Misspecified delay
+ Effect compartment",29.7423
+NA,0,0,0,120,0.765225,"CObs","b.Misspecified delay
+ Effect compartment",96.1604
+NA,0,0,0,24,9.37786,"CObs","b.Misspecified delay
+ Effect compartment",9.0235
+NA,0,0,0,36,8.8197,"CObs","b.Misspecified delay
+ Effect compartment",34.3444
+NA,0,0,0,48,8.29191,"CObs","b.Misspecified delay
+ Effect compartment",7.36743
+NA,0,0,0,72,6.2099,"CObs","b.Misspecified delay
+ Effect compartment",24.9806
+NA,0,0,0,96,5.6711,"CObs","b.Misspecified delay
+ Effect compartment",6.01527
+NA,0,0,0,120,3.50355,"CObs","b.Misspecified delay
+ Effect compartment",20.9592
+NA,0,0,0,24,9.7695,"CObs","b.Misspecified delay
+ Effect compartment",4.0099
+NA,0,0,0,36,10.1365,"CObs","b.Misspecified delay
+ Effect compartment",20.5497
+NA,0,0,0,48,7.41798,"CObs","b.Misspecified delay
+ Effect compartment",2.67308
+NA,0,0,0,72,4.88166,"CObs","b.Misspecified delay
+ Effect compartment",25.2687
+NA,0,0,0,96,3.83748,"CObs","b.Misspecified delay
+ Effect compartment",1.78192
+NA,0,0,0,120,2.02287,"CObs","b.Misspecified delay
+ Effect compartment",32.5813
+NA,0,0,0,24,43.8327,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.92949
+NA,0,0,0,36,27.9937,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.44776
+NA,0,0,0,48,25.0362,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.01017
+NA,0,0,0,72,34.41,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5297
+NA,0,0,0,96,42.4976,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5702
+NA,0,0,0,120,57.6534,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.1335
+NA,0,0,0,144,74.163,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.16702
+NA,0,0,0,0,101.54,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.7855
+NA,0,0,0,24,28.1112,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.5262
+NA,0,0,0,36,25.4072,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.463
+NA,0,0,0,48,25.8179,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.17903
+NA,0,0,0,72,23.6269,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.399
+NA,0,0,0,96,32.2571,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.16495
+NA,0,0,0,120,35.9645,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.7315
+NA,0,0,0,0,93.322,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.0814
+NA,0,0,0,24,28.5832,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",31.0191
+NA,0,0,0,36,24.2359,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",39.304
+NA,0,0,0,48,18.8193,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,72,18.2246,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.16702
+NA,0,0,0,96,20.7337,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.7855
+NA,0,0,0,120,18.3909,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.5262
+NA,0,0,0,144,23.614,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.463
+NA,0,0,0,0,91.519,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.17903
+NA,0,0,0,24,26.9327,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.399
+NA,0,0,0,36,22.6277,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.16495
+NA,0,0,0,48,18.0099,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.7315
+NA,0,0,0,72,19.0482,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.80737
+NA,0,0,0,96,17.615,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.0814
+NA,0,0,0,120,21.2078,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.8923
+NA,0,0,0,144,29.9489,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",31.0191
+NA,0,0,0,0,105.56,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,24,42.0351,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",0
+NA,0,0,0,36,26.0007,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.44776
+NA,0,0,0,48,32.6287,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.01017
+NA,0,0,0,72,37.6704,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5297
+NA,0,0,0,96,43.7793,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.1335
+NA,0,0,0,120,60.5691,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.16702
+NA,0,0,0,144,66.4963,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.7855
+NA,0,0,0,0,90.151,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.5262
+NA,0,0,0,24,37.3328,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.463
+NA,0,0,0,36,27.7727,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.17903
+NA,0,0,0,48,18.8919,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.399
+NA,0,0,0,72,29.2378,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.16495
+NA,0,0,0,96,31.0483,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.7315
+NA,0,0,0,120,45.3803,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.80737
+NA,0,0,0,144,57.4069,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.0814
+NA,0,0,0,24,30.0343,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.8923
+NA,0,0,0,36,21.8975,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",31.0191
+NA,0,0,0,48,19.8715,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",39.304
+NA,0,0,0,72,13.6579,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,96,14.6756,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.02373
+NA,0,0,0,120,24.247,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.567
+NA,0,0,0,144,29.5964,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.6309
+NA,0,0,0,0,106.72,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.31588
+NA,0,0,0,24,36.1189,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.4678
+NA,0,0,0,36,27.835,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.71574
+NA,0,0,0,48,30.3806,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.9602
+NA,0,0,0,72,30.0162,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.39041
+NA,0,0,0,96,38.6226,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.7171
+NA,0,0,0,120,49.0694,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.3836
+NA,0,0,0,144,63.7698,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.6937
+NA,0,0,0,0,92.508,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.007
+NA,0,0,0,24,39.655,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",22.6916
+NA,0,0,0,36,21.9779,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.0627
+NA,0,0,0,48,20.3114,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.3044
+NA,0,0,0,72,23.6889,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",37.3264
+NA,0,0,0,96,24.2678,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,120,36.2662,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",8.98698
+NA,0,0,0,144,43.2304,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.4394
+NA,0,0,0,0,104.51,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.4091
+NA,0,0,0,24,40.6615,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",10.9069
+NA,0,0,0,36,29.1773,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",8.7428
+NA,0,0,0,48,19.6887,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",34.6757
+NA,0,0,0,72,28.87,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.98744
+NA,0,0,0,96,27.679,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",25.9101
+NA,0,0,0,120,46.928,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",5.58448
+NA,0,0,0,144,43.5954,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",22.3856
+NA,0,0,0,0,96.307,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.56708
+NA,0,0,0,24,36.2252,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",22.7765
+NA,0,0,0,36,20.8796,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.27846
+NA,0,0,0,48,18.5822,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",28.1428
+NA,0,0,0,72,18.2047,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.45536
+NA,0,0,0,96,15.5359,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",35.9724
+NA,0,0,0,120,12.2551,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",44.916
+NA,0,0,0,144,21.8055,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,0,89.879,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5618
+NA,0,0,0,24,32.3372,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.1955
+NA,0,0,0,36,28.6126,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.27242
+NA,0,0,0,48,20.7021,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.5492
+NA,0,0,0,0,100.91,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.6577
+NA,0,0,0,24,40.4694,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.1016
+NA,0,0,0,36,36.7912,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.32413
+NA,0,0,0,48,27.1804,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.9173
+NA,0,0,0,72,20.9816,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.31327
+NA,0,0,0,96,27.4644,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.0111
+NA,0,0,0,120,28.1495,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.94179
+NA,0,0,0,144,36.3288,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.1257
+NA,0,0,0,0,88.483,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.0064
+NA,0,0,0,24,34.5087,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.8474
+NA,0,0,0,36,24.7651,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",37.9594
+NA,0,0,0,48,12.4699,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.00922
+NA,0,0,0,72,22.0423,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5165
+NA,0,0,0,96,25.3597,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5429
+NA,0,0,0,120,25.4041,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.093
+NA,0,0,0,144,32.2205,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.08563
+NA,0,0,0,0,89.148,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.9464
+NA,0,0,0,24,41.7115,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.42002
+NA,0,0,0,36,29.0352,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.7338
+NA,0,0,0,48,21.5424,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.05973
+NA,0,0,0,72,18.9272,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.777
+NA,0,0,0,96,23.3495,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.04155
+NA,0,0,0,120,36.0817,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.3218
+NA,0,0,0,144,43.2542,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.69553
+NA,0,0,0,0,86.846,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.8794
+NA,0,0,0,24,33.6213,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",32.0057
+NA,0,0,0,36,22.983,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",40.4389
+NA,0,0,0,48,19.9612,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,72,19.7231,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.02938
+NA,0,0,0,96,25.2897,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5867
+NA,0,0,0,120,35.4646,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.6654
+NA,0,0,0,0,100.86,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.264
+NA,0,0,0,24,37.2174,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.40706
+NA,0,0,0,36,24.2848,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.2807
+NA,0,0,0,48,11.4762,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.83398
+NA,0,0,0,72,16.8759,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.6575
+NA,0,0,0,96,18.7987,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.52392
+NA,0,0,0,120,15.3049,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.3018
+NA,0,0,0,0,96.569,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.5244
+NA,0,0,0,24,26.5376,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.0538
+NA,0,0,0,36,24.5824,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.13771
+NA,0,0,0,48,13.0762,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",21.8272
+NA,0,0,0,72,21.8043,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.17603
+NA,0,0,0,96,29.8092,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",28.2285
+NA,0,0,0,120,42.8513,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",36.0733
+NA,0,0,0,0,92.625,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,24,38.2077,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.93008
+NA,0,0,0,36,31.5382,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.44526
+NA,0,0,0,48,23.7479,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",8.99949
+NA,0,0,0,72,20.9211,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.4828
+NA,0,0,0,96,20.3417,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.4842
+NA,0,0,0,120,22.96,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.0112
+NA,0,0,0,0,88.494,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",8.93413
+NA,0,0,0,24,32.7465,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",34.2662
+NA,0,0,0,36,21.012,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.22771
+NA,0,0,0,48,22.3962,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",25.2499
+NA,0,0,0,72,26.6515,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",5.84718
+NA,0,0,0,96,38.6622,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",21.4834
+NA,0,0,0,120,52.3756,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.82683
+NA,0,0,0,0,96.596,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",21.4022
+NA,0,0,0,24,48.6733,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.50456
+NA,0,0,0,36,24.287,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",26.3213
+NA,0,0,0,48,21.5604,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.63917
+NA,0,0,0,72,18.1541,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.7679
+NA,0,0,0,96,24.4542,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",42.4421
+NA,0,0,0,120,30.2201,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,0,96.497,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.21034
+NA,0,0,0,24,29.861,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.6861
+NA,0,0,0,36,18.9172,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.57968
+NA,0,0,0,48,10.0441,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.3132
+NA,0,0,0,72,7.13028,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.23769
+NA,0,0,0,96,5.37597,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.2009
+NA,0,0,0,120,9.20926,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.22444
+NA,0,0,0,0,93.066,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.4378
+NA,0,0,0,24,42.0752,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.86098
+NA,0,0,0,36,30.1906,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.6937
+NA,0,0,0,48,19.0483,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.93758
+NA,0,0,0,72,10.6406,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",30.5456
+NA,0,0,0,96,26.0405,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",38.7627
+NA,0,0,0,120,21.4335,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,0,88.021,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.50626
+NA,0,0,0,24,30.8372,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.02493
+NA,0,0,0,36,9.13301,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5712
+NA,0,0,0,48,17.815,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.226
+NA,0,0,0,72,13.644,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.33514
+NA,0,0,0,96,18.1071,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.4282
+NA,0,0,0,120,19.1045,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.74067
+NA,0,0,0,0,99.997,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.8961
+NA,0,0,0,24,29.9241,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.41849
+NA,0,0,0,36,16.3193,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.6291
+NA,0,0,0,48,11.452,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.41309
+NA,0,0,0,72,19.6366,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.5582
+NA,0,0,0,96,19.3208,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.03426
+NA,0,0,0,120,22.4096,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",22.5089
+NA,0,0,0,0,99.465,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.08623
+NA,0,0,0,24,40.4362,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.0773
+NA,0,0,0,36,42.9172,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",37.0626
+NA,0,0,0,48,35.4007,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,72,43.3152,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.02475
+NA,0,0,0,96,60.0726,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5618
+NA,0,0,0,120,73.0338,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.618
+NA,0,0,0,0,103.98,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.27242
+NA,0,0,0,24,36.5301,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.5492
+NA,0,0,0,36,24.8648,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.6577
+NA,0,0,0,48,21.3355,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.1016
+NA,0,0,0,72,18.6562,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.32413
+NA,0,0,0,96,19.673,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.9173
+NA,0,0,0,120,35.6486,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.31327
+NA,0,0,0,0,92.94,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.94179
+NA,0,0,0,24,33.8744,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.0064
+NA,0,0,0,36,18.622,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,48,11.5963,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.50761
+NA,0,0,0,72,10.58,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.02475
+NA,0,0,0,96,15.701,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5618
+NA,0,0,0,120,17.7201,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.618
+NA,0,0,0,0,95.305,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.27242
+NA,0,0,0,24,38.3767,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.5492
+NA,0,0,0,36,24.8239,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.6577
+NA,0,0,0,48,24.7338,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.1016
+NA,0,0,0,72,15.5117,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.32413
+NA,0,0,0,96,16.8278,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.9173
+NA,0,0,0,120,25.0561,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.31327
+NA,0,0,0,0,97.752,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.0111
+NA,0,0,0,24,37.6445,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.94179
+NA,0,0,0,36,26.5459,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.1257
+NA,0,0,0,48,16.9454,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.0064
+NA,0,0,0,72,28.469,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.8474
+NA,0,0,0,96,30.635,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",37.9594
+NA,0,0,0,120,37.688,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,0,98.957,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",0
+NA,0,0,0,24,38.2921,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.93008
+NA,0,0,0,36,29.8198,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.44526
+NA,0,0,0,48,12.8269,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",8.99949
+NA,0,0,0,72,10.3273,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.4828
+NA,0,0,0,96,12.4657,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.4842
+NA,0,0,0,120,30.246,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",8.93413
+NA,0,0,0,0,102.92,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",34.2662
+NA,0,0,0,24,46.4915,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.22771
+NA,0,0,0,36,37.2656,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",25.2499
+NA,0,0,0,48,23.4843,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",5.84718
+NA,0,0,0,72,23.956,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",21.4834
+NA,0,0,0,96,21.7966,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.82683
+NA,0,0,0,120,22.9202,"EObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",21.4022
+NA,0,0,0,1,0.864774,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.50456
+NA,0,0,0,2,6.70936,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",26.3213
+NA,0,0,0,3,9.60561,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.7679
+NA,0,0,0,6,11.3495,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",42.4421
+NA,0,0,0,9,12.5792,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,12,10.3634,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.92911
+NA,0,0,0,24,7.042,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.00096
+NA,0,0,0,36,4.5396,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.4994
+NA,0,0,0,48,3.83333,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",11.5182
+NA,0,0,0,72,1.38294,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.03377
+NA,0,0,0,24,6.91214,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",34.0664
+NA,0,0,0,36,4.38897,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.35642
+NA,0,0,0,48,4.4124,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.9147
+NA,0,0,0,72,2.36937,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",5.99048
+NA,0,0,0,96,1.1445,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",21.0164
+NA,0,0,0,120,0.618343,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.97239
+NA,0,0,0,0.5,0.49654,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.6761
+NA,0,0,0,2,3.78614,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.63416
+NA,0,0,0,3,5.80152,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",25.3452
+NA,0,0,0,6,9.80771,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.74675
+NA,0,0,0,12,9.35283,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",32.5708
+NA,0,0,0,24,8.8806,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",41.0794
+NA,0,0,0,36,6.0008,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,48,6.44569,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.05779
+NA,0,0,0,72,5.57984,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",34.0049
+NA,0,0,0,96,3.86284,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.38455
+NA,0,0,0,120,2.78678,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.8282
+NA,0,0,0,3,6.46241,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.02037
+NA,0,0,0,6,9.88999,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.9063
+NA,0,0,0,9,12.1672,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.00148
+NA,0,0,0,24,11.549,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.5198
+NA,0,0,0,36,8.4632,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.65962
+NA,0,0,0,48,7.51653,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",25.1443
+NA,0,0,0,72,4.36088,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.76774
+NA,0,0,0,96,3.21949,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",32.3305
+NA,0,0,0,120,1.37989,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,3,9.33034,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.29605
+NA,0,0,0,6,11.4991,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.5087
+NA,0,0,0,9,13.227,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.6901
+NA,0,0,0,12,13.2712,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.0263
+NA,0,0,0,24,8.52816,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.36156
+NA,0,0,0,36,7.31033,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.8077
+NA,0,0,0,48,5.73151,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.35338
+NA,0,0,0,72,3.62541,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.8332
+NA,0,0,0,96,1.41279,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.97913
+NA,0,0,0,120,1.02066,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",22.8798
+NA,0,0,0,6,11.0586,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.0387
+NA,0,0,0,12,11.0953,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.538
+NA,0,0,0,24,6.13217,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,36,5.36195,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.25786
+NA,0,0,0,48,3.01578,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.5959
+NA,0,0,0,72,2.12044,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.64275
+NA,0,0,0,96,1.04658,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.1576
+NA,0,0,0,120,1.0427,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.30937
+NA,0,0,0,3,12.1835,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.9813
+NA,0,0,0,6,11.1984,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.29991
+NA,0,0,0,9,10.5019,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.0908
+NA,0,0,0,12,11.8702,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.93043
+NA,0,0,0,24,11.0277,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.2206
+NA,0,0,0,36,7.35537,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.99712
+NA,0,0,0,48,5.55153,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.9559
+NA,0,0,0,72,4.4709,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,96,3.66077,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.12963
+NA,0,0,0,3,5.00507,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.864
+NA,0,0,0,6,8.00952,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.47841
+NA,0,0,0,9,9.18112,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.5893
+NA,0,0,0,12,8.71565,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.1258
+NA,0,0,0,24,6.3511,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.5718
+NA,0,0,0,36,5.58573,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.11027
+NA,0,0,0,48,4.1472,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.9961
+NA,0,0,0,72,2.74392,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.7579
+NA,0,0,0,96,2.28337,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.436
+NA,0,0,0,120,1.33302,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.85048
+NA,0,0,0,1,0.062565,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",31.4555
+NA,0,0,0,2,3.6674,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,3,6.0024,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.07184
+NA,0,0,0,6,9.42136,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.9754
+NA,0,0,0,9,8.94,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.40245
+NA,0,0,0,12,9.91282,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.7805
+NA,0,0,0,24,7.42853,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.04022
+NA,0,0,0,36,6.02735,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.841
+NA,0,0,0,48,4.7295,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.02168
+NA,0,0,0,72,3.55739,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.4198
+NA,0,0,0,96,2.09595,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.6777
+NA,0,0,0,120,1.58001,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",25.0105
+NA,0,0,0,24,8.9016,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.78286
+NA,0,0,0,36,6.29768,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",32.1666
+NA,0,0,0,48,5.41564,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,72,2.53299,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.11242
+NA,0,0,0,96,1.3743,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.8903
+NA,0,0,0,120,1.41155,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.45421
+NA,0,0,0,1.5,0.0613935,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.6431
+NA,0,0,0,3,7.7084,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.09772
+NA,0,0,0,6,10.9115,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.6529
+NA,0,0,0,12,11.5325,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.08037
+NA,0,0,0,24,9.44766,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.1315
+NA,0,0,0,36,8.81962,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.73043
+NA,0,0,0,48,6.9721,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.6246
+NA,0,0,0,72,5.11161,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.8271
+NA,0,0,0,96,3.86503,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",31.6927
+NA,0,0,0,120,2.50212,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,3,9.5771,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.05779
+NA,0,0,0,6,13.0534,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",34.0049
+NA,0,0,0,9,10.2063,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.38455
+NA,0,0,0,24,8.95548,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.8282
+NA,0,0,0,36,7.9906,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.02037
+NA,0,0,0,48,6.52025,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.9063
+NA,0,0,0,72,5.24619,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.00148
+NA,0,0,0,96,3.21328,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.5198
+NA,0,0,0,120,2.90606,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.65962
+NA,0,0,0,1.5,3.50209,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",25.1443
+NA,0,0,0,3,6.61445,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.76774
+NA,0,0,0,6,9.93044,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",32.3305
+NA,0,0,0,9,10.123,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,24,9.48985,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.25122
+NA,0,0,0,36,6.80712,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.5929
+NA,0,0,0,48,6.15985,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.63033
+NA,0,0,0,72,4.89482,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.1724
+NA,0,0,0,96,2.94971,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.29339
+NA,0,0,0,120,2.33552,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.0145
+NA,0,0,0,0.5,0.4558,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.28123
+NA,0,0,0,1,0.128636,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.1609
+NA,0,0,0,2,11.8861,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.9124
+NA,0,0,0,3,12.2924,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.3275
+NA,0,0,0,6,12.3253,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.98123
+NA,0,0,0,9,11.7216,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",30.0974
+NA,0,0,0,24,8.65976,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,36,6.9762,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.2788
+NA,0,0,0,48,5.87548,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.5524
+NA,0,0,0,72,4.62134,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.66971
+NA,0,0,0,96,2.3228,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.0875
+NA,0,0,0,1,3.99217,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.33963
+NA,0,0,0,3,8.93081,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.8854
+NA,0,0,0,6,10.5405,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.33145
+NA,0,0,0,9,10.82,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.9434
+NA,0,0,0,24,7.71266,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.95939
+NA,0,0,0,36,5.09872,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.0223
+NA,0,0,0,48,4.5972,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.02196
+NA,0,0,0,72,2.34485,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.7103
+NA,0,0,0,96,2.00858,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,120,1.57994,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.25786
+NA,0,0,0,24,10.281,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.5959
+NA,0,0,0,36,10.3986,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.64275
+NA,0,0,0,48,6.79068,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.1576
+NA,0,0,0,72,4.81847,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.30937
+NA,0,0,0,96,3.13178,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.9813
+NA,0,0,0,120,2.80567,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.29991
+NA,0,0,0,24,10.3811,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.0908
+NA,0,0,0,36,7.9512,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.93043
+NA,0,0,0,48,6.06714,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.2206
+NA,0,0,0,72,4.75203,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.99712
+NA,0,0,0,96,3.09537,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.9559
+NA,0,0,0,120,1.9194,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,24,11.5896,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.31588
+NA,0,0,0,36,7.573,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.4678
+NA,0,0,0,48,6.18,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.71574
+NA,0,0,0,72,3.31831,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.9602
+NA,0,0,0,96,2.65987,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.39041
+NA,0,0,0,120,1.87676,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.7171
+NA,0,0,0,24,8.8366,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.3836
+NA,0,0,0,36,8.0541,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.6937
+NA,0,0,0,48,5.99338,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.007
+NA,0,0,0,72,4.0345,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",22.6916
+NA,0,0,0,96,3.44944,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.0627
+NA,0,0,0,120,3.34511,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.3044
+NA,0,0,0,24,9.32222,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,36,7.22584,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.31588
+NA,0,0,0,48,4.52067,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.4678
+NA,0,0,0,72,2.69992,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.71574
+NA,0,0,0,96,1.6314,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.9602
+NA,0,0,0,120,0.563925,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.39041
+NA,0,0,0,24,8.60825,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.7171
+NA,0,0,0,36,8.06275,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.3836
+NA,0,0,0,48,6.88798,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.6937
+NA,0,0,0,72,4.39082,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.007
+NA,0,0,0,96,3.62123,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",22.6916
+NA,0,0,0,120,2.2568,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.0627
+NA,0,0,0,24,9.03812,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.3044
+NA,0,0,0,36,6.4874,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,48,6.22925,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.31588
+NA,0,0,0,72,5.10626,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.4678
+NA,0,0,0,96,4.6378,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.71574
+NA,0,0,0,120,3.29124,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.9602
+NA,0,0,0,24,10.169,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.39041
+NA,0,0,0,36,8.88022,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.7171
+NA,0,0,0,48,7.10714,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.3836
+NA,0,0,0,72,5.62344,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.6937
+NA,0,0,0,96,3.40453,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.007
+NA,0,0,0,120,2.83155,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",22.6916
+NA,0,0,0,24,11.591,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.0627
+NA,0,0,0,36,10.359,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",29.3044
+NA,0,0,0,48,6.60109,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,72,5.04015,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.50199
+NA,0,0,0,96,3.91179,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.0872
+NA,0,0,0,120,2.7219,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.95777
+NA,0,0,0,24,11.9984,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.3444
+NA,0,0,0,36,9.90135,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.66447
+NA,0,0,0,48,8.5618,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.8721
+NA,0,0,0,72,5.95647,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.67428
+NA,0,0,0,96,5.52591,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",17.3906
+NA,0,0,0,120,3.19405,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.27841
+NA,0,0,0,24,9.70846,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.9287
+NA,0,0,0,36,7.41772,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.29939
+NA,0,0,0,48,4.70853,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",27.1052
+NA,0,0,0,72,3.7209,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,96,2.05432,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.21034
+NA,0,0,0,120,1.19716,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.6861
+NA,0,0,0,24,11.2865,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.57968
+NA,0,0,0,36,9.64255,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.3132
+NA,0,0,0,48,7.52677,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.23769
+NA,0,0,0,72,5.08628,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.2009
+NA,0,0,0,96,2.7389,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.22444
+NA,0,0,0,120,0.815427,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.4378
+NA,0,0,0,24,7.40201,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.86098
+NA,0,0,0,36,7.6578,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.6937
+NA,0,0,0,48,7.2603,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.93758
+NA,0,0,0,72,5.0274,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",30.5456
+NA,0,0,0,96,4.8252,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,120,3.6167,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.35111
+NA,0,0,0,24,7.37096,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.3879
+NA,0,0,0,36,7.58897,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.75961
+NA,0,0,0,48,7.00669,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",23.8397
+NA,0,0,0,72,5.69994,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.43893
+NA,0,0,0,96,3.53598,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",19.5576
+NA,0,0,0,120,3.21896,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.43366
+NA,0,0,0,24,7.7052,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",18.4565
+NA,0,0,0,36,7.32611,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",3.05289
+NA,0,0,0,48,4.87628,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",22.3772
+NA,0,0,0,72,2.78372,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.10213
+NA,0,0,0,96,1.85085,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",28.9177
+NA,0,0,0,120,0.765301,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",96.1395
+NA,0,0,0,24,9.37589,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",9.11242
+NA,0,0,0,36,8.81947,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",33.8903
+NA,0,0,0,48,8.29169,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",7.45421
+NA,0,0,0,72,6.2099,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.6431
+NA,0,0,0,96,5.6711,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",6.09772
+NA,0,0,0,120,3.50357,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.6529
+NA,0,0,0,24,9.7695,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",4.08037
+NA,0,0,0,36,10.136,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",20.1315
+NA,0,0,0,48,7.41736,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",2.73043
+NA,0,0,0,72,4.88109,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",24.6246
+NA,0,0,0,96,3.83678,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",1.8271
+NA,0,0,0,120,2.02277,"CObs","c.Misspecified delay and correlation
+ Effect compartment, Full Omega",31.6927

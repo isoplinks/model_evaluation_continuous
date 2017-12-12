@@ -1,0 +1,512 @@
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
+head(pipred)
+ggplot(ipred[ipred$Model %in% c("True model","Misspecified structural model","Constant error model",
+"Proportional error model"),],aes(x=time,y=V1))+
+geom_line(colour="green")+
+geom_line(data=pipred[pipred$Model %in% c("True model","Misspecified structural model","Constant error model",
+"Proportional error model"),],aes(x=time,y=y1),col="red")+
+labs(x="Time",y="Concentration")+
+geom_point(data=iobs,aes(x=Time,y=Conc),color="blue")+
+facet_wrap (~Model,ncol=4)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
+Figure_S3 <- ggplot(ipred[ipred$Model %in% c("True model","Misspecified structural model","Constant error model",
+"Proportional error model"),],aes(x=time,y=V1))+
+geom_line(colour="green")+
+geom_line(data=pipred[pipred$Model %in% c("True model","Misspecified structural model","Constant error model",
+"Proportional error model"),],aes(x=time,y=y1),col="red")+
+labs(x="Time",y="Concentration")+
+geom_point(data=iobs,aes(x=Time,y=Conc),color="blue")+
+facet_wrap (~Model,ncol=4)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
+ggsave(".\\Figure_S3.tiff",Figure_S3,width=10,height=5,dpi=300,compression="lwz")
+ggsave(".\\Figure_S3.tiff",Figure_S3,width=10,height=5,dpi=300,compression="lzw")
+ggsave(".\\Figure_S3.tiff",Figure_S3,width=10,height=3.5,dpi=300,compression="lzw")
+# Variance - covariance matrix of random effects of the true model
+corr_true <- diag(c(0.448,0.482,0.473,0.413)^2)
+corr_true[1,2] <- corr_true[2,1] <- 0.438*0.448*0.482
+# Variance - covariance matrix of random effects of the Misspecified correlation (between random effects) model
+corr_wrong <- diag(c(0.45,0.478,0.473,0.403)^2)
+### Decorrelate random effects for true model
+var.eig <- eigen(corr_true)
+xmat <- var.eig$vectors %*% diag(sqrt(var.eig$values)) %*% solve(var.eig$vectors)
+ymat<-try(solve(xmat))
+deceta1<- as.data.frame(as.matrix(eta1[,2:5]) %*% ymat)
+### Decorrelate random effects for Misspecified correlation (between random effects) model
+var.eig <- eigen(corr_wrong)
+xmat <- var.eig$vectors %*% diag(sqrt(var.eig$values)) %*% solve(var.eig$vectors)
+ymat<-try(solve(xmat))
+deceta4<- as.data.frame(as.matrix(eta4[,2:5]) %*% ymat)
+colnames(deceta1) <- colnames(deceta4) <-c("CL","V1","Q","V2")
+neworder1 <- c("True model","Misspecified correlation model")
+# Combine EBE for True and Misspecified correlation model
+eta14<- plyr::rbind.fill(eta1,eta4)
+eta14$Model <- rep(c("True model","Misspecified correlation model"),each=dim(eta1)[1])
+eta14$Model <- as.factor(eta14$Model)
+eta14 <- arrange(transform(eta14,Model=factor(Model,levels=neworder1)),Model)
+slope <- data.frame(cor=c(0.438,0),Model=c("True model","Misspecified correlation model"))
+eta14 <- merge(eta14,slope,by="Model")
+eta14$Model <- as.factor(eta14$Model)
+eta14 <- arrange(transform(eta14,Model=factor(Model,levels=neworder)),Model)
+# Combine decorrelated EBE for True and Misspecified correlation model
+deceta <- plyr::rbind.fill(deceta1,deceta4)
+deceta$Model <- rep(c("True model","Misspecified correlation model"),each=dim(eta1)[1])
+deceta$Model <- as.factor(deceta$Model)
+deceta <- arrange(transform(deceta,Model=factor(Model,levels=neworder)),Model)
+# Figure S4: EBE and decorrelated EBE of Clearance versus those of Volume of the Central compartment
+Figure_S4_1 <- ggplot(eta14,aes(x=CL,y=V1))+geom_point(colour="blue")+
+geom_abline(aes(intercept=0,slope=cor),colour = "black", size = 1)+
+labs(x=expression(eta[CL]),y=expression(eta[V[1]]))+
+facet_wrap (~Model,ncol=2)+
+stat_smooth(method="lm",se=F,size=2,color="red",linetype="dashed")+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14),plot.margin=unit(c(0,1,0,1), "cm"))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("(A)")+
+theme(plot.title = element_text(size=16, face="bold"))
+Figure_S4_2 <- ggplot(deceta,aes(x=CL,y=V1))+geom_point(colour="blue")+
+geom_abline(intercept=0,slope=0,colour = "black", size = 1)+
+labs(x=expression(paste("Decorrelated ",eta[CL])),y=expression(paste("Decorrelated ",eta[V[1]])))+
+facet_wrap (~Model,ncol=2)+
+stat_smooth(method="lm",se=F,size=2,color="red",linetype="dashed")+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14),plot.margin=unit(c(0,1,0,1), "cm"))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("(B)")+
+theme(plot.title = element_text(size=16, face="bold"))
+p <- arrangeGrob(Figure_S4_1,Figure_S4_2,ncol=1)
+grid.draw(p)
+ggsave(".\\Figure_S4.tiff",p,width=7,height=7,dpi=300,compression="lwz")
+ggsave(".\\Figure_S4.tiff",p,width=7,height=7,dpi=300,compression="lzw")
+ggsave(".\\Figure_S4.tiff",p,width=6,height=7,dpi=300,compression="lzw")
+ggsave(".\\Figure_S4.tiff",p,width=5,height=7,dpi=300,compression="lzw")
+ggsave(".\\Figure_S4.tiff",p,width=6,height=7,dpi=300,compression="lzw")
+eta13<- plyr::rbind.fill(eta1,eta3)
+eta13$Model <- rep(c("True model","Misspecified covariate model"),each=dim(eta1)[1])
+eta13$Model <- as.factor(eta13$Model)
+eta13 <- arrange(transform(eta13,Model=factor(Model,levels=c("True model","Misspecified covariate model"))),Model)
+indivpar13<- plyr::rbind.fill(indivpar1,indivpar3)
+indivpar13$Model <- rep(c("True model","Misspecified covariate model"),each=dim(eta1)[1])
+indivpar13$Model <- as.factor(indivpar13$Model)
+indivpar13 <- arrange(transform(indivpar13,Model=factor(Model,levels=c("True model","Misspecified covariate model"))),Model)
+indivpar13[,2:5] <- log(indivpar13[,2:5])
+Figure_S5_A1 <- ggplot(indivpar13, aes(x=as.factor(Sex), y=CL)) + geom_boxplot(color="blue")+
+labs(x="Concomitant treatment",y="log(CL)")+
+scale_x_discrete(labels=c("0"="No","1"="Yes"))+
+facet_wrap (~Model,ncol=2)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("(A)")+
+theme(plot.title = element_text(size=16, face="bold"))
+Figure_S5_A2 <- ggplot(indivpar13, aes(x=T_Weight, y=V1)) + geom_point(colour="blue")+
+labs(x="T_Weight",y=expression("log("~V["1"]~")"))+
+stat_plsmo(color="red",size=1.5,linetype="dashed")+
+facet_wrap (~Model,ncol=2)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("")+
+theme(plot.title = element_text(size=16, face="bold"))
+Figure_S5_B1 <- ggplot(eta13, aes(x=as.factor(Sex), y=CL)) + geom_boxplot(color="blue")+
+labs(x="Concomitant treatment",y=expression(eta[CL]))+
+scale_x_discrete(labels=c("0"="No","1"="Yes"))+
+geom_hline(yintercept=0,colour = "black", size = 1)+
+facet_wrap (~Model,ncol=2)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("(B)")+
+theme(plot.title = element_text(size=16, face="bold"))
+Figure_S5_B2 <- ggplot(eta13, aes(x=T_Weight, y=V1)) + geom_point(colour="blue")+
+labs(x="T_Weight",y=expression(eta[V["1"]]))+
+stat_plsmo(color="red",size=1.5,linetype="dashed")+
+facet_wrap (~Model,ncol=2)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("")+
+theme(plot.title = element_text(size=16, face="bold"))
+p <- arrangeGrob(Figure_S5_A1,Figure_S5_A2,ncol=1)
+grid.draw(p)
+ggsave(".\\Figure_S5A.tiff",p,width=5,height=7,dpi=300,compression="lzw")
+ggsave(".\\Figure_S5A.tiff",p,width=6,height=7,dpi=300,compression="lzw")
+p <- arrangeGrob(Figure_S5_B1,Figure_S5_B2,ncol=1)
+grid.draw(p)
+ggsave(".\\Figure_S5B.tiff",p,width=6,height=7,dpi=300,compression="lzw")
+etatruedesign<- plyr::rbind.fill(eta1,eta1_2,eta1_1)
+etatruedesign$Design <- rep(c("A","B","C"),each=dim(eta1)[1])
+mf_labeller <- as_labeller(c("A"=paste("Standard design\n","\u03B7","-Shrinkage (CL) = 9%\n","\u03B7","-Shrinkage (V1) = 11%",sep=""),
+"B"=paste("Sparse design\n","\u03B7","-Shrinkage (CL) = 26%\n","\u03B7","-Shrinkage (V1) = 39%",sep=""),
+"C"=paste("Very sparse design\n","\u03B7","-Shrinkage (CL) = 64%\n","\u03B7","-Shrinkage (V1) = 61%",sep="")))
+Figure_S6A <- ggplot(etatruedesign, aes(x=CL, y=V1)) + geom_point(colour="blue")+
+labs(x=expression(eta[CL]),y=expression(eta[V[1]]))+
+stat_plsmo(color="red",size=1.5,linetype="dashed")+
+facet_grid(~Design,labeller=mf_labeller)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("(A)")+
+theme(plot.title = element_text(size=16, face="bold"))
+ggplot(etatruedesign, aes(x=CL, y=V1)) + geom_point(colour="blue")+
+labs(x=expression(eta[CL]),y=expression(eta[V[1]]))+
+stat_plsmo(color="red",size=1.5,linetype="dashed")+
+facet_grid(~Design,labeller=mf_labeller)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("(A)")+
+theme(plot.title = element_text(size=16, face="bold"))
+ggsave(".\\Figure_S6A.tiff",Figure_S6A,width=10,height=8,dpi=300,compression="lzw")
+ggsave(".\\Figure_S6A.tiff",Figure_S6A,width=10,height=4,dpi=300,compression="lzw")
+ggsave(".\\Figure_S6A.tiff",Figure_S6A,width=10,height=5,dpi=300,compression="lzw")
+etafalsedesign<- plyr::rbind.fill(eta3,eta3_2,eta3_1)
+etafalsedesign$Design <- rep(c("A","B","C"),each=dim(eta3)[1])
+mf_labeller <- as_labeller(c("A"=paste("Standard design\n","\u03B7","-Shrinkage (CL) = 8%\n","\u03B7","-Shrinkage (V1) = 11%",sep=""),
+"B"=paste("Sparse design\n","\u03B7","-Shrinkage (CL) = 23%\n","\u03B7","-Shrinkage (V1) = 35%",sep=""),
+"C"=paste("Very sparse design\n","\u03B7","-Shrinkage (CL) = 60%\n","\u03B7","-Shrinkage (V1) = 69%",sep="")))
+Figure_S6_B1 <- ggplot(etafalsedesign, aes(x=as.factor(Sex), y=CL)) +
+geom_boxplot(colour="blue",show.legend = F)+
+labs(x="Concomitant treatment",y=expression(eta[CL]))+
+scale_x_discrete(labels=c("0"="No","1"="Yes"))+
+geom_hline(yintercept=0,colour = "black", size = 1)+
+facet_grid(~Design,labeller=mf_labeller)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14),plot.margin=unit(c(0,1,0,1), "cm"))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("(B)")+
+theme(plot.title = element_text(size=16, face="bold"))
+Figure_S6_B2 <- ggplot(etafalsedesign, aes(x=T_Weight, y=V1)) + geom_point(colour="blue")+
+labs(x="T_Weight",y=expression(eta[V[1]]))+
+geom_hline(yintercept=0,colour = "black", size = 1)+
+stat_plsmo(color="red",size=1.5,linetype="dashed")+
+facet_grid(~Design,labeller=mf_labeller)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14),plot.margin=unit(c(0,1,0,1), "cm"))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("")+
+theme(plot.title = element_text(size=16, face="bold"))
+p <- arrangeGrob(Figure_S6_B1,Figure_S6_B2,ncol=1)
+grid.draw(p)
+ggsave(".\\Figure_S6B.tiff",p,width=10,height=5,dpi=300,compression="lzw")
+ggsave(".\\Figure_S6B.tiff",p,width=10,height=10,dpi=300,compression="lzw")
+res2$Design <- "A"
+res2_2$Design <- "B"
+res2_1$Design <- "C"
+res<- plyr::rbind.fill(res2,res2_2,res2_1)
+mf_labeller <- as_labeller(c("A"=paste("Standard design\n","\u03B5","-Shrinkage = 56%",sep=""),
+"B"=paste("Sparse design\n","\u03B5","-Shrinkage = 72%",sep=""),
+"C"=paste("Very sparse design\n","\u03B5","-Shrinkage = 80%",sep="")))
+OBS <- c(obs$Conc,obs_2pt$Conc,obs_1pt$Conc)
+res$Obs <- OBS
+# Figure S7A1: Observations versus Individual predictions for misspecified structural model
+Figure_S7_A1 <- ggplot(res, aes(x=IPRED, y=Obs)) + geom_point(colour="blue")+
+labs(x="IPRED",y="OBS")+
+geom_abline(intercept=0,slope=1,color="black",size=1)+
+stat_plsmo(color="red",size=1.5,linetype="dashed")+
+facet_grid(~Design,labeller=mf_labeller)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("(A)")+
+theme(plot.title = element_text(size=16, face="bold"))
+# Figure S7A2: IWRES versus Time for misspecified structural model
+Figure_S7_A2 <- ggplot(res, aes(x=Time, y=IWRES)) + geom_point(colour="blue")+
+labs(x="Time",y="IWRES")+
+geom_abline(intercept=0,slope=0,color="black",size=1)+
+stat_plsmo(color="red",size=1.5,linetype="dashed")+
+facet_grid(~Design,labeller=mf_labeller)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("")+
+theme(plot.title = element_text(size=16, face="bold"))
+# Figure S7B1: Observations versus Population predictions for misspecified structural model
+Figure_S7_B1 <- ggplot(res, aes(x=PPRED, y=Obs)) + geom_point(colour="blue")+
+labs(x="PPRED",y="OBS")+
+geom_abline(intercept=0,slope=1,color="black",size=1)+
+stat_plsmo(color="red",size=1.5,linetype="dashed")+
+facet_grid(~Design,labeller=mf_labeller)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("(B)")+
+theme(plot.title = element_text(size=16, face="bold"))
+# Figure S7B2: PWRES versus Time for misspecified structural model
+Figure_S7_B2 <- ggplot(res, aes(x=Time, y=PWRES)) + geom_point(colour="blue")+
+labs(x="Time",y="PWRES")+
+geom_abline(intercept=0,slope=0,color="black",size=1)+
+stat_plsmo(color="red",size=1.5,linetype="dashed")+
+facet_grid(~Design,labeller=mf_labeller)+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)+
+ggtitle("")+
+theme(plot.title = element_text(size=16, face="bold"))
+p <- arrangeGrob(Figure_S7_A1,Figure_S7_A2,ncol=1)
+grid.draw(p)
+ggsave(".\\Figure_S7A.tiff",p,width=10,height=8,dpi=300,compression="lzw")
+ggsave(".\\Figure_S7B.tiff",p,width=10,height=8,dpi=300,compression="lzw")
+p <- arrangeGrob(Figure_S7_B1,Figure_S7_B2,ncol=1)
+grid.draw(p)
+ggsave(".\\Figure_S7B.tiff",p,width=10,height=8,dpi=300,compression="lzw")
+pcvpc1 <- pcvpc(obs,sim1,bin,percentile,alpha,log.y=F)
+pcobsx <- pcvpc1$obs
+pcvpc_classic1 <- pcvpc1$theoper
+pcvpc1 <- pcvpc1$PI
+# Compute VPC for true model
+vpc1 <- vpc(obs,sim1,bin,percentile,alpha,log.y=F)
+obsx <- vpc1$obs
+vpc_classic1 <- vpc1$theoper
+vpc1 <- vpc1$PI
+Figure_S8A <- ggplot(data=obsx ,aes(x=Time,y=Conc))+ geom_point(aes(colour=as.factor(AMT)),shape=1)+
+geom_ribbon(data=vpc_classic1, aes(x=meantime,y=medianPI,ymin=lowerPI,ymax=upperPI,fill="red"),alpha=0.1,col=NA,show.legend=F) +
+geom_line(data=vpc_classic1, aes(x=meantime,y=medianPI),col="black",size=1,linetype="dashed") +
+geom_line(data=vpc_classic1, aes(x=meantime,y=lowerPI),col="black",linetype="dashed") +
+geom_line(data=vpc_classic1, aes(x=meantime,y=upperPI),col="black",linetype="dashed") +
+scale_colour_manual(values=c("#2c7fb8","#df65b0","#2ca25f"),guide=F)+
+ylab("Observations")+ xlab("Time")+
+scale_x_continuous(breaks=seq(0,25,5))+
+scale_y_log10()+
+ggtitle("(A)")+
+theme(plot.title = element_text(size=16, face="bold"))+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
+### Confidence interval VPC
+Figure_S8B <- ggplot(vpc1 ,aes(x=meantime,y=median))+
+geom_ribbon(aes(ymin=CIlower,ymax=CIupper,fill=PI,col=PI),alpha=0.1,col=NA)+
+geom_line(aes(col=PI),size=1) +
+geom_line(aes(y=theomedian,group=PI),linetype="dashed",color="black") +
+geom_point(data=obsx,aes(x=Time,y=Conc,col=as.factor(AMT)),shape=1)+
+scale_colour_manual(values=c("#2c7fb8","#df65b0","#2ca65f","#2c7fb8","#df65b0","#2c7fb8"),guide=F)+
+scale_fill_manual(name="Prediction Intervals 95% CI (ribbons)\n Median Predictions (solid lines)",
+breaks=c("10% percentile","50% percentile","90% percentile"),values=c("blue","red","blue"),guide=F)+
+ylab("Observations")+ xlab("Time")+
+scale_x_continuous(breaks=seq(0,25,5))+
+scale_y_log10()+
+ggtitle("(B)")+
+theme(plot.title = element_text(size=16, face="bold"))+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
+# Scatter pcVPC for True model
+Figure_S8C <- ggplot(data=pcobsx ,aes(x=Time,y=pcConc))+ geom_point(aes(colour=as.factor(AMT)),shape=1)+
+geom_ribbon(data=pcvpc_classic1, aes(x=meantime,y=medianPI,ymin=lowerPI,ymax=upperPI,fill="red"),alpha=0.1,col=NA,show.legend=F) +
+geom_line(data=pcvpc_classic1, aes(x=meantime,y=medianPI),col="black",size=1,linetype="dashed") +
+geom_line(data=pcvpc_classic1, aes(x=meantime,y=lowerPI),col="black",linetype="dashed") +
+geom_line(data=pcvpc_classic1, aes(x=meantime,y=upperPI),col="black",linetype="dashed") +
+scale_colour_manual(values=c("#2c7fb8","#df65b0","#2ca25f"),guide=F)+
+ylab("Prediction corrected Observations")+ xlab("Time")+
+scale_x_continuous(breaks=seq(0,25,5))+
+scale_y_log10()+
+ggtitle("(C)")+
+theme(plot.title = element_text(size=16, face="bold"))+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
+# Confidence Interval pcVPC for True model
+Figure_S8D <- ggplot(pcvpc1 ,aes(x=meantime,y=median))+
+geom_ribbon(aes(ymin=CIlower,ymax=CIupper,fill=PI,col=PI),alpha=0.1,col=NA)+
+geom_line(aes(col=PI),size=1) +
+geom_line(aes(y=theomedian,group=PI),linetype="dashed",color="black") +
+geom_point(data=pcobsx,aes(x=Time,y=pcConc,col=as.factor(AMT)),shape=1)+
+scale_colour_manual(values=c("#2c7fb8","#df65b0","#2ca65f","#2c7fb8","#df65b0","#2c7fb8"),guide=F)+
+scale_fill_manual(name="Prediction Intervals 95% CI (ribbons)\n Median Predictions (solid lines)",
+breaks=c("10% percentile","50% percentile","90% percentile"),values=c("blue","red","blue"),guide=F)+
+ylab("Prediction corrected Observations")+ xlab("Time")+
+scale_x_continuous(breaks=seq(0,25,5))+
+scale_y_log10()+
+ggtitle("(D)")+
+theme(plot.title = element_text(size=16, face="bold"))+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
+p <- arrangeGrob(Figure_S8A,Figure_S8B,Figure_S8C,Figure_S8D,ncol=2)
+grid.draw(p)
+ggsave(".\\Figure_S8.tiff",p,width=7,height=7,dpi=300,compression="lzw")
+# Define different Prediction intervals for npc plots
+PI <- c(0,20,40,50,60,80,90,95)
+# Compute npc for different models
+npccal1 <- npc(obs,sim1,PI)
+npccal2 <- npc(obs,sim2,PI)
+npccal3 <- npc(obs,sim3,PI)
+npccal4 <- npc(obs,sim4,PI)
+npccal5 <- npc(obs,sim5,PI)
+npccal6 <- npc(obs,sim6,PI)
+# Combine npc results
+npccal <- plyr::rbind.fill(npccal1,npccal2,npccal3,npccal4,npccal5,npccal6)
+npccal$Model <- rep(neworder,each=length(PI)*2)
+npccal$Model <- as.factor(npccal$Model)
+npccal <- arrange(transform(npccal,Model=factor(Model,levels=neworder)),Model)
+# Compute npc for true and misspecified covariate models, stratifying by Sex
+npccal1_Sex0 <- npc(obs[obs$Sex==0,],sim1[sim1$Sex==0,],PI)
+npccal1_Sex1 <- npc(obs[obs$Sex==1,],sim2[sim1$Sex==1,],PI)
+npccal3_Sex0 <- npc(obs[obs$Sex==0,],sim3[sim3$Sex==0,],PI)
+npccal3_Sex1 <- npc(obs[obs$Sex==1,],sim3[sim3$Sex==1,],PI)
+# Combine npc results stratified by Sex
+npccalSex <- plyr::rbind.fill(npccal1_Sex0,npccal1_Sex1,npccal3_Sex0,npccal3_Sex1)
+npccalSex$Model <- rep(c("True model\n Concomitant treatment \n No",
+"True model\n Concomitant treatment \n Yes",
+"Misspecified covariate model\n Concomitant treatment \n No",
+"Misspecified covariate model\n Concomitant treatment \n Yes"),each=length(PI)*2)
+npccalSex$Model <- as.factor(npccalSex$Model)
+npccalSex <- arrange(transform(npccalSex,Model=factor(Model,levels=c("True model\n Concomitant treatment \n No",
+"True model\n Concomitant treatment \n Yes",
+"Misspecified covariate model\n Concomitant treatment \n No",
+"Misspecified covariate model\n Concomitant treatment \n Yes"))),Model)
+npccalSex$Sex <- rep(c(0,1),each=length(PI)*2)
+# Figure S9: Numerical Predictive Check for different models
+Figure_S9_A <- ggplot(npccal[npccal$Model %in% c("True model", "Misspecified structural model","Constant error model",
+"Proportional error model"),], aes(PI,Ratio))+
+geom_point(aes(col=as.factor(Outliers),pch=as.factor(Outliers)),size=3)+geom_line()+
+geom_ribbon(aes(ymin=lwr,ymax=upr),fill="red",alpha=0.1)+
+geom_hline(yintercept=1,linetype="dashed")+
+facet_grid(Type~Model)+
+scale_colour_manual("Outside the CI",breaks=c("No","Yes"),values=c("black","red"))+
+scale_shape_manual("Outside the CI",breaks=c("No","Yes"),values=c(1,8))+
+ylab("Observed/Expected")+
+ggtitle("(A)")+
+theme(plot.title = element_text(size=16, face="bold"))+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=0.5)
+Figure_S9_B <- ggplot(npccalSex,aes(PI,Ratio))+
+geom_point(aes(col=as.factor(Outliers),pch=as.factor(Outliers)),size=3)+geom_line()+
+geom_ribbon(aes(ymin=lwr,ymax=upr),fill="red",alpha=0.1)+
+geom_hline(yintercept=1,linetype="dashed")+
+facet_grid(Type~Model)+
+scale_colour_manual("Outside the CI",breaks=c("No","Yes"),values=c("black","red"))+
+scale_shape_manual("Outside the CI",breaks=c("No","Yes"),values=c(1,8))+
+ylab("Observed/Expected")+
+ggtitle("(B)")+
+theme(plot.title = element_text(size=16, face="bold"))+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=0.5)
+p <- arrangeGrob(Figure_S9_A,Figure_S9_B,ncol=1)
+grid.draw(p)
+ggsave(".\\Figure_S9.tiff",p,width=10,height=8,dpi=300,compression="lzw")
+ggsave(".\\Figure_S9.tiff",p,width=10,height=7,dpi=300,compression="lzw")
+ggsave(".\\Figure_S9.tiff",p,width=10,height=7.5,dpi=300,compression="lzw")
+source("./npde_2_modified/func_plots_npd.R")
+# Compute tnpd for true model
+ta1 <- npde.plot.meanprofile(npde1,ref.prof=list(ID=100),xscale=T)
+tnpdex1 <- data.frame(Time=rep(ta1$xcalsim$bnds$xcent,3),CIlower=matrix(ta1$xcalsim$bnds$binf,ncol=1),
+CIupper=matrix(ta1$xcalsim$bnds$bsup,ncol=1),theomedian=matrix(ta1$xcalsim$bnds$bmed,ncol=1),
+median=matrix(ta1$xcalobs$percobs,ncol=1))
+tnpdex1$PI <- rep(c("10% percentile","50% percentile","90% percentile"),each=dim(tnpdex1)[1]/3)
+tobsnpde1 <- ta1$xcalobs$plmat
+tobsnpde1$AMT <- obs$AMT
+obsnpde1$AMT <- obs$AMT
+# npd for True model
+Figure_S10A <- ggplot(npdex1,aes(x=Time,y=median))+
+geom_ribbon(aes(ymin=CIlower,ymax=CIupper,fill=PI,col=PI),alpha=0.1,col=NA)+
+geom_line(aes(col=PI),size=1) +
+geom_point(data=obsnpde1,aes(x=x,y=y,col=as.factor(AMT)),shape=1)+
+scale_colour_manual(values=c("#2c7fb8","#2c7fb8","#df65b0","#2ca65f","#df65b0","#2c7fb8"),guide=F)+
+scale_fill_manual(name="Prediction Intervals 95% CI (ribbons)\n Median Predictions (solid lines)",
+breaks=c("10% percentile","50% percentile","90% percentile"),values=c("blue","red","blue"),guide=F)+
+ylab("npd")+ xlab("Time")+
+scale_y_continuous(breaks=seq(-3.5,3.5,1))+scale_x_continuous(breaks=seq(0,25,5))+
+ggtitle("(A)")+
+theme(plot.title = element_text(size=16, face="bold"))+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
+# tnpd for True model
+Figure_S10B <- ggplot(tnpdex1 ,aes(x=Time,y=median))+
+geom_ribbon(aes(ymin=CIlower,ymax=CIupper,fill=PI,col=PI),alpha=0.1,col=NA)+
+geom_line(aes(col=PI),size=1) +
+geom_point(data=tobsnpde1,aes(x=x,y=ty,col=as.factor(AMT)),shape=1)+
+scale_colour_manual(values=c("#2c7fb8","#2c7fb8","#df65b0","#2ca65f","#df65b0","#2c7fb8"),guide=F)+
+scale_fill_manual(name="Prediction Intervals 95% CI (ribbons)\n Median Predictions (solid lines)",
+breaks=c("10% percentile","50% percentile","90% percentile"),values=c("blue","red","blue"),guide=F)+
+ylab("Transformed npd")+ xlab("Time")+
+scale_x_continuous(breaks=seq(0,25,5))+
+ggtitle("(B)")+
+theme(plot.title = element_text(size=16, face="bold"))+
+theme(panel.background= element_rect(fill = 'white', colour = 'black'))+
+theme(legend.position="bottom",axis.text=element_text(size=12),
+axis.title=element_text(size=14))+
+theme(panel.grid.major= element_line(colour = "gray", linetype = "solid"))+
+theme(panel.grid.minor = element_line(colour = "gray", linetype = "dotted"))+
+theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
+p <- arrangeGrob(Figure_S10A,Figure_S10B,ncol=2)
+grid.draw(p)
+ggsave(".\\Figure_S10.tiff",p,width=7,height=4,dpi=300,compression="lzw")
