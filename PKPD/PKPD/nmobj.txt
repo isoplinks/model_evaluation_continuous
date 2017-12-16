@@ -1,0 +1,5 @@
+                 Run	Obj	Meth	Eval	Sig	Nsub	Nobs
+ka1_ce_emax_est_BLK2	1207.247	FOCEI	284	1.7	32	483
+    ka1_to_emax1_est	1279.342	FOCEI	177	2.9	32	483
+     ka1_ce_emax_est	1334.120	FOCEI	324	+3.3	32	483
+     ka1_im_emax_est	1400.761	FOCEI	854	NA	32	483

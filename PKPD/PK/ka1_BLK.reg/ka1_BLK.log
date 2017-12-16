@@ -1,0 +1,11 @@
+Wings for NONMEM
+C:\nm730\wfn7\bin\nmfewfn73 ka1_BLK.ctl ka1_BLK.lst -prdefault [nodes]=1 "-nmexec=ka1_BLK.exe" "-runpdir=../temp_gf.dir"
+C:\nm730\ver7_20131208\gf\reg\tr\nmtran.exe 
+  
+ WARNINGS AND ERRORS (IF ANY) FOR PROBLEM    1
+             
+ (WARNING  2) NM-TRAN INFERS THAT THE DATA ARE POPULATION.
+[User] nhol004
+[CPU] SMAX4 Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+[status]
+Error=None 

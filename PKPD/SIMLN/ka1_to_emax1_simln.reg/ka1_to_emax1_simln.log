@@ -1,0 +1,19 @@
+Wings for NONMEM
+C:\nm730\wfn7\bin\nmfewfn73 ka1_to_emax1_simln.ctl ka1_to_emax1_simln.lst -prdefault [nodes]=1 "-nmexec=ka1_to_emax1_simln.exe" "-runpdir=../temp_gf.dir"
+C:\nm730\ver7_20131208\gf\reg\tr\nmtran.exe 
+  
+ WARNINGS AND ERRORS (IF ANY) FOR PROBLEM    1
+             
+ (WARNING  2) NM-TRAN INFERS THAT THE DATA ARE POPULATION.
+             
+ (WARNING  3) THERE MAY BE AN ERROR IN THE ABBREVIATED CODE. THE FOLLOWING
+ ONE OR MORE RANDOM VARIABLES ARE DEFINED WITH "IF" STATEMENTS THAT DO NOT
+ PROVIDE DEFINITIONS FOR BOTH THE "THEN" AND "ELSE" CASES. IF ALL
+ CONDITIONS FAIL, THE VALUES OF THESE VARIABLES WILL BE ZERO.
+  
+   Y
+
+[User] nhol004
+[CPU] SMAX4 Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+[status]
+Error=None 

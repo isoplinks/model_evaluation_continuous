@@ -1,0 +1,1520 @@
+Mon 30/03/2015 
+03:18 p.m.
+$PROB WARFARIN PKPD
+
+;O'REILLY RA, AGGELER PM. STUDIES ON COUMARIN ANTICOAGULANT DRUGS
+;INITIATION OF WARFARIN THERAPY WITHOUT A LOADING DOSE.
+;CIRCULATION 1968;38:169-177
+;
+;O'REILLY RA, AGGELER PM, LEONG LS. STUDIES OF THE COUMARIN ANTICOAGULANT
+;DRUGS: THE PHARMACODYNAMICS OF WARFARIN IN MAN.
+;JOURNAL OF CLINICAL INVESTIGATION 1963;42(10):1542-1551
+
+$INPUT ID TIME WT AGE SEX DVID DV MDV EVID CMTX AMT
+$DATA ..\ka1_to_emax1_simln.csv
+
+$EST MAX=9990 NSIG=3 SIGL=9 PRINT=1
+METHOD=COND INTER NOABORT
+$COV
+
+$THETA
+(0.01,0.131,1) FIX ; POP_CL L/H/70KG
+(0.01,8.06,20) FIX ; POP_V L/70KG
+(0.01,0.944,24) FIX ; POP_TABS H
+(0.01,1.03,24) FIX ; POP_LAG H
+$OMEGA
+0.0649 FIX ; PPV_CL
+0.0201 FIX ; PPV_V
+0.447 FIX ; PPV_TABS
+0.311 FIX ; PPV_LAG
+$SIGMA 0.00478 FIX ; RUV_CV
+$SIGMA 0.135 FIX ; RUV_SD MG/L
+
+$THETA
+(0.01,96.2,200) ; POP_E0
+(-INF,-168.,0) ; POP_EMAX
+(0.01,5.84,100) ; POP_C50
+(0.01,39.9,100) ; POP_TEQ
+$OMEGA
+0.0017 ; PPV_E0
+0 FIX ; PPV_EMAX
+0.0305 ; PPV_C50
+0.0373 ; PPV_TEQ
+$SIGMA 15.9 ; RUV_FX
+
+$SUBR ADVAN4 TRAN4
+
+$PK
+
+   IF (NEWIND.EQ.0) LN2=LOG(2)
+
+   FSZV=WT/70
+   FSZCL=FSZV**0.75
+
+   CL=FSZCL*THETA(1)*EXP(ETA(1))
+   V=FSZV*THETA(2)*EXP(ETA(2))
+   TABS=THETA(3)*EXP(ETA(3))
+   TLAG=THETA(4)*EXP(ETA(4))
+
+   E0=THETA(5)*EXP(ETA(5))
+   EMAX=THETA(6)*EXP(ETA(6))
+   C50=THETA(7)*EXP(ETA(7))
+   TEQ=THETA(8)*EXP(ETA(8))
+
+   KEQ=LN2/TEQ
+   KA=LN2/TABS
+   ALAG1=TLAG
+   S2=V
+   V2=V
+   V3=V2*0.0001
+   Q=V3*KEQ
+
+$ERROR
+
+   CP=A(2)/S2
+   CE=A(3)/V3
+   PCA=E0 + EMAX*CE/(C50+CE)
+   IF (DVID.LE.1) THEN
+      Y=CP*(1+ERR(1)) + ERR(2)
+   ENDIF
+   IF (DVID.EQ.2) THEN
+      Y=PCA + ERR(3)
+   ENDIF
+
+$TABLE ID TIME DVID CP CE PCA Y
+ETA1 ETA2 ETA3 ETA4 ETA5 ETA6 ETA7 ETA8
+ONEHEADER NOPRINT FILE=ka1_ce_emax_est.fit
+  
+NM-TRAN MESSAGES 
+  
+ WARNINGS AND ERRORS (IF ANY) FOR PROBLEM    1
+             
+ (WARNING  2) NM-TRAN INFERS THAT THE DATA ARE POPULATION.
+             
+ (WARNING  3) THERE MAY BE AN ERROR IN THE ABBREVIATED CODE. THE FOLLOWING
+ ONE OR MORE RANDOM VARIABLES ARE DEFINED WITH "IF" STATEMENTS THAT DO NOT
+ PROVIDE DEFINITIONS FOR BOTH THE "THEN" AND "ELSE" CASES. IF ALL
+ CONDITIONS FAIL, THE VALUES OF THESE VARIABLES WILL BE ZERO.
+  
+   Y
+
+License Registered to: University of Auckland - School of Medicine
+Expiration Date:    14 NOV 2015
+Current Date:       30 MAR 2015
+Days until program expires : 224
+1NONLINEAR MIXED EFFECTS MODEL PROGRAM (NONMEM) VERSION 7.3.0
+ ORIGINALLY DEVELOPED BY STUART BEAL, LEWIS SHEINER, AND ALISON BOECKMANN
+ CURRENT DEVELOPERS ARE ROBERT BAUER, ICON DEVELOPMENT SOLUTIONS,
+ AND ALISON BOECKMANN. IMPLEMENTATION, EFFICIENCY, AND STANDARDIZATION
+ PERFORMED BY NOUS INFOSYSTEMS.
+
+ PROBLEM NO.:         1
+ WARFARIN PKPD
+0DATA CHECKOUT RUN:              NO
+ DATA SET LOCATED ON UNIT NO.:    2
+ THIS UNIT TO BE REWOUND:        NO
+ NO. OF DATA RECS IN DATA SET:      526
+ NO. OF DATA ITEMS IN DATA SET:  11
+ ID DATA ITEM IS DATA ITEM NO.:   1
+ DEP VARIABLE IS DATA ITEM NO.:   7
+ MDV DATA ITEM IS DATA ITEM NO.:  8
+0INDICES PASSED TO SUBROUTINE PRED:
+   9   2  11   0   0   0   0   0   0   0   0
+0LABELS FOR DATA ITEMS:
+ ID TIME WT AGE SEX DVID DV MDV EVID CMTX AMT
+0(NONBLANK) LABELS FOR PRED-DEFINED ITEMS:
+ CP CE PCA Y
+0FORMAT FOR DATA:
+ (E3.0,E4.0,E5.0,E3.0,2E2.0,E10.0,3E2.0,E5.0)
+
+ TOT. NO. OF OBS RECS:      483
+ TOT. NO. OF INDIVIDUALS:     32
+0LENGTH OF THETA:   8
+0DEFAULT THETA BOUNDARY TEST OMITTED:    NO
+0OMEGA HAS BLOCK FORM:
+  1
+  0  2
+  0  0  3
+  0  0  0  4
+  0  0  0  0  5
+  0  0  0  0  0  6
+  0  0  0  0  0  0  7
+  0  0  0  0  0  0  0  8
+0DEFAULT OMEGA BOUNDARY TEST OMITTED:    NO
+0SIGMA HAS BLOCK FORM:
+  1
+  0  2
+  0  0  3
+0DEFAULT SIGMA BOUNDARY TEST OMITTED:    NO
+0INITIAL ESTIMATE OF THETA:
+ LOWER BOUND    INITIAL EST    UPPER BOUND
+  0.1310E+00     0.1310E+00     0.1310E+00
+  0.8060E+01     0.8060E+01     0.8060E+01
+  0.9440E+00     0.9440E+00     0.9440E+00
+  0.1030E+01     0.1030E+01     0.1030E+01
+  0.1000E-01     0.9620E+02     0.2000E+03
+ -0.1000E+07    -0.1680E+03     0.0000E+00
+  0.1000E-01     0.5840E+01     0.1000E+03
+  0.1000E-01     0.3990E+02     0.1000E+03
+0INITIAL ESTIMATE OF OMEGA:
+ BLOCK SET NO.   BLOCK                                                                    FIXED
+        1                                                                                  YES
+                  0.6490E-01
+        2                                                                                  YES
+                  0.2010E-01
+        3                                                                                  YES
+                  0.4470E+00
+        4                                                                                  YES
+                  0.3110E+00
+        5                                                                                   NO
+                  0.1700E-02
+        6                                                                                  YES
+                  0.0000E+00
+        7                                                                                   NO
+                  0.3050E-01
+        8                                                                                   NO
+                  0.3730E-01
+0INITIAL ESTIMATE OF SIGMA:
+ BLOCK SET NO.   BLOCK                                                                    FIXED
+        1                                                                                  YES
+                  0.4780E-02
+        2                                                                                  YES
+                  0.1350E+00
+        3                                                                                   NO
+                  0.1590E+02
+0COVARIANCE STEP OMITTED:        NO
+ EIGENVLS. PRINTED:              NO
+ SPECIAL COMPUTATION:            NO
+ COMPRESSED FORMAT:              NO
+ SIGDIGITS ETAHAT (SIGLO):                  -1
+ SIGDIGITS GRADIENTS (SIGL):                -1
+ RELATIVE TOLERANCE (TOL):                  -1
+ ABSOLUTE TOLERANCE-ADVAN 9,13 ONLY (ATOL): -1
+ EXCLUDE COV FOR FOCE (NOFCOV):              NO
+ RESUME COV ANALYSIS (RESUME):               NO
+0TABLES STEP OMITTED:    NO
+ NO. OF TABLES:           1
+ SEED NUMBER (SEED):    11456
+ RANMETHOD:
+ MC SAMPLES (ESEED):    300
+ WRES SQUARE ROOT TYPE:            EIGENVALUE
+0-- TABLE   1 --
+ PRINTED:                NO
+ HEADER:                YES
+ FILE TO BE FORWARDED:   NO
+ FORMAT:                S1PE11.4
+ LFORMAT:
+ RFORMAT:
+0USER-CHOSEN ITEMS:
+ ID TIME DVID CP CE PCA Y ETA1 ETA2 ETA3 ETA4 ETA5 ETA6 ETA7 ETA8
+1DOUBLE PRECISION PREDPP VERSION 7.3.0
+
+ TWO COMPARTMENT MODEL WITH FIRST-ORDER ABSORPTION (ADVAN4)
+0MAXIMUM NO. OF BASIC PK PARAMETERS:   5
+0BASIC PK PARAMETERS (AFTER TRANSLATION):
+   BASIC PK PARAMETER NO.  1: ELIMINATION RATE (K)
+   BASIC PK PARAMETER NO.  2: CENTRAL-TO-PERIPH. RATE (K23)
+   BASIC PK PARAMETER NO.  3: PERIPH.-TO-CENTRAL RATE (K32)
+   BASIC PK PARAMETER NO.  5: ABSORPTION RATE (KA)
+ TRANSLATOR WILL CONVERT PARAMETERS
+ CL, V2, Q, V3 TO K, K23, K32 (TRANS4)
+0COMPARTMENT ATTRIBUTES
+ COMPT. NO.   FUNCTION   INITIAL    ON/OFF      DOSE      DEFAULT    DEFAULT
+                         STATUS     ALLOWED    ALLOWED    FOR DOSE   FOR OBS.
+    1         DEPOT        OFF        YES        YES        YES        NO
+    2         CENTRAL      ON         NO         YES        NO         YES
+    3         PERIPH.      ON         NO         YES        NO         NO
+    4         OUTPUT       OFF        YES        NO         NO         NO
+1
+ ADDITIONAL PK PARAMETERS - ASSIGNMENT OF ROWS IN GG
+ COMPT. NO.                             INDICES
+              SCALE      BIOAVAIL.   ZERO-ORDER  ZERO-ORDER  ABSORB
+                         FRACTION    RATE        DURATION    LAG
+    1            *           *           *           *           6
+    2            7           *           *           *           *
+    3            *           *           *           *           *
+    4            *           -           -           -           -
+             - PARAMETER IS NOT ALLOWED FOR THIS MODEL
+             * PARAMETER IS NOT SUPPLIED BY PK SUBROUTINE;
+               WILL DEFAULT TO ONE IF APPLICABLE
+0DATA ITEM INDICES USED BY PRED ARE:
+   EVENT ID DATA ITEM IS DATA ITEM NO.:      9
+   TIME DATA ITEM IS DATA ITEM NO.:          2
+   DOSE AMOUNT DATA ITEM IS DATA ITEM NO.:  11
+
+0PK SUBROUTINE CALLED WITH EVERY EVENT RECORD.
+ PK SUBROUTINE NOT CALLED AT NONEVENT (ADDITIONAL OR LAGGED) DOSE TIMES.
+0ERROR SUBROUTINE CALLED WITH EVERY EVENT RECORD.
+0ERROR SUBROUTINE INDICATES THAT DERIVATIVES OF COMPARTMENT AMOUNTS ARE USED.
+1
+
+
+ #TBLN:      1
+ #METH: First Order Conditional Estimation with Interaction
+
+ ESTIMATION STEP OMITTED:                 NO  
+ ANALYSIS TYPE:                           POPULATION
+ CONDITIONAL ESTIMATES USED:              YES 
+ CENTERED ETA:                            NO  
+ EPS-ETA INTERACTION:                     YES 
+ LAPLACIAN OBJ. FUNC.:                    NO  
+ NO. OF FUNCT. EVALS. ALLOWED:            9990
+ NO. OF SIG. FIGURES REQUIRED:            3
+ INTERMEDIATE PRINTOUT:                   YES 
+ ESTIMATE OUTPUT TO MSF:                  NO  
+ ABORT WITH PRED EXIT CODE 1:             NO  
+ IND. OBJ. FUNC. VALUES SORTED:           NO  
+ NUMERICAL DERIVATIVE 
+       FILE REQUEST (NUMDER):             NONE
+ MAP (ETAHAT) ESTIMATION METHOD (OPTMAP): 0           
+ ETA HESSIAN EVALUATION METHOD (ETADER):  0           
+ INITIAL ETA FOR MAP ESTIMATION (MCETA):  0           
+ SIGDIGITS FOR MAP ESTIMATION (SIGLO):    9           
+ GRADIENT SIGDIGITS OF 
+       FIXED EFFECTS PARAMETERS (SIGL):   9           
+ EXCLUDE TITLE (NOTITLE):                 NO 
+ EXCLUDE COLUMN LABELS (NOLABEL):         NO 
+ NOPRIOR SETTING (NOPRIOR):               OFF
+ NOCOV SETTING (NOCOV):                   OFF
+ DERCONT SETTING (DERCONT):               OFF
+ ABSOLUTE TOLERANCE-ADVAN 9,13 ONLY(ATOL):-100        
+ FINAL ETA RE-EVALUATION (FNLETA):        ON 
+ EXCLUDE NON-INFLUENTIAL (NON-INFL.) ETAS 
+       IN SHRINKAGE (ETASTYPE):           NO 
+ NON-INFL. ETA CORRECTION (NONINFETA):    OFF
+ FORMAT FOR ADDITIONAL FILES (FORMAT):    S1PE12.5
+ PARAMETER ORDER FOR OUTPUTS (ORDER):     TSOL
+ ADDITIONAL CONVERGENCE TEST (CTYPE=4)?:  NO
+ EM OR BAYESIAN METHOD USED:                NONE
+
+
+ THE FOLLOWING LABELS ARE EQUIVALENT
+ PRED=PREDI
+ RES=RESI
+ WRES=WRESI
+ IWRS=IWRESI
+ IPRD=IPREDI
+ IRS=IRESI
+
+ MONITORING OF SEARCH:
+
+
+0ITERATION NO.:    0    OBJECTIVE VALUE:   1334.12239994469        NO. OF FUNC. EVALS.:   7
+ CUMULATIVE NO. OF FUNC. EVALS.:        7
+ NPARAMETR:  9.6200E+01 -1.6800E+02  5.8400E+00  3.9900E+01  1.7000E-03  3.0500E-02  3.7300E-02  1.5900E+01
+ PARAMETER:  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01
+ GRADIENT:   4.3425E+00  4.1410E+00  8.1463E-01  1.7568E+00 -4.6652E-01 -5.0636E-02 -1.6875E-01  3.4409E-01
+
+0ITERATION NO.:    1    OBJECTIVE VALUE:   1334.12239994469        NO. OF FUNC. EVALS.:  18
+ CUMULATIVE NO. OF FUNC. EVALS.:       25
+ NPARAMETR:  9.6200E+01 -1.6800E+02  5.8400E+00  3.9900E+01  1.7000E-03  3.0500E-02  3.7300E-02  1.5900E+01
+ PARAMETER:  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01  1.0000E-01
+ GRADIENT:   6.9233E-01 -1.8990E+00 -9.7732E-01  1.5442E+00 -4.6652E-01 -5.0636E-02 -1.6875E-01  2.9772E-01
+
+0ITERATION NO.:    2    OBJECTIVE VALUE:   1334.12056367855        NO. OF FUNC. EVALS.:  16
+ CUMULATIVE NO. OF FUNC. EVALS.:       41
+ NPARAMETR:  9.6186E+01 -1.6787E+02  5.8421E+00  3.9885E+01  1.7006E-03  3.0501E-02  3.7305E-02  1.5896E+01
+ PARAMETER:  9.9727E-02  1.0075E-01  1.0039E-01  9.9390E-02  1.0018E-01  1.0002E-01  1.0007E-01  9.9882E-02
+ GRADIENT:   7.9797E-01  2.2362E+00  1.0832E+00  1.5849E+00 -4.6164E-01 -6.8692E-02 -1.7311E-01  1.6679E-01
+
+0ITERATION NO.:    3    OBJECTIVE VALUE:   1334.12051873014        NO. OF FUNC. EVALS.:  31
+ CUMULATIVE NO. OF FUNC. EVALS.:       72             RESET HESSIAN, TYPE I
+ NPARAMETR:  9.6218E+01 -1.6787E+02  5.8429E+00  3.9872E+01  1.7013E-03  3.0513E-02  3.7320E-02  1.5881E+01
+ PARAMETER:  1.0036E-01  1.0080E-01  1.0054E-01  9.8843E-02  1.0038E-01  1.0022E-01  1.0027E-01  9.9410E-02
+ GRADIENT:   8.0670E+00  9.8194E+00  3.7098E+00  1.6586E+00 -4.4460E-01 -7.1029E-02 -1.5908E-01 -5.3012E-02
+
+0ITERATION NO.:    4    OBJECTIVE VALUE:   1334.12036285194        NO. OF FUNC. EVALS.:   8
+ CUMULATIVE NO. OF FUNC. EVALS.:       80
+ NPARAMETR:  9.6215E+01 -1.6788E+02  5.8421E+00  3.9867E+01  1.7016E-03  3.0515E-02  3.7324E-02  1.5880E+01
+ PARAMETER:  1.0031E-01  1.0070E-01  1.0039E-01  9.8643E-02  1.0048E-01  1.0025E-01  1.0033E-01  9.9384E-02
+ GRADIENT:   7.4676E+00  8.7628E+00  3.1639E+00  1.5215E+00 -4.4175E-01 -6.6458E-02 -1.5703E-01 -5.1191E-02
+
+0ITERATION NO.:    5    OBJECTIVE VALUE:   1334.12036185461        NO. OF FUNC. EVALS.:   9
+ CUMULATIVE NO. OF FUNC. EVALS.:       89
+ NPARAMETR:  9.6213E+01 -1.6789E+02  5.8422E+00  3.9865E+01  1.7020E-03  3.0516E-02  3.7329E-02  1.5880E+01
+ PARAMETER:  1.0027E-01  1.0066E-01  1.0040E-01  9.8546E-02  1.0058E-01  1.0026E-01  1.0038E-01  9.9380E-02
+ GRADIENT:   7.1896E+00  8.5390E+00  3.0518E+00  1.4726E+00 -4.3804E-01 -6.4809E-02 -1.5381E-01 -4.6353E-02
+
+0ITERATION NO.:    6    OBJECTIVE VALUE:   1334.12036185461        NO. OF FUNC. EVALS.:  14
+ CUMULATIVE NO. OF FUNC. EVALS.:      103
+ NPARAMETR:  9.6213E+01 -1.6789E+02  5.8422E+00  3.9865E+01  1.7020E-03  3.0516E-02  3.7329E-02  1.5880E+01
+ PARAMETER:  1.0027E-01  1.0066E-01  1.0040E-01  9.8546E-02  1.0058E-01  1.0026E-01  1.0038E-01  9.9380E-02
+ GRADIENT:   3.5260E+00  2.4521E+00  1.2523E+00  1.2597E+00 -4.3804E-01 -6.4809E-02 -1.5381E-01 -9.2762E-02
+
+0ITERATION NO.:    7    OBJECTIVE VALUE:   1334.12023249536        NO. OF FUNC. EVALS.:  27
+ CUMULATIVE NO. OF FUNC. EVALS.:      130             RESET HESSIAN, TYPE I
+ NPARAMETR:  9.6200E+01 -1.6788E+02  5.8423E+00  3.9889E+01  1.7026E-03  3.0528E-02  3.7321E-02  1.5884E+01
+ PARAMETER:  9.9992E-02  1.0073E-01  1.0041E-01  9.9559E-02  1.0078E-01  1.0046E-01  1.0029E-01  9.9497E-02
+ GRADIENT:   5.8835E+00  8.7432E+00  3.1224E+00  1.8615E+00 -4.3839E-01 -5.0123E-02 -1.7327E-01  2.3581E-02
+
+0ITERATION NO.:    8    OBJECTIVE VALUE:   1334.12023249536        NO. OF FUNC. EVALS.:  13
+ CUMULATIVE NO. OF FUNC. EVALS.:      143
+ NPARAMETR:  9.6200E+01 -1.6788E+02  5.8423E+00  3.9889E+01  1.7026E-03  3.0528E-02  3.7321E-02  1.5884E+01
+ PARAMETER:  9.9992E-02  1.0073E-01  1.0041E-01  9.9559E-02  1.0078E-01  1.0046E-01  1.0029E-01  9.9497E-02
+ GRADIENT:   2.2302E+00  2.6550E+00  1.3234E+00  1.6489E+00 -4.3839E-01 -5.0123E-02 -1.7327E-01 -2.2821E-02
+
+0ITERATION NO.:    9    OBJECTIVE VALUE:   1334.12018027694        NO. OF FUNC. EVALS.:  13
+ CUMULATIVE NO. OF FUNC. EVALS.:      156
+ NPARAMETR:  9.6201E+01 -1.6787E+02  5.8423E+00  3.9883E+01  1.7037E-03  3.0528E-02  3.7322E-02  1.5884E+01
+ PARAMETER:  1.0002E-01  1.0078E-01  1.0042E-01  9.9290E-02  1.0107E-01  1.0047E-01  1.0029E-01  9.9504E-02
+ GRADIENT:   2.4662E+00  2.8978E+00  1.4489E+00  1.5654E+00 -4.2344E-01 -4.9019E-02 -1.7023E-01 -1.6278E-02
+
+0ITERATION NO.:   10    OBJECTIVE VALUE:   1334.12017859706        NO. OF FUNC. EVALS.:  13
+ CUMULATIVE NO. OF FUNC. EVALS.:      169
+ NPARAMETR:  9.6201E+01 -1.6786E+02  5.8422E+00  3.9881E+01  1.7043E-03  3.0529E-02  3.7322E-02  1.5884E+01
+ PARAMETER:  1.0002E-01  1.0081E-01  1.0041E-01  9.9193E-02  1.0125E-01  1.0048E-01  1.0029E-01  9.9507E-02
+ GRADIENT:   2.4966E+00  2.9990E+00  1.4979E+00  1.5364E+00 -4.1542E-01 -4.8191E-02 -1.6971E-01 -1.2535E-02
+
+0ITERATION NO.:   11    OBJECTIVE VALUE:   1334.12017816376        NO. OF FUNC. EVALS.:  14
+ CUMULATIVE NO. OF FUNC. EVALS.:      183
+ NPARAMETR:  9.6201E+01 -1.6786E+02  5.8422E+00  3.9879E+01  1.7046E-03  3.0529E-02  3.7322E-02  1.5884E+01
+ PARAMETER:  1.0002E-01  1.0083E-01  1.0039E-01  9.9143E-02  1.0135E-01  1.0048E-01  1.0030E-01  9.9506E-02
+ GRADIENT:   2.5194E+00  3.0350E+00  1.5142E+00  1.5205E+00 -4.1084E-01 -4.7749E-02 -1.6960E-01 -1.1873E-02
+
+0ITERATION NO.:   12    OBJECTIVE VALUE:   1334.12015518049        NO. OF FUNC. EVALS.:  27
+ CUMULATIVE NO. OF FUNC. EVALS.:      210             RESET HESSIAN, TYPE I
+ NPARAMETR:  9.6202E+01 -1.6787E+02  5.8411E+00  3.9877E+01  1.7045E-03  3.0536E-02  3.7321E-02  1.5884E+01
+ PARAMETER:  1.0003E-01  1.0076E-01  1.0020E-01  9.9025E-02  1.0132E-01  1.0058E-01  1.0028E-01  9.9508E-02
+ GRADIENT:   5.9356E+00  8.2898E+00  2.8748E+00  1.6397E+00 -4.1115E-01 -3.8471E-02 -1.7219E-01  4.6726E-02
+
+0ITERATION NO.:   13    OBJECTIVE VALUE:   1334.12015518049        NO. OF FUNC. EVALS.:  14
+ CUMULATIVE NO. OF FUNC. EVALS.:      224
+ NPARAMETR:  9.6202E+01 -1.6787E+02  5.8411E+00  3.9877E+01  1.7045E-03  3.0536E-02  3.7321E-02  1.5884E+01
+ PARAMETER:  1.0003E-01  1.0076E-01  1.0020E-01  9.9025E-02  1.0132E-01  1.0058E-01  1.0028E-01  9.9508E-02
+ GRADIENT:   2.2812E+00  2.1995E+00  1.0797E+00  1.4270E+00 -4.1115E-01 -3.8471E-02 -1.7219E-01  3.2619E-04
+
+0ITERATION NO.:   14    OBJECTIVE VALUE:   1334.12013895895        NO. OF FUNC. EVALS.:  27
+ CUMULATIVE NO. OF FUNC. EVALS.:      251             RESET HESSIAN, TYPE I
+ NPARAMETR:  9.6204E+01 -1.6786E+02  5.8415E+00  3.9878E+01  1.7044E-03  3.0542E-02  3.7318E-02  1.5884E+01
+ PARAMETER:  1.0007E-01  1.0081E-01  1.0028E-01  9.9100E-02  1.0130E-01  1.0068E-01  1.0025E-01  9.9493E-02
+ GRADIENT:   6.3382E+00  8.8532E+00  3.1697E+00  1.6996E+00 -4.1134E-01 -3.3291E-02 -1.7505E-01  3.2885E-02
+
+0ITERATION NO.:   15    OBJECTIVE VALUE:   1334.12013895895        NO. OF FUNC. EVALS.:  13
+ CUMULATIVE NO. OF FUNC. EVALS.:      264
+ NPARAMETR:  9.6204E+01 -1.6786E+02  5.8415E+00  3.9878E+01  1.7044E-03  3.0542E-02  3.7318E-02  1.5884E+01
+ PARAMETER:  1.0007E-01  1.0081E-01  1.0028E-01  9.9100E-02  1.0130E-01  1.0068E-01  1.0025E-01  9.9493E-02
+ GRADIENT:   2.6822E+00  2.7597E+00  1.3732E+00  1.4869E+00 -4.1134E-01 -3.3291E-02 -1.7505E-01 -1.3516E-02
+
+0ITERATION NO.:   16    OBJECTIVE VALUE:   1334.12013132945        NO. OF FUNC. EVALS.:  27
+ CUMULATIVE NO. OF FUNC. EVALS.:      291             RESET HESSIAN, TYPE I
+ NPARAMETR:  9.6204E+01 -1.6787E+02  5.8411E+00  3.9877E+01  1.7043E-03  3.0548E-02  3.7317E-02  1.5884E+01
+ PARAMETER:  1.0007E-01  1.0079E-01  1.0020E-01  9.9059E-02  1.0127E-01  1.0078E-01  1.0022E-01  9.9496E-02
+ GRADIENT:   6.2083E+00  8.5351E+00  3.0022E+00  1.6663E+00 -4.1210E-01 -2.5351E-02 -1.7819E-01  3.9039E-02
+
+0ITERATION NO.:   17    OBJECTIVE VALUE:   1334.12013132945        NO. OF FUNC. EVALS.:  14
+ CUMULATIVE NO. OF FUNC. EVALS.:      305
+ NPARAMETR:  9.6204E+01 -1.6787E+02  5.8411E+00  3.9877E+01  1.7043E-03  3.0548E-02  3.7317E-02  1.5884E+01
+ PARAMETER:  1.0007E-01  1.0079E-01  1.0020E-01  9.9059E-02  1.0127E-01  1.0078E-01  1.0022E-01  9.9496E-02
+ GRADIENT:   2.5524E+00  2.4425E+00  1.2071E+00  1.4536E+00 -4.1210E-01 -2.5351E-02 -1.7819E-01 -7.3620E-03
+
+0ITERATION NO.:   18    OBJECTIVE VALUE:   1334.12013132945        NO. OF FUNC. EVALS.:  19
+ CUMULATIVE NO. OF FUNC. EVALS.:      324
+ NPARAMETR:  9.6204E+01 -1.6787E+02  5.8411E+00  3.9877E+01  1.7043E-03  3.0548E-02  3.7317E-02  1.5884E+01
+ PARAMETER:  1.0007E-01  1.0079E-01  1.0020E-01  9.9059E-02  1.0127E-01  1.0078E-01  1.0022E-01  9.9496E-02
+ GRADIENT:  -9.9000E-02 -1.3892E-01 -2.0580E-02 -1.3023E-02  2.1602E-01  9.7317E-04  1.0711E-01  4.8308E-03
+
+ #TERM:
+0MINIMIZATION SUCCESSFUL
+ HOWEVER, PROBLEMS OCCURRED WITH THE MINIMIZATION.
+ REGARD THE RESULTS OF THE ESTIMATION STEP CAREFULLY, AND ACCEPT THEM ONLY
+ AFTER CHECKING THAT THE COVARIANCE STEP PRODUCES REASONABLE OUTPUT.
+ NO. OF FUNCTION EVALUATIONS USED:      324
+ NO. OF SIG. DIGITS IN FINAL EST.:  3.3
+
+ ETABAR IS THE ARITHMETIC MEAN OF THE ETA-ESTIMATES,
+ AND THE P-VALUE IS GIVEN FOR THE NULL HYPOTHESIS THAT THE TRUE MEAN IS 0.
+
+ ETABAR:        -4.2195E-04  4.4618E-03  1.1035E-01  5.1143E-02  9.9291E-04  0.0000E+00 -1.4816E-03 -2.7479E-03
+ SE:             4.4442E-02  2.2070E-02  6.3803E-02  3.2157E-02  5.3818E-03  0.0000E+00  2.6305E-02  2.6663E-02
+ N:                      32          32          32          32          32          32          32          32
+
+ P VAL.:         9.9242E-01  8.3979E-01  8.3704E-02  1.1174E-01  8.5363E-01  1.0000E+00  9.5508E-01  9.1791E-01
+
+ ETAshrink(%):   1.0000E-10  1.0532E+01  4.5152E+01  6.6859E+01  2.5076E+01  1.0000E+02  1.3500E+01  2.0672E+01
+ EBVshrink(%):   2.1024E+00  1.0139E+01  4.0091E+01  5.0101E+01  2.6403E+01  0.0000E+00  1.4706E+01  2.1405E+01
+ EPSshrink(%):   1.4617E+01  1.0000E-10  1.5590E+01
+
+ #TERE:
+ Elapsed estimation time in seconds:    11.81
+ Elapsed covariance time in seconds:     4.14
+1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ************************************************************************************************************************
+ ********************                                                                                ********************
+ ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ #OBJT:**************                       MINIMUM VALUE OF OBJECTIVE FUNCTION                      ********************
+ ********************                                                                                ********************
+ ************************************************************************************************************************
+ 
+
+
+
+
+
+ #OBJV:********************************************     1334.120       **************************************************
+1
+ ************************************************************************************************************************
+ ********************                                                                                ********************
+ ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ ********************                             FINAL PARAMETER ESTIMATE                           ********************
+ ********************                                                                                ********************
+ ************************************************************************************************************************
+ 
+
+
+ THETA - VECTOR OF FIXED EFFECTS PARAMETERS   *********
+
+
+         TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8     
+ 
+         1.31E-01  8.06E+00  9.44E-01  1.03E+00  9.62E+01 -1.68E+02  5.84E+00  3.99E+01
+ 
+
+
+ OMEGA - COV MATRIX FOR RANDOM EFFECTS - ETAS  ********
+
+
+            ETA1      ETA2      ETA3      ETA4      ETA5      ETA6      ETA7      ETA8   
+ 
+ ETA1
++        6.49E-02
+ 
+ ETA2
++        0.00E+00  2.01E-02
+ 
+ ETA3
++        0.00E+00  0.00E+00  4.47E-01
+ 
+ ETA4
++        0.00E+00  0.00E+00  0.00E+00  3.11E-01
+ 
+ ETA5
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  1.70E-03
+ 
+ ETA6
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
+ 
+ ETA7
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  3.05E-02
+ 
+ ETA8
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  3.73E-02
+ 
+
+
+ SIGMA - COV MATRIX FOR RANDOM EFFECTS - EPSILONS  ****
+
+
+            EPS1      EPS2      EPS3   
+ 
+ EPS1
++        4.78E-03
+ 
+ EPS2
++        0.00E+00  1.35E-01
+ 
+ EPS3
++        0.00E+00  0.00E+00  1.59E+01
+ 
+1
+
+
+ OMEGA - CORR MATRIX FOR RANDOM EFFECTS - ETAS  *******
+
+
+            ETA1      ETA2      ETA3      ETA4      ETA5      ETA6      ETA7      ETA8   
+ 
+ ETA1
++        2.55E-01
+ 
+ ETA2
++        0.00E+00  1.42E-01
+ 
+ ETA3
++        0.00E+00  0.00E+00  6.69E-01
+ 
+ ETA4
++        0.00E+00  0.00E+00  0.00E+00  5.58E-01
+ 
+ ETA5
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  4.13E-02
+ 
+ ETA6
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
+ 
+ ETA7
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  1.75E-01
+ 
+ ETA8
++        0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  1.93E-01
+ 
+
+
+ SIGMA - CORR MATRIX FOR RANDOM EFFECTS - EPSILONS  ***
+
+
+            EPS1      EPS2      EPS3   
+ 
+ EPS1
++        6.91E-02
+ 
+ EPS2
++        0.00E+00  3.67E-01
+ 
+ EPS3
++        0.00E+00  0.00E+00  3.99E+00
+ 
+1
+ ************************************************************************************************************************
+ ********************                                                                                ********************
+ ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ ********************                            STANDARD ERROR OF ESTIMATE                          ********************
+ ********************                                                                                ********************
+ ************************************************************************************************************************
+ 
+
+
+ THETA - VECTOR OF FIXED EFFECTS PARAMETERS   *********
+
+
+         TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8     
+ 
+        ......... ......... ......... .........  1.02E+00  1.15E+01  7.42E-01  1.49E+00
+ 
+
+
+ OMEGA - COV MATRIX FOR RANDOM EFFECTS - ETAS  ********
+
+
+            ETA1      ETA2      ETA3      ETA4      ETA5      ETA6      ETA7      ETA8   
+ 
+ ETA1
++       .........
+ 
+ ETA2
++       ......... .........
+ 
+ ETA3
++       ......... ......... .........
+ 
+ ETA4
++       ......... ......... ......... .........
+ 
+ ETA5
++       ......... ......... ......... .........  6.33E-04
+ 
+ ETA6
++       ......... ......... ......... ......... ......... .........
+ 
+ ETA7
++       ......... ......... ......... ......... ......... .........  1.71E-02
+ 
+ ETA8
++       ......... ......... ......... ......... ......... ......... .........  2.31E-02
+ 
+
+
+ SIGMA - COV MATRIX FOR RANDOM EFFECTS - EPSILONS  ****
+
+
+            EPS1      EPS2      EPS3   
+ 
+ EPS1
++       .........
+ 
+ EPS2
++       ......... .........
+ 
+ EPS3
++       ......... .........  2.33E+00
+ 
+1
+
+
+ OMEGA - CORR MATRIX FOR RANDOM EFFECTS - ETAS  *******
+
+
+            ETA1      ETA2      ETA3      ETA4      ETA5      ETA6      ETA7      ETA8   
+ 
+ ETA1
++       .........
+ 
+ ETA2
++       ......... .........
+ 
+ ETA3
++       ......... ......... .........
+ 
+ ETA4
++       ......... ......... ......... .........
+ 
+ ETA5
++       ......... ......... ......... .........  7.67E-03
+ 
+ ETA6
++       ......... ......... ......... ......... ......... .........
+ 
+ ETA7
++       ......... ......... ......... ......... ......... .........  4.88E-02
+ 
+ ETA8
++       ......... ......... ......... ......... ......... ......... .........  5.99E-02
+ 
+
+
+ SIGMA - CORR MATRIX FOR RANDOM EFFECTS - EPSILONS  ***
+
+
+            EPS1      EPS2      EPS3   
+ 
+ EPS1
++       .........
+ 
+ EPS2
++       ......... .........
+ 
+ EPS3
++       ......... .........  2.93E-01
+ 
+1
+ ************************************************************************************************************************
+ ********************                                                                                ********************
+ ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ ********************                          COVARIANCE MATRIX OF ESTIMATE                         ********************
+ ********************                                                                                ********************
+ ************************************************************************************************************************
+ 
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ TH 1
++       .........
+ 
+ TH 2
++       ......... .........
+ 
+ TH 3
++       ......... ......... .........
+ 
+ TH 4
++       ......... ......... ......... .........
+ 
+ TH 5
++       ......... ......... ......... .........  1.04E+00
+ 
+ TH 6
++       ......... ......... ......... .........  3.13E-02  1.33E+02
+ 
+ TH 7
++       ......... ......... ......... ......... -1.20E-01 -8.00E+00  5.50E-01
+ 
+ TH 8
++       ......... ......... ......... .........  4.13E-02 -7.32E+00  1.71E-01  2.21E+00
+ 
+ OM11
++       ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM12
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM13
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM14
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM15
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         .........
+ 
+ OM16
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... .........
+ 
+ OM17
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... .........
+ 
+ OM18
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... .........
+ 
+ OM22
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... .........
+ 
+ OM23
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... .........
+ 
+1
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ OM24
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... .........
+ 
+ OM25
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM26
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM27
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM28
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM33
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM34
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        .........
+ 
+ OM35
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... .........
+ 
+ OM36
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... .........
+ 
+ OM37
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... .........
+ 
+ OM38
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... .........
+ 
+ OM44
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... .........
+ 
+ OM45
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... .........
+ 
+1
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ OM46
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM47
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM48
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM55
++       ......... ......... ......... .........  1.31E-04  2.62E-05  5.80E-05 -4.10E-04 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........  4.01E-07
+ 
+ OM56
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM57
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         .........
+ 
+ OM58
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... .........
+ 
+ OM66
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... .........
+ 
+ OM67
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... .........
+ 
+ OM68
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... .........
+ 
+1
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ OM77
++       ......... ......... ......... .........  3.81E-03  3.89E-02 -5.35E-04 -1.48E-02 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........  5.59E-06 .........
+         ......... ......... ......... ......... .........  2.92E-04
+ 
+ OM78
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... .........
+ 
+ OM88
++       ......... ......... ......... .........  8.25E-03  3.88E-02 -3.46E-04 -1.64E-02 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........  9.72E-06 .........
+         ......... ......... ......... ......... .........  3.54E-04 .........  5.36E-04
+ 
+ SG11
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG12
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG13
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG22
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG23
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        .........
+ 
+ SG33
++       ......... ......... ......... ......... -2.82E-01 -2.42E+00  6.87E-02  1.17E+00 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... -6.81E-04 .........
+         ......... ......... ......... ......... ......... -2.56E-02 ......... -3.99E-02 ......... ......... ......... .........
+        .........  5.44E+00
+ 
+1
+ ************************************************************************************************************************
+ ********************                                                                                ********************
+ ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ ********************                          CORRELATION MATRIX OF ESTIMATE                        ********************
+ ********************                                                                                ********************
+ ************************************************************************************************************************
+ 
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ TH 1
++       .........
+ 
+ TH 2
++       ......... .........
+ 
+ TH 3
++       ......... ......... .........
+ 
+ TH 4
++       ......... ......... ......... .........
+ 
+ TH 5
++       ......... ......... ......... .........  1.02E+00
+ 
+ TH 6
++       ......... ......... ......... .........  2.67E-03  1.15E+01
+ 
+ TH 7
++       ......... ......... ......... ......... -1.58E-01 -9.36E-01  7.42E-01
+ 
+ TH 8
++       ......... ......... ......... .........  2.73E-02 -4.27E-01  1.55E-01  1.49E+00
+ 
+ OM11
++       ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM12
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM13
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM14
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM15
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         .........
+ 
+ OM16
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... .........
+ 
+ OM17
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... .........
+ 
+ OM18
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... .........
+ 
+ OM22
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... .........
+ 
+ OM23
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... .........
+ 
+1
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ OM24
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... .........
+ 
+ OM25
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM26
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM27
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM28
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM33
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM34
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        .........
+ 
+ OM35
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... .........
+ 
+ OM36
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... .........
+ 
+ OM37
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... .........
+ 
+ OM38
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... .........
+ 
+ OM44
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... .........
+ 
+ OM45
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... .........
+ 
+1
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ OM46
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM47
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM48
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM55
++       ......... ......... ......... .........  2.04E-01  3.59E-03  1.24E-01 -4.35E-01 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........  6.33E-04
+ 
+ OM56
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM57
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         .........
+ 
+ OM58
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... .........
+ 
+ OM66
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... .........
+ 
+ OM67
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... .........
+ 
+ OM68
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... .........
+ 
+1
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ OM77
++       ......... ......... ......... .........  2.19E-01  1.98E-01 -4.23E-02 -5.82E-01 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........  5.17E-01 .........
+         ......... ......... ......... ......... .........  1.71E-02
+ 
+ OM78
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... .........
+ 
+ OM88
++       ......... ......... ......... .........  3.50E-01  1.46E-01 -2.01E-02 -4.75E-01 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........  6.63E-01 .........
+         ......... ......... ......... ......... .........  8.95E-01 .........  2.31E-02
+ 
+ SG11
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG12
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG13
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG22
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG23
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        .........
+ 
+ SG33
++       ......... ......... ......... ......... -1.19E-01 -8.99E-02  3.97E-02  3.38E-01 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... -4.61E-01 .........
+         ......... ......... ......... ......... ......... -6.42E-01 ......... -7.39E-01 ......... ......... ......... .........
+        .........  2.33E+00
+ 
+1
+ ************************************************************************************************************************
+ ********************                                                                                ********************
+ ********************               FIRST ORDER CONDITIONAL ESTIMATION WITH INTERACTION              ********************
+ ********************                      INVERSE COVARIANCE MATRIX OF ESTIMATE                     ********************
+ ********************                                                                                ********************
+ ************************************************************************************************************************
+ 
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ TH 1
++       .........
+ 
+ TH 2
++       ......... .........
+ 
+ TH 3
++       ......... ......... .........
+ 
+ TH 4
++       ......... ......... ......... .........
+ 
+ TH 5
++       ......... ......... ......... .........  4.09E+00
+ 
+ TH 6
++       ......... ......... ......... .........  1.27E+00  5.89E-01
+ 
+ TH 7
++       ......... ......... ......... .........  1.87E+01  8.48E+00  1.24E+02
+ 
+ TH 8
++       ......... ......... ......... .........  2.37E+00  1.19E+00  1.68E+01  3.23E+00
+ 
+ OM11
++       ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM12
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM13
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM14
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM15
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         .........
+ 
+ OM16
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... .........
+ 
+ OM17
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... .........
+ 
+ OM18
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... .........
+ 
+ OM22
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... .........
+ 
+ OM23
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... .........
+ 
+1
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ OM24
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... .........
+ 
+ OM25
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM26
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM27
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM28
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM33
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM34
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        .........
+ 
+ OM35
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... .........
+ 
+ OM36
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... .........
+ 
+ OM37
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... .........
+ 
+ OM38
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... .........
+ 
+ OM44
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... .........
+ 
+ OM45
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... .........
+ 
+1
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ OM46
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM47
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM48
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM55
++       ......... ......... ......... .........  6.38E+02  2.70E+02  3.13E+03  1.26E+03 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........  5.65E+06
+ 
+ OM56
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ OM57
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         .........
+ 
+ OM58
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... .........
+ 
+ OM66
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... .........
+ 
+ OM67
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... .........
+ 
+ OM68
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... .........
+ 
+1
+
+            TH 1      TH 2      TH 3      TH 4      TH 5      TH 6      TH 7      TH 8      OM11      OM12      OM13      OM14  
+             OM15      OM16      OM17      OM18      OM22      OM23      OM24      OM25      OM26      OM27      OM28      OM33  
+            OM34      OM35      OM36      OM37      OM38      OM44      OM45      OM46      OM47      OM48      OM55      OM56  
+             OM57      OM58      OM66      OM67      OM68      OM77      OM78      OM88      SG11      SG12      SG13      SG22  
+            SG23      SG33  
+ 
+ OM77
++       ......... ......... ......... .........  1.09E+02  3.67E+01  5.16E+02  1.34E+02 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... .........  1.43E+05 .........
+         ......... ......... ......... ......... .........  2.63E+04
+ 
+ OM78
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... .........
+ 
+ OM88
++       ......... ......... ......... ......... -2.37E+02 -8.12E+01 -1.17E+03 -1.87E+02 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... -2.09E+05 .........
+         ......... ......... ......... ......... ......... -2.27E+04 .........  3.15E+04
+ 
+ SG11
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG12
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG13
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG22
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+ 
+ SG23
++       ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        .........
+ 
+ SG33
++       ......... ......... ......... ......... -1.12E+00 -4.24E-01 -6.18E+00 -8.38E-01 ......... ......... ......... .........
+         ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... .........
+        ......... ......... ......... ......... ......... ......... ......... ......... ......... ......... -3.08E+02 .........
+         ......... ......... ......... ......... ......... -3.83E+01 .........  1.05E+02 ......... ......... ......... .........
+        .........  7.44E-01
+ 
+ #CPUT: Total CPU Time in Seconds,       15.600
+Stop Time: 
+Mon 30/03/2015 
+03:18 p.m.
+start 30/03/2015
+end   30/03/2015
+exe  nmtcl
+user 0:4.49
+real 0:4.49
+sys  0:0
+start 30/03/2015
+end   30/03/2015
+exe  nonmem
+user 0:16.7
+real 0:16.7
+sys  0:0
