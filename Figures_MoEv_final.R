@@ -24,7 +24,7 @@ require(scales)   # version 0.4.0
 
 
 # PK examaples
-setwd("C:/Users/Tram/Google Drive/ISOP MOEV/Revision/R script_Data/")
+#setwd("C:/Users/Tram/Google Drive/ISOP MOEV/Revision/R script_Data/")
 
 
 # function for Lowess regression for trend lines 
@@ -537,7 +537,8 @@ npde6 <- autonpde(obs,sim6,iid = 1,ix = 2, iy = 3)
 npde1["prefs"]$vpc.interval <- 0.8
 a1 <- npde.plot.meanprofile(npde1)
 npdex1 <- data.frame(Time=rep(a1$xcalsim$bnds$xcent,3),CIlower=matrix(a1$xcalsim$bnds$binf,ncol=1),
-                     CIupper=matrix(a1$xcalsim$bnds$bsup,ncol=1),theomedian=matrix(a1$xcalsim$bnds$bmed,ncol=1),
+                     CIupper=matrix(a1$xcalsim$bnds$bsup,ncol=1),
+                     theomedian=matrix(a1$xcalsim$bnds$bmed,ncol=1),
                      median=matrix(a1$xcalobs$percobs,ncol=1))
 npdex1$PI <- rep(c("10% percentile","50% percentile","90% percentile"),each=dim(npdex1)[1]/3)
 obsnpde1 <- a1$xcalobs$plmat
@@ -1709,13 +1710,12 @@ ggsave(".\\Figure_S10.tiff",p,width=7,height=4,dpi=300,compression="lzw")
 ## PKPD warfarin example ##
 ###########################
 
-setwd("C:/Users/Tram/Google Drive/ISOP MOEV/Submission/R script_Data/")
-
+#setwd("C:/Users/Tram/Google Drive/ISOP MOEV/Submission/R script_Data/")
+setwd("../PKPD_figures/") 
 
 # function for Lowess regression for trend lines 
-source('./stat_plsmo_new.R')
+source('../stat_plsmo_new.R')
 
-setwd("./PKPD_figures")
 
 # Make sure that you have all required packages. 
 # The order of loading packages is important as some will mask functions from others.
@@ -2033,17 +2033,16 @@ vpcplotmain2 <- ggplot(PCDATAm ,aes(t,`50%_DVPLOT`,ymin=`2.5%_DVPLOT`,ymax=`97.5
 
 #Figure 7C & 7D: NPD & tranformed NPD
 # Defining generic functions
-source("./npde_2_modified/global.R")
-
-# Classes
-source("./npde_2_modified/NpdeData.R")
-source("./npde_2_modified/NpdeRes.R")
-source("./npde_2_modified/NpdeObject.R")
-
-# Main function
-source("./npde_2_modified/func_methods.R")
-source("./npde_2_modified/func_plots_npd.R")
-source("./npde_2_modified/main.R")
+#source the npde functions from the pK_figures folder if not already done
+# source("./npde_2_modified/global.R")
+# # Classes
+# source("./npde_2_modified/NpdeData.R")
+# source("./npde_2_modified/NpdeRes.R")
+# source("./npde_2_modified/NpdeObject.R")
+# # Main function
+# source("./npde_2_modified/func_methods.R")
+# source("./npde_2_modified/func_plots_npd.R")
+# source("./npde_2_modified/main.R")
 
 
 npde1 <- autonpde(originaldata,ALLPCDATA1,iid = 1,ix = 2, iy = 3)
@@ -2157,7 +2156,12 @@ obsnpde<- plyr::rbind.fill(obsnpde1,obsnpde2,obsnpde3,obsnpde4)
 obsnpdet<- plyr::rbind.fill(obsnpde1t,obsnpde2t,obsnpde3t,obsnpde4t)
 
 # npd vs Time
-NPDETRUE<- ggplot(data.frame(npdex),aes(x=Time,y=median))+
+npdex<- as.data.frame(npdex)
+#latest ggplot might not work if x and or y are one column matrix
+
+npdex$median <- npdex$median[,1]
+
+NPDETRUE<- ggplot(npdex,aes(x=Time,y=median))+
   facet_grid(~ModelName) +
   geom_line(aes(y=theomedian,group=PI),color="black",linetype="dashed") +
   geom_ribbon(aes(ymin=CIlower,ymax=CIupper,fill=PI,col=PI),alpha=0.1,col=NA)+
@@ -2178,6 +2182,9 @@ NPDETRUE<- ggplot(data.frame(npdex),aes(x=Time,y=median))+
   theme(strip.text = element_text(size = 12, colour = "black"),aspect.ratio=1)
 
 # tnpd vs Time
+npdext<- data.frame(npdext)
+npdext$median <- npdext$median[,1]
+
 NPDETRUESCALE <- ggplot(data.frame(npdext),aes(x=Time,y=median))+
   facet_grid(~ModelName)+
   geom_line(aes(y=theomedian,group=PI),linetype="dashed",color="black") +
@@ -2213,7 +2220,7 @@ ggsave(".\\Figure_7.pdf",p,width=35,height=45,units="cm",dpi=300)
 gofmedianpred<- gof %>%
   filter(ObsName=="EObs")  %>%
   group_by (ModelName,IVAR,ObsName) %>%
-  summarise( MEDIANPRED=  median(PRED))
+  dplyr::summarise( MEDIANPRED=  median(PRED))
 FIGS11 <- ggplot(datafit[!is.na(datafit$PD),] ,aes(TIME,PD))+
   geom_line(aes(group=ID,color="e.Simulated"))+
   ylab("Observed PCA")+ xlab("Time (h)")+
@@ -2241,7 +2248,7 @@ ggsave(".\\Figure_S11.pdf",FIGS11,width=15,height=15,units="cm",dpi=300)
 gof<-  gof %>%
   filter(ObsName=="EObs")
 
-gofcwres <- gather(gof[,c("ModelName","ID","IVAR","PRED","PCWRES","CWRES","WRES")], variable, value, -IVAR,-PRED, -ID, -ModelName)
+#gofcwres <- gather(gof[,c("ModelName","ID","IVAR","PRED","PCWRES","CWRES","WRES")], variable, value, -IVAR,-PRED, -ID, -ModelName)
 gofcwres <- gather(gof[,c("ModelName","ID","IVAR","PRED","PCWRES")], variable, value, -IVAR,-PRED, -ID, -ModelName)
 PCWRESvsTIME<- ggplot(gofcwres ,aes(IVAR,value))+
   geom_point(color="blue")+
